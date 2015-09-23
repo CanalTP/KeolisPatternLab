@@ -1,0 +1,134 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+.footer-container {
+    background-color: $color-footer;
+    [class*="hr-"],
+    [class^="hr-"]  {
+        border-color: $gray-dark;
+    }
+
+    a {
+        color: $font-color-light;
+    }
+}
+
+// container footer
+.footer-container {
+    a {
+        [class^="icon-"], [class*=" icon-"] {
+            cursor: pointer;
+        }
+    }
+}
+// navigation footer
+.footer-nav {
+    [class*=" icon-"],
+    [class^="icon-"]  {
+        display: inline-block;
+        background-image: url("../images/sprite/sprite.png");
+        background-repeat: no-repeat;
+    }
+    [class*=" block-"] ,
+    [class^="block-"]  {
+       & > ul, & > h3,
+       & > div {
+           padding-top: 1em;
+           padding-bottom: 1em;
+       }
+    }
+    .link-block {
+        padding: 0.5em 1em;
+        text-decoration:none;
+        & > .arrow {
+            background: #454952;
+            border-radius: 4px;
+            display: inline-block;
+            height: 31px;
+            line-height: 31px;
+            margin-left: 15px;
+            text-align: center;
+            width: 33px;
+        }
+    }
+}
+// nav list social network
+.nav-social-network {
+    padding: 0.95em 0;
+    @media all and (max-width: $bp-med) {
+        padding: 0 0.5em;
+    }
+    & > li {
+        display: block;
+        padding-left: 1.125em;
+        text-align: center;
+        @media all and (min-width: $bp-large-2) {
+            width: 17%;
+        }
+    }
+    & > li [class*=" icon-"],
+    & > li [class^="icon-"]  {
+        vertical-align: middle;
+    }
+    &.hr-left.hr-right {
+        @media all and (max-width: $bp-med) {
+            border-right: none;
+            border-left: none;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+    }
+}
+// nav list icon mode
+.nav-icon-mode {
+    & > li {
+        display: block;
+        padding-left: 1em;
+        margin-top: 0.25em;
+    }
+    & > li [class*=" icon-"],
+    & > li [class^="icon-"]  {
+        vertical-align: middle;
+    }
+}
+// logo footer
+.logo-footer {
+    margin-right:1.5em;
+    padding: 1em 0;
+}
+// sitemap
+.sitemap {
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    h4 {
+        margin-top: 1.250em;
+        margin-bottom: 1.250em;
+        text-transform: uppercase;
+    }
+    .simple-nav {
+        & > li {
+            margin-bottom: 0.25em;
+        }
+    }
+}
+// bottom footer
+.footer-bottom {
+    &.honrizontal-nav {
+        padding: 1em 0;
+    }
+    &> li {
+       border-left: 1px solid;
+       font-size: 0.65rem;
+       padding: 0 1em;
+   }
+    &> li:first-child {
+       border-left: none;
+       font-size: 0.65rem;
+       padding: 0 1em;
+   }
+}
+

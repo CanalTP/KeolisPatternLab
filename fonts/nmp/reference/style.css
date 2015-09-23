@@ -1,0 +1,358 @@
+@font-face {
+	font-family: 'nmp';
+	src:url('fonts/nmp.eot?64voz5');
+	src:url('fonts/nmp.eot?#64voz5') format('embedded-opentype'),
+		url('fonts/nmp.woff?64voz5') format('woff'),
+		url('fonts/nmp.ttf?64voz5') format('truetype'),
+		url('fonts/nmp.svg?64voz5#nmp') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'nmp';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sign-warning:before {
+	content: "\e600";
+}
+.icon-sign-info:before {
+	content: "\e601";
+}
+.icon-sign-forbidden:before {
+	content: "\e602";
+}
+.icon-service-taxi:before {
+	content: "\e603";
+}
+.icon-service-payment:before {
+	content: "\e604";
+}
+.icon-service-park-plus-relay:before {
+	content: "\e605";
+}
+.icon-service-park:before {
+	content: "\e606";
+}
+.icon-service-car-lock:before {
+	content: "\e607";
+}
+.icon-service-bicycle-park:before {
+	content: "\e608";
+}
+.icon-service-bicycle-lock:before {
+	content: "\e609";
+}
+.icon-poi-vip:before {
+	content: "\e60a";
+}
+.icon-poi-video:before {
+	content: "\e60b";
+}
+.icon-poi-sport:before {
+	content: "\e60c";
+}
+.icon-poi-spectacle:before {
+	content: "\e60d";
+}
+.icon-poi-soccer:before {
+	content: "\e60e";
+}
+.icon-poi-restaurant:before {
+	content: "\e60f";
+}
+.icon-poi-religion:before {
+	content: "\e610";
+}
+.icon-poi-monument:before {
+	content: "\e611";
+}
+.icon-poi-library:before {
+	content: "\e612";
+}
+.icon-poi-information:before {
+	content: "\e613";
+}
+.icon-poi-house:before {
+	content: "\e614";
+}
+.icon-poi-high-school:before {
+	content: "\e615";
+}
+.icon-poi-health:before {
+	content: "\e616";
+}
+.icon-poi-food:before {
+	content: "\e617";
+}
+.icon-poi-flowers:before {
+	content: "\e618";
+}
+.icon-poi-event:before {
+	content: "\e619";
+}
+.icon-poi-circus:before {
+	content: "\e61a";
+}
+.icon-poi-bowling:before {
+	content: "\e61b";
+}
+.icon-poi-books:before {
+	content: "\e61c";
+}
+.icon-poi-bed:before {
+	content: "\e61d";
+}
+.icon-poi-beach:before {
+	content: "\e61e";
+}
+.icon-poi-anchor:before {
+	content: "\e61f";
+}
+.icon-poi-admin:before {
+	content: "\e620";
+}
+.icon-mode-walk:before {
+	content: "\e621";
+}
+.icon-mode-tramway:before {
+	content: "\e622";
+}
+.icon-mode-train:before {
+	content: "\e623";
+}
+.icon-mode-subway:before {
+	content: "\e624";
+}
+.icon-mode-school:before {
+	content: "\e625";
+}
+.icon-mode-plane:before {
+	content: "\e626";
+}
+.icon-mode-odt:before {
+	content: "\e627";
+}
+.icon-mode-minibus:before {
+	content: "\e628";
+}
+.icon-mode-gondola:before {
+	content: "\e629";
+}
+.icon-mode-ferry:before {
+	content: "\e62a";
+}
+.icon-mode-coach:before {
+	content: "\e62b";
+}
+.icon-mode-car-pooling:before {
+	content: "\e62c";
+}
+.icon-mode-car-park:before {
+	content: "\e62d";
+}
+.icon-mode-car:before {
+	content: "\e62e";
+}
+.icon-mode-bus:before {
+	content: "\e62f";
+}
+.icon-mode-bicycle-park:before {
+	content: "\e630";
+}
+.icon-mode-bicycle:before {
+	content: "\e631";
+}
+.icon-journey-stop-area:before {
+	content: "\e632";
+}
+.icon-journey-reverse:before {
+	content: "\e633";
+}
+.icon-journey-magnifier:before {
+	content: "\e634";
+}
+.icon-journey-location:before {
+	content: "\e635";
+}
+.icon-journey-leaf:before {
+	content: "\e636";
+}
+.icon-journey-fare:before {
+	content: "\e637";
+}
+.icon-journey-entry-point:before {
+	content: "\e638";
+}
+.icon-journey-connection:before {
+	content: "\e639";
+}
+.icon-journey-clock:before {
+	content: "\e63a";
+}
+.icon-journey-arrow:before {
+	content: "\e63b";
+}
+.icon-action-wifi:before {
+	content: "\e63c";
+}
+.icon-action-user:before {
+	content: "\e63d";
+}
+.icon-action-star-light:before {
+	content: "\e63e";
+}
+.icon-action-star-dark:before {
+	content: "\e63f";
+}
+.icon-action-rss:before {
+	content: "\e640";
+}
+.icon-action-print:before {
+	content: "\e641";
+}
+.icon-action-pdf:before {
+	content: "\e642";
+}
+.icon-action-mail:before {
+	content: "\e643";
+}
+.icon-action-facebook:before {
+	content: "\e644";
+}
+.icon-action-comment:before {
+	content: "\e645";
+}
+.icon-action-calendar:before {
+	content: "\e646";
+}
+.icon-access-wheelchair-dark:before {
+	content: "\e647";
+}
+.icon-access-wheelchair:before {
+	content: "\e648";
+}
+.icon-access-visual-dark:before {
+	content: "\e649";
+}
+.icon-access-visual:before {
+	content: "\e64a";
+}
+.icon-access-deficient-dark:before {
+	content: "\e64b";
+}
+.icon-access-deficient:before {
+	content: "\e64c";
+}
+.icon-access-auditive-dark:before {
+	content: "\e64d";
+}
+.icon-access-auditive:before {
+	content: "\e64e";
+}
+.icon-social-twitter-dark:before {
+	content: "\e64f";
+}
+.icon-social-rss:before {
+	content: "\e650";
+}
+.icon-social-phone:before {
+	content: "\e651";
+}
+.icon-social-facebook-dark:before {
+	content: "\e652";
+}
+.icon-computer:before {
+	content: "\e653";
+}
+.icon-cell-phone:before {
+	content: "\e654";
+}
+.icon-star-dark:before {
+	content: "\e655";
+}
+.icon-star-light:before {
+	content: "\e656";
+}
+.icon-action-share:before {
+	content: "\e657";
+}
+.icon-action-dowload:before {
+	content: "\e658";
+}
+.icon-alert-bis:before {
+	content: "\e659";
+}
+.icon-detour:before {
+	content: "\e65a";
+}
+.icon-detour-dark:before {
+	content: "\e65b";
+}
+.icon-social-facebook:before {
+	content: "\e65c";
+}
+.icon-social-twitter:before {
+	content: "\e65d";
+}
+.icon-social-google:before {
+	content: "\e65e";
+}
+.icon-social-google-plus:before {
+	content: "\e65f";
+}
+.icon-social-linkedin:before {
+	content: "\e660";
+}
+.icon-social-yahoo:before {
+	content: "\e661";
+}
+.icon-social-outlook:before {
+	content: "\e662";
+}
+.icon-action-user-logout:before {
+	content: "\e663";
+}
+.icon-has_air_conditioned:before {
+	content: "\e664";
+}
+.icon-has_air_conditioned-dark:before {
+	content: "\e665";
+}
+.icon-has_bike_accepted:before {
+	content: "\e666";
+}
+.icon-has_bike_accepted-dark:before {
+	content: "\e667";
+}
+.icon-has_elevator:before {
+	content: "\e668";
+}
+.icon-has_elevator-dark:before {
+	content: "\e669";
+}
+.icon-has_sheltered:before {
+	content: "\e66a";
+}
+.icon-has_sheltered-dark:before {
+	content: "\e66b";
+}
+.icon-cog:before {
+	content: "\e66c";
+}
+.icon-menu-burger:before {
+	content: "\e66d";
+}
+.icon-map:before {
+    content: "\e66e";
+}

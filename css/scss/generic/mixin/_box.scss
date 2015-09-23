@@ -1,0 +1,31 @@
+
+// Centered container element
+@mixin container-fixed() {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left:  $pad-half;
+    padding-right: $pad-half;
+    @include clearfix();
+}
+
+/**
+ * Style for a row in a grid system
+ * @TODO make margin editable with variable (gutter width)
+ */
+@mixin content-row {
+    @include clearfix;
+    margin-left: -$pad-half;
+    margin-right: -$pad-half;
+}
+
+/**
+ * Style for a column in a grid system
+ * @TODO make padding editable with variable (gutter width)
+ */
+@mixin content-col {
+    float: left;
+    min-height: 1px;
+    padding-left: $pad-half;
+    padding-right: $pad-half;
+    position: relative;
+}

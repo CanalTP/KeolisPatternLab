@@ -1,0 +1,85 @@
+//Intro text
+.intro {
+	font-size: $font-size-med-2;
+	font-weight: bold;
+}
+
+//Pullquote
+.pullquote {
+	font-family: $font-secondary;
+	font-size: $font-size-large;
+}
+
+//Caption 
+.caption {
+	font-style: italic;
+}
+
+//Passages of text
+.text {
+	a {
+		text-decoration: underline;
+	}
+
+	ul {
+		list-style: disc;
+		margin: 0 0 $space 1.2em;
+
+		ul {
+			margin-bottom: 0;
+		}
+	}
+
+	ol {
+		list-style: decimal;
+		margin: 0 0 $space 1.5em;
+
+		ol {
+			margin-bottom: 0;
+		}
+	}
+}
+.link-block {
+    @include font-size(0.875);
+}
+.sitemap {
+    h4 {
+        @include font-size(1);
+        color:$font-color-light;
+    }
+}
+h2.title {
+    margin-bottom: 1em;
+}
+h4.uppercase {
+    @include font-size(1.125);
+}
+.text {
+    @include font-size(0.875);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.title-light {
+    font-weight: 300;
+}
+h4.title-small {
+    @include font-size(0.813);
+}
+.sitemap {
+    li {
+        a {
+            @include font-size(0.85);
+        }
+    }
+}
+.footer-bottom {
+    a {
+        @include font-size(0.75);
+    }
+}
+.preface-default {
+    .text {
+        line-height: 1.125em;
+    }
+}

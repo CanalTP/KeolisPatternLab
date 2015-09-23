@@ -1,0 +1,67 @@
+/**
+ * Creates a cross-browser rgba background color.
+ * @param $red red color component
+ * @param $green green color component
+ * @param $blue blue color component
+ * @param $alpha alpha color component
+ */
+@mixin background-rgba($red: 0, $green: 0, $blue: 0, $alpha: 0.5){
+    background-color: rgb($red, $green, $blue);
+    background-color: rgba($red, $green, $blue, $alpha);
+
+    @include has-layout;
+    background-color: transparent\9;
+    $color: rgba($red, $green, $blue, $alpha);
+    @include filter-gradient($color, $color);
+
+}
+
+/**
+ * Block style and  variants
+ * @param $primary-color 
+ * @param $second-color 
+ */
+@mixin block-style ($primary-color: $color-main, $second-color : $white) {
+
+	& > a {
+		div {
+			padding: 0.5em;
+			min-height: 10em;
+		}
+		.bg-color-default, .preface-default {
+			&:hover {
+				background-color: lighten( $primary-color, 5% );
+			}
+		}
+		.bg-default {
+			&:hover {
+				background-color: darken( $white, 5% );
+			}
+		}
+	}
+	.bg-color-default, .preface-default {
+		background-color: $primary-color;
+		color: $white;
+	}
+	.bg-default {
+		background-color: $white;
+		color: $primary-color;
+	}
+	.boder-default,
+	&.boder-default {
+		border: 1px solid $primary-color;
+	}
+	.btn-style1 {
+		@include button-link( $primary-color, $second-color); 
+	}
+	.btn-style2 {
+		@include button-link($second-color, $primary-color);
+	}
+	.icon-arrow-right::before {
+	    content: " ";
+	}
+
+    .bg-default.boder-default {
+        padding: 0.45em;
+    }
+}

@@ -1,0 +1,117 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+.nav {
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+// nav principal
+.main-nav {
+    height: auto;
+    display: none;
+    @media all and (min-width: $bp-med-2) {
+        display: block;
+    }
+    li{
+        
+        width: 100%;
+        @media all and (min-width: $bp-med-2) {
+            padding: $pad $space-half;
+        }
+        @media all and (min-width: $bp-large-2) {
+            padding: $pad;
+        }
+        @media all and (min-width: $bp-med-2) {
+            width: auto;
+        }
+        & > ul {
+            display: none;
+        }
+        &:hover {
+          background-color: $color-second;
+          border-bottom: 7px solid $color-second;
+            a {
+                color: $font-color-light;
+            }
+        }
+    }
+	a {
+        color: $font-color-gray;
+	}
+    a, li.active span {
+        padding: $pad-half;
+    }
+}
+
+///honrizontal nav
+.honrizontal-nav {
+    @include clearfix;
+    & > li {
+        float:left;
+    }
+    & a, li.active span {
+        text-decoration: none;
+        display:block;
+    }
+    li.link-account a {
+        color: $font-color-light;
+    }
+    li.active a {
+        color: $font-color-dark;
+    }
+}
+// top nav
+.top-nav {
+    li {
+        padding: $pad $pad $pad-half $pad;
+    }
+    a {
+        color: $font-color-dark; 
+        @media all and (min-width: $bp-med-2) {
+            text-align: center;
+            width: 130px;
+            margin-left: 3em;
+            line-height: $pad-and-half;
+        }
+    }
+    a:first-child {
+        @media all and (min-width: $bp-med-2) {
+            margin-left: 0;
+        }
+    }
+    select {
+        border: none;
+        background-image: url("../images/sprite/sprite.png");
+        background-repeat: no-repeat;
+        background-position: -318px -345px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        width: 3em;
+    }
+}
+
+// link for user account
+li.link-account {
+    padding-right: 0;
+}
+
+//Pagination
+.pagination {
+	overflow: hidden;
+
+	li {
+		float: left;
+		border-right: $border-light solid $gray-light-2;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+
+	a {
+		padding: $pad;
+	}
+}

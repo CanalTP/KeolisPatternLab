@@ -1,0 +1,77 @@
+.header-container {
+    top: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    background-color: $color-header;
+
+    [class*="hr-"],
+    [class^="hr-"]  {
+        border-color: $gray-light-2;
+    }
+    // Ancre ctp-main-nav inactive (on n'affiche que le bouton d'affichage du menu)
+    &:not(:target) > a:first-of-type {
+        display: block;
+        @media all and (min-width: $bp-med-2) {
+            display: none;
+        }
+    }
+    &:not(:target) > a:last-of-type {
+        display: none;
+    }
+    // Ancre ctp-main-nav active (on n'affiche que le bouton de masquage du menu)
+    &:target > a:first-of-type {
+        display: none;
+    }
+    &:target > a:last-of-type {
+        display: block;
+        @media all and (min-width: $bp-med-2) {
+            display: none;
+        }
+    }
+
+    &:target > ul {
+        display: block;
+    }
+}
+
+.link-account {
+    a {
+        background-color: $color-second;
+        color:$font-color-light;
+    }
+}
+
+//
+.nav-toggle {
+	float: right;
+	display: block;
+	padding: 0.9rem 1rem 0.7rem;
+	@include font-size(1.3);
+	line-height: 1;
+	border-left: 1px solid #dbdbdb;
+
+	@media all and (min-width: $bp-med-2) {
+		display: none;
+	}
+
+	@media all and (max-width: 17em) {
+		padding-left: 0.2rem;
+		padding-right: 0.2rem;
+	}
+}
+
+.search-form {
+	overflow: hidden;
+	max-height: 0;
+
+	@media all and (min-width: $bp-med-2) {
+		float: right;
+		max-height: none;
+		margin: 0.65em 0.5em 0 0;
+	}
+    &:target > ul {
+        display: block;
+    }
+}

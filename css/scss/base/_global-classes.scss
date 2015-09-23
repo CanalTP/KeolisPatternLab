@@ -1,0 +1,185 @@
+/*------------------------------------*\
+    $GLOBAL CLASSES
+\*------------------------------------*/
+
+*, *:before,
+*:after {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+body {
+    font-family:$font;
+    background-color: $color-body;
+    color: $font-color-dark;
+    // override default appearance
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-top: 138px;
+}
+
+
+/* Completely remove from the flow and screen readers. */
+.is-hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Completely remove from the flow but leave available to screen readers. */
+.is-vishidden {
+    position: absolute !important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Floats */
+
+.right-search {
+	float: right;
+	padding: 0 0 $pad 0;
+}
+
+/* Text-Align */
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-left {
+	text-align: left;
+}
+
+/* Display Classes */
+.hide-small {
+    @media all and (max-width: $bp-med) {
+        display: none;
+    }
+}
+
+.hide-med {
+    @media all and (min-width: $bp-med) and (max-width: $bp-large) {
+        display: none;
+    }
+}
+
+.hide-large {
+    @media all and (min-width: $bp-large) {
+        display: none;
+    }
+}
+
+//States
+.valid {
+	color: $valid;
+}
+
+.error {
+	color: $error;
+}
+
+.warning {
+    color: $warning;
+}
+
+.information {
+    color: $information;
+}
+
+.font-secondary, 
+.text-bold {
+    font-family: $font-secondary;
+}
+
+.active {
+    border-bottom: 7px solid $color-second;
+    font-family:$font-third;
+    color: $black;
+}
+
+// float for element
+/// right
+.right {
+    float: right;
+}
+/// left
+.left {
+    float: left;
+}
+// border for element
+///top
+.hr-top  {
+    border-top: $border-light solid;
+}
+///bottom
+.hr-bottom  {
+    border-bottom: $border-light solid;
+}
+///left
+.hr-left {
+    border-left: $border-light solid;
+}
+///right
+.hr-right {
+    border-right: $border-light solid;
+}
+//clearfix
+.clearfix {
+    @include clearfix;
+}
+// hide element
+.hide {
+    display:none;
+}
+// font weight bold
+.bold {
+    font-weight: bold;
+}
+// element link siplay block
+.link-block {
+    display: block;
+}
+// element text UPPERCASE
+.uppercase {
+    text-transform: uppercase;
+}
+// btn soscial
+
+// alt txt
+.ctp-txt-alt {
+    padding-right: 1em;
+}
+.shade {
+    & > .inner-shade::after {
+        background: #fff none repeat scroll 0 0;
+        border-radius: 50%;
+        bottom: auto;
+        display: block;
+        height: 190px;
+        opacity: 0.08;
+        position: absolute;
+        top: auto;
+        width: 192px;
+        z-index: 5;
+        content: "";
+    }
+    &.shade-bottom-left {
+        & > .inner-shade::after {
+            left: -69px;
+            top: 60px;
+        }
+    }
+    &.shade-bottom-right {
+        & > .inner-shade::after {
+            right: -69px;
+            top: 60px;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?lc4hd5');
+	src:url('fonts/icomoon.eot?#iefixlc4hd5') format('embedded-opentype'),
+		url('fonts/icomoon.woff?lc4hd5') format('woff'),
+		url('fonts/icomoon.ttf?lc4hd5') format('truetype'),
+		url('fonts/icomoon.svg?lc4hd5#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-traffic_cone:before {
+	content: "\e600";
+}
+.icon-warning_sign:before {
+	content: "\e601";
+}
+.icon-mode_car_light:before {
+	content: "\e602";
+}
+.icon-mode_car_dark:before {
+	content: "\e603";
+}
+.icon-mode_bike_light:before {
+	content: "\e604";
+}
+.icon-mode_bike_dark:before {
+	content: "\e605";
+}
+.icon-mode_bus_light:before {
+	content: "\e606";
+}
+.icon-mode_bus_dark:before {
+	content: "\e607";
+}
+.icon-mode_subway_light:before {
+	content: "\e608";
+}
+.icon-mode_subway_dark:before {
+	content: "\e609";
+}
+.icon-mode_tramway_light:before {
+	content: "\e60a";
+}
+.icon-mode_tramway_dark:before {
+	content: "\e60b";
+}
+.icon-mode_train_light:before {
+	content: "\e60c";
+}
+.icon-mode_train_dark:before {
+	content: "\e60d";
+}
+.icon-mode_walk_light:before {
+	content: "\e60e";
+}
+.icon-mode_walk_dark:before {
+	content: "\e60f";
+}
+.icon-wheelchair_light:before {
+	content: "\e610";
+}
+.icon-wheelchair_dark:before {
+	content: "\e611";
+}
+.icon-equipment_wheelchair_light:before {
+	content: "\e612";
+}
+.icon-equipment_wheelchair_dark:before {
+	content: "\e613";
+}
+.icon-parking_light:before {
+	content: "\e614";
+}
+.icon-parking_dark:before {
+	content: "\e615";
+}
+.icon-circle_mode_car:before {
+	content: "\e616";
+}
+.icon-circle_mode_bike:before {
+	content: "\e617";
+}
+.icon-circle_mode_bus:before {
+	content: "\e618";
+}
+.icon-circle_mode_subway:before {
+	content: "\e619";
+}
+.icon-circle_mode_tramway:before {
+	content: "\e61a";
+}
+.icon-circle_mode_train:before {
+	content: "\e61b";
+}
+.icon-circle_mode_walk:before {
+	content: "\e61c";
+}
+.icon-circle_wheelchair:before {
+	content: "\e61d";
+}
+.icon-circle_equipment_wheelchair:before {
+	content: "\e61e";
+}
+.icon-circle_parking:before {
+	content: "\e61f";
+}

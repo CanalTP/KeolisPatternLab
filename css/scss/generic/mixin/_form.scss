@@ -1,0 +1,19 @@
+
+/**
+ * Display a link as a button with foreground and background color
+ * @param $fg-color foreground text color
+ * @param $bg-color button background color
+ */
+@mixin button-link($fg-color: $font-color-contrast-main, $bg-color: $color-main) {
+    color: $fg-color;
+    border: 0 none;
+    background-color: $bg-color;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.75em 1em;
+    @include border-radius(0.15em);
+    @include font-size(0.875);
+    &:hover {
+        background-color: darken($bg-color, 5);
+    }
+}
