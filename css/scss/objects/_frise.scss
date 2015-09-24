@@ -4,8 +4,8 @@
         height: 3em;
         margin-bottom: 0.3em;
         margin-right: 0.3em;
-        padding: 0.5em 0 0;
         text-align: center;
+        padding: 0.5em 0 0;
         @media all and (min-width: $bp-med) {
             width: 30%;/* supprimer width calcul automatique dans nmp, juste pour l'exemple  */
         }
@@ -71,14 +71,20 @@
                 margin-left: 3em;
             }
         }
-   }
-   time {
+    }
+    time {
         font-size: $font-size-small;
-   }
+        border-bottom: 0.5px dotted;
+        padding: 0.5em;
+        @media all and (min-width: $bp-med) {
+            border-bottom: none;
+            padding: 0em;
+        }
+    }
 }
 .division {
     @media all and (min-width: $bp-med) {
-      display: none;
+        display: none;
     }
 }
 .supplementary-text {

@@ -1,0 +1,61 @@
+.co2 {
+    .co2-section {
+        height: 37.5px;
+        width: 75px;
+        overflow: hidden;
+        position: relative;
+        @media all and (min-width: $bp-med) {
+            height: 50px;
+            width: 100px;
+        }
+        
+        &::before {
+            border-color: $gray-light-2 $gray-light-2;
+            border-radius: 300px 300px 0 0;
+            border-style: solid solid none;
+            border-width: 10px 10px medium;
+            z-index: 1;
+            content: "";
+            height: 37.5px;
+            position: absolute;
+            width: 75px;
+            @media all and (min-width: $bp-med) {
+                height: 50px;
+                width: 100px;
+            }
+        }
+        
+        .arc {
+            border-radius: 0 0 300px 300px;
+            border-style: none solid solid;
+            border-width: medium 10px 10px;
+            top: 100%;
+            z-index: 2;
+            border-color: $black;
+            content: "";
+            height: 37.5px;
+            position: absolute;
+            transform-origin: 50% 0 0;
+            width: 75px;
+            transform: rotate(81deg);
+            -ms-transform: rotate(81deg);
+            -webkit-transform: rotate(81deg);
+            @media all and (min-width: $bp-med) {
+                height: 50px;
+                width: 100px;
+            }
+        }
+        .unit {
+           display: block;
+           font-size: $font-size-small-2;
+           margin-top: 15px;
+           text-align: center;
+           width: 75px;
+           @media all and (min-width: $bp-med) {
+               font-size: $font-size-med;
+               width: 100px;
+               margin-top: 20px;
+           }
+        }
+    }       
+}
