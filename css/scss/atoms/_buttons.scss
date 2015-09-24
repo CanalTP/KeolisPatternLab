@@ -1,0 +1,81 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+input[type=submit], button, .btn {
+    font-size: $font-size-small-2;
+    padding: 0.65rem 1.3rem;
+    background: $gray-dark;
+    z-index: 1;
+    width: auto;
+    display: inline-block;
+    color: $white;
+    line-height: 1;
+    font-weight: bold;
+    padding: $pad;
+    border: none;
+    text-align: center;
+
+    &:hover, &:focus {
+        background: $gray;
+        color: $white;
+    }
+
+    &.disabled {
+        background: $gray-light-2;
+        color: $gray;
+    }
+}
+
+.btn-small {
+    padding: $pad-half;
+}
+
+.btn-large {
+    padding: $pad-half;
+    text-transform: uppercase;
+    background: $gray;
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+.text-btn {
+    font-style: italic;
+}
+
+// keolis
+.btn {
+    &.btn-social {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 3em;
+        background: none;
+        padding: 0;
+        width: 100%;
+        &:hover {
+            @include opacity(0.6);
+        }
+    }
+}
+
+// btn
+.btn-block {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+.btn-style2 {
+    .icon-arrow-right {
+        background-position: -389px -312px;
+    }
+}
+
+.btn-icon {
+    &.btn-style1,
+    &.btn-style2 {
+        border-radius: 0.25em;
+        padding: 0.45em 0.65em;
+    }
+}
