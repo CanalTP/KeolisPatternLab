@@ -74,7 +74,7 @@
     }
     time {
         font-size: $font-size-small;
-        border-bottom: 1px dotted $font-color-dark;
+        border-bottom: 1px dotted;
         padding: 0.5em;
         @media all and (min-width: $bp-med) {
             border-bottom: none;
