@@ -1,14 +1,14 @@
-/*                                                                                                                                         
-                                                ,,            ,,                          ,,                                             
- .M"""bgd mm                                    db          `7MM        mm         mm   `7MM                                    OO OO OO 
-,MI    "Y MM                                                  MM        MM         MM     MM                                    88 88 88 
-`MMb.   mmMMmm ,pW"Wq.`7MMpdMAo.     `7Mb,od8 `7MM  .P"Ybmmm  MMpMMMb.mmMMmm     mmMMmm   MMpMMMb.  .gP"Ya `7Mb,od8 .gP"Ya      || || || 
-  `YMMNq. MM  6W'   `Wb MM   `Wb       MM' "'   MM :MI  I8    MM    MM  MM         MM     MM    MM ,M'   Yb  MM' "',M'   Yb     || || || 
-.     `MM MM  8M     M8 MM    M8       MM       MM  WmmmP"    MM    MM  MM         MM     MM    MM 8M""""""  MM    8M""""""     `' `' `' 
-Mb     dM MM  YA.   ,A9 MM   ,AP       MM       MM 8M         MM    MM  MM         MM     MM    MM YM.    ,  MM    YM.    ,     ,, ,, ,, 
-P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo      `Mbmo.JMML  JMML.`Mbmmd'.JMML.   `Mbmmd'     db db db 
-                        MM                         6'     dP                                                                             
-                      .JMML.                       Ybmmmd'                                                                               
+/*
+                                                ,,            ,,                          ,,
+ .M"""bgd mm                                    db          `7MM        mm         mm   `7MM                                    OO OO OO
+,MI    "Y MM                                                  MM        MM         MM     MM                                    88 88 88
+`MMb.   mmMMmm ,pW"Wq.`7MMpdMAo.     `7Mb,od8 `7MM  .P"Ybmmm  MMpMMMb.mmMMmm     mmMMmm   MMpMMMb.  .gP"Ya `7Mb,od8 .gP"Ya      || || ||
+  `YMMNq. MM  6W'   `Wb MM   `Wb       MM' "'   MM :MI  I8    MM    MM  MM         MM     MM    MM ,M'   Yb  MM' "',M'   Yb     || || ||
+.     `MM MM  8M     M8 MM    M8       MM       MM  WmmmP"    MM    MM  MM         MM     MM    MM 8M""""""  MM    8M""""""     `' `' `'
+Mb     dM MM  YA.   ,A9 MM   ,AP       MM       MM 8M         MM    MM  MM         MM     MM    MM YM.    ,  MM    YM.    ,     ,, ,, ,,
+P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo      `Mbmo.JMML  JMML.`Mbmmd'.JMML.   `Mbmmd'     db db db
+                        MM                         6'     dP
+                      .JMML.                       Ybmmmd'
 
 Pattern Lab doesn't have any CSS requirements, which means you can write your styles however you want. Hooray!
 You can use Sass, Less, vanilla CSS, or some other crazy thing I haven't heard of yet.
@@ -26,17 +26,17 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 
 */
 /*------------------------------------*\
-    $TABLE OF CONTENTS 
+    $TABLE OF CONTENTS
     based generally on Harry Roberts excellent CSS Guidelines https://github.com/csswizardry/CSS-Guidelines
 \*------------------------------------*/
 /**
- * VARIABLES..............................Declarations of Sass variables 
+ * VARIABLES..............................Declarations of Sass variables
  * .....Colors
  * .....Typography
  * .....Layout
  * .....Defaults
  * .....Breakpoints
- * MIXINS.................................Sass mixins 
+ * MIXINS.................................Sass mixins
  * RESET..................................Set reset defaults
  * GLOBAL CLASSES.........................Set reset defaults
  * GLOBAL ELEMENTS........................Establish global styles
@@ -4273,4 +4273,101 @@ h4.title-small {
   color: #ff0000;
   border-color: #ff0000;
   background: #ffbebe;
+}
+
+.frise {
+  /* chevron */
+}
+.frise .frise-section {
+  float: left;
+  height: 3em;
+  margin-bottom: 0.3em;
+  margin-right: 0.3em;
+  padding: 0.5em 0 0;
+  text-align: center;
+}
+@media all and (min-width: 46.8em) {
+  .frise .frise-section {
+    width: 30%;
+    /* supprimer width calcul automatique dans nmp, juste pour l'exemple  */
+  }
+}
+.frise .frise-section img {
+  display: inline;
+  vertical-align: middle;
+}
+@media all and (min-width: 46.8em) {
+  .frise .frise-section img {
+    max-width: 34px;
+    position: relative;
+    z-index: 10;
+  }
+}
+@media all and (min-width: 46.8em) {
+  .frise .rafter {
+    position: relative;
+  }
+  .frise .rafter:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: #d9d9d9;
+    -webkit-transform: skew(21deg, 0deg);
+    -moz-transform: skew(21deg, 0deg);
+    -ms-transform: skew(21deg, 0deg);
+    -o-transform: skew(21deg, 0deg);
+    transform: skew(21deg, 0deg);
+  }
+  .frise .rafter:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: #d9d9d9;
+    -webkit-transform: skew(-21deg, 0deg);
+    -moz-transform: skew(-21deg, 0deg);
+    -ms-transform: skew(-21deg, 0deg);
+    -o-transform: skew(-21deg, 0deg);
+    transform: skew(-21deg, 0deg);
+  }
+}
+@media all and (min-width: 46.8em) {
+  .frise .bg-dotted:after {
+    background: transparent url("../images/bg-dotted-frise.png") repeat-x 0 0%;
+    content: "";
+    display: block;
+    height: 1em;
+  }
+}
+@media all and (min-width: 46.8em) {
+  .frise .bg-dotted.marg-right:after {
+    margin-right: 3em;
+  }
+  .frise .bg-dotted.marg-left:after {
+    margin-left: 3em;
+  }
+}
+.frise time {
+  font-size: 0.75em;
+}
+
+@media all and (min-width: 46.8em) {
+  .division {
+    display: none;
+  }
+}
+
+.supplementary-text {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.875em;
+  padding: 0.2em;
+  position: relative;
+  text-align: center;
+  z-index: 10;
 }
