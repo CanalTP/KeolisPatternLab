@@ -74,7 +74,7 @@
     }
     time {
         font-size: $font-size-small;
-        border-bottom: 0.5px dotted;
+        border-bottom: 1px dotted;
         padding: 0.5em;
         @media all and (min-width: $bp-med) {
             border-bottom: none;
@@ -90,9 +90,9 @@
 .supplementary-text {
     background-color: $black;
     color: $white;
-    font-size: $font-size-small-2;
     padding: 0.2em;
     position: relative;
     text-align: center;
     z-index: 10;
+    font-weight: bold;
 }
