@@ -21,8 +21,8 @@
 
     }
     /* chevron */
-   .rafter {
-       @media all and (min-width: $bp-med) {
+    @media all and (min-width: $bp-med) {
+        .rafter {
             position: relative;
             &:before {
                 content: '';
@@ -55,8 +55,8 @@
         }
    }
    .bg-dotted {
-        &:after {
-            @media all and (min-width: $bp-med) {
+        @media all and (min-width: $bp-med) {
+            &:after {
                 background: transparent url("../images/bg-dotted-frise.png") repeat-x 0 0%;
                 content: "";
                 display: block;
@@ -74,7 +74,7 @@
     }
     time {
         font-size: $font-size-small;
-        border-bottom: 1px dotted;
+        border-bottom: 1px dotted $font-color-dark;
         padding: 0.5em;
         @media all and (min-width: $bp-med) {
             border-bottom: none;
@@ -82,8 +82,9 @@
         }
     }
 }
-.division {
-    @media all and (min-width: $bp-med) {
+
+@media all and (min-width: $bp-med) {
+    .division {
         display: none;
     }
 }
