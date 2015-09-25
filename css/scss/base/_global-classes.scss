@@ -40,21 +40,21 @@ body {
 /* Floats */
 
 .right-search {
-	float: right;
-	padding: 0 0 $pad 0;
+    float: right;
+    padding: 0 0 $pad 0;
 }
 
 /* Text-Align */
 .align-right {
-	text-align: right;
+    text-align: right;
 }
 
 .align-center {
-	text-align: center;
+    text-align: center;
 }
 
 .align-left {
-	text-align: left;
+    text-align: left;
 }
 
 /* Display Classes */
@@ -78,11 +78,11 @@ body {
 
 //States
 .valid {
-	color: $valid;
+    color: $valid;
 }
 
 .error {
-	color: $error;
+    color: $error;
 }
 
 .warning {
@@ -93,13 +93,13 @@ body {
     color: $information;
 }
 
-.font-secondary, 
+.font-secondary,
 .text-bold {
     font-family: $font-secondary;
 }
 
-.active {
-    border-bottom: 7px solid $color-second;
+.highlight {
+    border-bottom: $pad-quarter solid $color-second;
     font-family:$font-third;
     color: $black;
 }
