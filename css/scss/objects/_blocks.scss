@@ -48,15 +48,14 @@
     }
 }
 // block style color main one
-.block-style-1 {
-    @include  block-style($color-main, $white);
-    .btn-style1 {
-        .icon-arrow-right {
-            background-position: -390px -282px;
-        }
-    }
-
-}
+//.block-style-1 {
+//    @include  block-style($color-main, $white);
+//    .btn-style1 {
+//        .icon-arrow-right {
+//            background-position: -390px -282px;
+//        }
+//    }
+//}
 // block style color main two
 .block-style-2 {
     @include  block-style($color-second, $white);
