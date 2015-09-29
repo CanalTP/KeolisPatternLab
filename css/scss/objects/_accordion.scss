@@ -8,7 +8,7 @@
     text-transform: uppercase;
     font-weight: bold;
     display: block;
-    padding: $pad-half $pad-double $pad-half $pad-half;
+    padding: $pad $pad-double $pad $pad;
     border-bottom: 1px solid $gray-light;
     position: relative;
 
@@ -37,5 +37,5 @@
 }
 
 .acc-panel {
-    padding: $pad-half;
+    padding: $pad;
 }
