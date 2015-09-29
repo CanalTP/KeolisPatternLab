@@ -1,38 +1,38 @@
 .accordion {
-	margin-bottom: $space;
+    margin-bottom: $space;
 }
 
 .acc-handle {
-	background: $color-second;
-	color: $font-color-contrast-second;
-	text-transform: uppercase;
-	font-weight: bold;
-	display: block;
-	padding: $pad-half $pad-double $pad-half $pad-half;
-	border-bottom: 1px solid $gray-light;
+    background: $color-second;
+    color: $font-color-contrast-second;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding: $pad-half $pad-double $pad-half $pad-half;
+    border-bottom: 1px solid $gray-light;
     position: relative;
 
-	&:after {
+    &:after {
         position: absolute;
-		content:">";
+        content:">";
         top: 50%;
         right: $pad;
         @include transform(translate(50%, -50%) rotate(90deg));
         @include transition(transform, 0.5s, ease-out);
-	}
+    }
 
-	&:hover {
-		color: contrast-color($gray-light, $font-color-dark, $font-color-light);
-		background: $gray-light;
-	}
+    &:hover {
+        color: contrast-color($gray-light, $font-color-dark, $font-color-light);
+        background: $gray-light;
+    }
 
-	&.active {
-		background: $gray-light;
+    &.active {
+        background: $gray-light;
 
-		&:after {
+        &:after {
             @include transform(translate(50%, -50%) rotate(270deg));
-		}
-	}
+        }
+    }
 }
 
 .acc-panel {
