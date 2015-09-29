@@ -5,8 +5,10 @@
 //Colors
 
 $color-main:#055FA3;
-$color-second:#00ADAF;
-$color-third: #f2500f;
+$color-main-highlight: #B4CFE4; // rgba($color-main, 0.3);
+$color-second:#007F80;
+$color-second-highlight: #B3D9D9; // rgba($color-second, 0.3);
+$color-third: #CA430B;
 $white : #fff;
 $black : #000;
 $gray : #666A74;
@@ -24,9 +26,11 @@ $dim : rgba(0,0,0,0.5);
 $font-color-dark: $black;
 $font-color-gray: $gray;
 $font-color-light: $white;
-$font-color-contrast-main: contrast-color($color-main, $black, $white);
-$font-color-contrast-second: contrast-color($color-second, $black, $white);
-$font-color-contrast-third: contrast-color($color-third, $black, $white);
+$font-color-contrast-main: contrast-color($color-main, $font-color-dark, $font-color-light);
+$font-color-contrast-main-highlight: contrast-color($color-main-highlight, $font-color-dark, $font-color-light);
+$font-color-contrast-second: contrast-color($color-second, $font-color-dark, $font-color-light);
+$font-color-contrast-second-highlight: contrast-color($color-second-highlight, $font-color-dark, $font-color-light);
+$font-color-contrast-third: contrast-color($color-third, $font-color-dark, $font-color-light);
 $font-color-accent: $color-main;
 //header
 $color-header: $white;

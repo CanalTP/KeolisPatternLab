@@ -22,12 +22,13 @@
     }
 
     &:hover {
-        color: contrast-color($gray-light, $font-color-dark, $font-color-light);
-        background: $gray-light;
+        color: $font-color-contrast-second-highlight;
+        background-color: $color-second-highlight;
     }
 
     &.active {
-        background: $gray-light;
+        color: $font-color-contrast-second-highlight;
+        background: $color-second-highlight;
 
         &:after {
             @include transform(translate(50%, -50%) rotate(270deg));
