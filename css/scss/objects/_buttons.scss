@@ -1,8 +1,11 @@
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
+a.btn {
+    text-decoration: none;
+}
 
-input[type=submit], button, .btn {
+input[type=submit].btn, button.btn, a.btn, span.btn, .btn {
     font-size: $font-size-small-2;
     font-weight: bold;
     line-height: 1.5;
@@ -30,8 +33,6 @@ input[type=submit], button, .btn {
         color: $gray;
     }
 
-    // block style color main one
-    @include  block-style($color-main, $white);
     .icon-arrow-right {
         background-position: -390px -282px;
     }
@@ -42,13 +43,17 @@ input[type=submit], button, .btn {
 
     &.btn-icon {
         position: relative;
-        padding-right: 2rem;
+
+        & .text {
+            display: inline;
+            margin: 0 1rem 0 0;
+        }
 
         & .icon-arrow-right {
             position: absolute;
             right: 1rem;
             top: 50%;
-            margin-top: -6px;
+            @include translate(50%, -50%);
         }
     }
 
@@ -56,9 +61,6 @@ input[type=submit], button, .btn {
         cursor: pointer;
     }
 }
-
-
-
 
 .btn-small {
     padding: $pad-half;
