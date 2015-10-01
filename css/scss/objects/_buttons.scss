@@ -50,3 +50,20 @@ input[type=submit].btn, button.btn, a.btn, .btn {
         cursor: default;
     }
 }
+.input-group-btn {
+    .btn {
+        padding: 0.6em;
+    }
+}
+.btn-favoris {
+    .icon-arrow-top-white {
+        @include transform(rotate(180deg));
+        display: inline-block;
+        margin-left: 0.5em;
+    }
+}
+.group-date {
+    .ui-datepicker-trigger {
+        padding: 0.4em;
+    }
+}

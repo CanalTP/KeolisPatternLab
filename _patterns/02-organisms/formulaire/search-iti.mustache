@@ -1,0 +1,57 @@
+<form id="" class="" action="#">
+    <fieldset class="journey-specifics">
+        <legend class="hide">Vos critères de recherche</legend>
+        <!-- Départ -->
+        <div class="clearfix">
+            <div id="" class="field-container autocomplete clearfix search-from">
+                <label for="text">Départ <abbr title="Required">*</abbr></label>
+                <div class="icon-inside-input left">
+                    <input id="text" type="text" placeholder="Text Input">
+                    <span class="icon-clear">x</span>
+                </div>
+                <!-- liste icons ( geoloc + favoris + btn inverse) -->
+                <ul class="iconable-group input-group-btn left">
+                    <li><a title="Se géolocaliser" href="#" class="btn" id="geolocButton">
+                        <span class="icon-journey-location"></span>
+                        <span class="sr-only">Se géolocaliser</span>
+                    </a></li>
+                    <li><a class="btn modalbox" href="/fr/login">
+                        <span title="Selectionnez votre favori" class="icon-star-dark"></span>
+                        <span class="sr-only">Vos favoris</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="journey-reverse">
+                <a class="btn" href="#" title="Inverser le départ et l'arrivée">
+                    <span class="sr-only">Inverser le départ et l'arrivée</span>
+                    <span class="icon-journey-reverse"></span>
+                </a>
+            </div>
+            <!-- arrivee -->
+            <div id="" class="field-container autocomplete clearfix search-to">
+                <label for="text">Arrivée <abbr title="Required">*</abbr></label>
+                <div class="icon-inside-input left">
+                    <input id="text" type="text" placeholder="Text Input">
+                    <span class="icon-clear">x</span>
+                </div>
+                <!-- liste icons ( geoloc + favoris) -->
+                <ul class="iconable-group input-group-btn left">
+                    <li><a title="Se géolocaliser" href="#" class="btn" id="geolocButton">
+                        <span class="icon-journey-location"></span>
+                        <span class="sr-only">Se géolocaliser</span>
+                    </a></li>
+                    <li><a class="btn modalbox" href="/fr/login">
+                        <span title="Selectionnez votre favori" class="icon-star-dark"></span>
+                        <span class="sr-only">Vos favoris</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+       {{> molecules-search-datetime }}
+       <div class="groupe-btn">
+            <button type="button" class="btn" title="valider le formulaire">
+                 Valider
+            </button>
+       </div>
+    </fieldset>
+</form>
