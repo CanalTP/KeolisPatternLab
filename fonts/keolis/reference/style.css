@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'Keolis';
-	src:url('fonts/Keolis.eot?-jj8ydy');
-	src:url('fonts/Keolis.eot?#iefix-jj8ydy') format('embedded-opentype'),
-		url('fonts/Keolis.ttf?-jj8ydy') format('truetype'),
-		url('fonts/Keolis.woff?-jj8ydy') format('woff'),
-		url('fonts/Keolis.svg?-jj8ydy#Keolis') format('svg');
+	font-family: 'keolis-icons';
+	src:url('fonts/keolis-icons.eot?-3k3p9');
+	src:url('fonts/keolis-icons.eot?-3k3p9#iefix') format('embedded-opentype'),
+		url('fonts/keolis-icons.ttf?-3k3p9') format('truetype'),
+		url('fonts/keolis-icons.woff?-3k3p9') format('woff'),
+		url('fonts/keolis-icons.svg?-3k3p9#keolis-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'Keolis';
+	font-family: 'keolis-icons';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -28,6 +28,9 @@
 }
 .icon-warning_sign:before {
 	content: "\e601";
+}
+.icon-warning_alert:before {
+	content: "\e60e";
 }
 .icon-mode_car:before {
 	content: "\e602";
@@ -59,9 +62,40 @@
 .icon-parking:before {
 	content: "\e60b";
 }
-.icon-arrow-right:before {
-	content: "\e60c";
+.icon-hambuger:before {
+	content: "\e66d";
+}
+.icon-geoloc:before {
+	content: "\e635";
 }
 .icon-location:before {
 	content: "\e60d";
 }
+.icon-arrow-right:before {
+	content: "\e60c";
+}
+.icon-reverse:before {
+	content: "\e633";
+}
+.icon-facebook:before {
+	content: "\e65c";
+}
+.icon-twitter:before {
+	content: "\e65d";
+}
+.icon-calendar:before {
+	content: "\e646";
+}
+.icon-download:before {
+	content: "\e658";
+}
+.icon-mail:before {
+	content: "\e643";
+}
+.icon-star:before {
+	content: "\e60f";
+}
+.icon-star_empty:before {
+	content: "\e610";
+}
+

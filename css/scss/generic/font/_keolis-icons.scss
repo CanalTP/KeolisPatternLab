@@ -17,10 +17,8 @@
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
-    font-size: $font-size-large-2;
 	text-transform: none;
 	line-height: 1;
-    vertical-align: -25%;
     position: relative;
     z-index: 1;
 
@@ -29,8 +27,7 @@
 	-moz-osx-font-smoothing: grayscale;
 
     &.square {
-        font-size: $font-size-large-2 * 0.8;
-        padding: 0.2em;
+        padding: 0.3em;
         background: $gray-dark;
         color: $font-color-contrast-main;
     }
@@ -45,6 +42,9 @@
 }
 .keolis-icon-warning-sign:before {
 	content: $icon-warning_sign;
+}
+.keolis-icon-warning-alert:before {
+	content: $icon-warning_alert;
 }
 .keolis-icon-mode-car:before {
 	content: $icon-mode_car;
@@ -76,9 +76,39 @@
 .keolis-icon-parking:before {
 	content: $icon-parking;
 }
-.keolis-icon-arrow-right:before {
-	content: $icon-arrow-right;
+.keolis-icon-hamburger:before {
+	content: $icon-hambuger;
+}
+.keolis-icon-geoloc:before {
+	content: $icon-geoloc;
 }
 .keolis-icon-location:before {
 	content: $icon-location;
+}
+.keolis-icon-arrow-right:before {
+	content: $icon-arrow-right;
+}
+.keolis-icon-reverse:before {
+	content: $icon-reverse;
+}
+.keolis-icon-facebook:before {
+	content: $icon-facebook;
+}
+.keolis-icon-twitter:before {
+	content: $icon-twitter;
+}
+.keolis-icon-calendar:before {
+	content: $icon-calendar;
+}
+.keolis-icon-download:before {
+	content: $icon-download;
+}
+.keolis-icon-mail:before {
+	content: $icon-mail;
+}
+.keolis-icon-star:before {
+	content: $icon-star;
+}
+.keolis-icon-star-empty:before {
+	content: $icon-star_empty;
 }
