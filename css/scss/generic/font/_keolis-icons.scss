@@ -1,3 +1,5 @@
+@import "../fonts/keolis/reference/variables";
+
 @font-face {
 	font-family: 'keolis-icons';
 	src:url('../fonts/keolis/keolis-icons.eot?lc4hd5');
@@ -25,101 +27,58 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+    &.square {
+        font-size: $font-size-large-2 * 0.8;
+        padding: 0.2em;
+        background: $gray-dark;
+        color: $font-color-contrast-main;
+    }
+    &.round {
+        @extend .square;
+        border-radius: 50%;
+    }
 }
 
 .keolis-icon-traffic-cone:before {
-	content: "\e600";
+	content: $icon-traffic_cone;
 }
 .keolis-icon-warning-sign:before {
-	content: "\e601";
+	content: $icon-warning_sign;
 }
-.keolis-icon-mode-car-light:before {
-	content: "\e602";
+.keolis-icon-mode-car:before {
+	content: $icon-mode_car;
 }
-.keolis-icon-mode-car-dark:before {
-	content: "\e603";
+.keolis-icon-mode-bike:before {
+	content: $icon-mode_bike;
 }
-.keolis-icon-mode-bike-light:before {
-	content: "\e604";
+.keolis-icon-mode-bus:before {
+	content: $icon-mode_bus;
 }
-.keolis-icon-mode-bike-dark:before {
-	content: "\e605";
+.keolis-icon-mode-subway:before {
+	content: $icon-mode_subway;
 }
-.keolis-icon-mode-bus-light:before {
-	content: "\e606";
+.keolis-icon-mode-tramway:before {
+	content: $icon-mode_tramway;
 }
-.keolis-icon-mode-bus-dark:before {
-	content: "\e607";
+.keolis-icon-mode-train:before {
+	content: $icon-mode_train;
 }
-.keolis-icon-mode-subway-light:before {
-	content: "\e608";
+.keolis-icon-mode-walk:before {
+	content: $icon-mode_walk;
 }
-.keolis-icon-mode-subway-dark:before {
-	content: "\e609";
+.keolis-icon-wheelchair:before {
+	content: $icon-wheelchair;
 }
-.keolis-icon-mode-tramway-light:before {
-	content: "\e60a";
+.keolis-icon-equipment-wheelchair:before {
+	content: $icon-equipment_wheelchair;
 }
-.keolis-icon-mode-tramway-dark:before {
-	content: "\e60b";
+.keolis-icon-parking:before {
+	content: $icon-parking;
 }
-.keolis-icon-mode-train-light:before {
-	content: "\e60c";
+.keolis-icon-arrow-right:before {
+	content: $icon-arrow-right;
 }
-.keolis-icon-mode-train-dark:before {
-	content: "\e60d";
-}
-.keolis-icon-mode-walk-light:before {
-	content: "\e60e";
-}
-.keolis-icon-mode-walk-dark:before {
-	content: "\e60f";
-}
-.keolis-icon-wheelchair-light:before {
-	content: "\e610";
-}
-.keolis-icon-wheelchair-dark:before {
-	content: "\e611";
-}
-.keolis-icon-equipment-wheelchair-light:before {
-	content: "\e612";
-}
-.keolis-icon-equipment-wheelchair-dark:before {
-	content: "\e613";
-}
-.keolis-icon-parking-light:before {
-	content: "\e614";
-}
-.keolis-icon-parking-dark:before {
-	content: "\e615";
-}
-.keolis-icon-circle-mode-car:before {
-	content: "\e616";
-}
-.keolis-icon-circle-mode-bike:before {
-	content: "\e617";
-}
-.keolis-icon-circle-mode-bus:before {
-	content: "\e618";
-}
-.keolis-icon-circle-mode-subway:before {
-	content: "\e619";
-}
-.keolis-icon-circle-mode-tramway:before {
-	content: "\e61a";
-}
-.keolis-icon-circle-mode-train:before {
-	content: "\e61b";
-}
-.keolis-icon-circle-mode-walk:before {
-	content: "\e61c";
-}
-.keolis-icon-circle-wheelchair:before {
-	content: "\e61d";
-}
-.keolis-icon-circle-equipment-wheelchair:before {
-	content: "\e61e";
-}
-.keolis-icon-circle-parking:before {
-	content: "\e61f";
+.keolis-icon-location:before {
+	content: $icon-location;
 }
