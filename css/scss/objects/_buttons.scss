@@ -5,8 +5,9 @@ a.btn {
     text-decoration: none;
 }
 
-input[type=submit].btn, button.btn, a.btn, span.btn, .btn {
+input[type=submit].btn, button.btn, a.btn, .btn {
     font-size: $font-size-small-2;
+    font-family: $font;
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
@@ -30,20 +31,27 @@ input[type=submit].btn, button.btn, a.btn, span.btn, .btn {
 
     &:after, &:before {
         font-weight: normal;
+        font-family: 'keolis-icons';
+        vertical-align: middle;
+        display: inline-block;
+        font-weight: normal;
+    }
+
+    &:after {
+        margin-left: 0.25rem;
+    }
+    &:before {
+        margin-right: 0.25rem;
+    }
+
+    & * {
+        cursor: pointer;
     }
 
     &.disabled {
         background: $gray-light-2;
         color: $gray;
-    }
-
-    .icon-arrow-right {
-        background-position: -390px -282px;
-    }
-
-    & .span {
-        vertical-align: middle;
-    }
+        }
 
     &.btn-icon {
         position: relative;
@@ -52,17 +60,6 @@ input[type=submit].btn, button.btn, a.btn, span.btn, .btn {
             display: inline;
             margin: 0 1rem 0 0;
         }
-
-        & .icon-arrow-right {
-            position: absolute;
-            right: 1rem;
-            top: 50%;
-            @include translate(50%, -50%);
-        }
-    }
-
-    & * {
-        cursor: pointer;
     }
 }
 

@@ -20,7 +20,6 @@ body {
 }
 
 /* Floats */
-
 .right-search {
     float: right;
     padding: 0 0 $pad 0;
@@ -158,4 +157,9 @@ body {
             top: 60px;
         }
     }
+}
+
+// screen reader
+.sr-only {
+    display: none;
 }
