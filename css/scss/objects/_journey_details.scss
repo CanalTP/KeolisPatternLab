@@ -1,0 +1,118 @@
+.details {
+    .head-title {
+        float: left;
+        clear: both;
+    }
+    
+    .head-duration {
+        color: $color-main;
+        float: right;
+        text-align: right;
+        width: 15%;
+        padding-top: 0.3em;
+    }
+}
+
+.sections-list {
+    margin-bottom: 1em;
+}
+
+.block-section {
+    padding: 0.5em;
+    border-bottom: 1px solid #E4E4E4;
+    font-size: 0.875em;
+
+    &.bg {
+        background: $white;
+    }
+
+    .section-no-type {
+        .info {
+            width: 96%;
+        }
+    }
+
+    .section-type {
+        .network img, .picto img {
+            max-width: 70px;
+        }
+    }
+
+    .bloc-left {
+        width: auto;
+        float: left;
+        overflow: hidden;
+        @media (min-width: $breakpoint-s) {
+            width: 4%;
+        }
+    }
+
+    .info {
+        float: left;
+        line-height: 1.25em;
+        margin: 0.5em 0.25em 0.5em 1em;
+        width: auto;
+
+        @media (min-width: $breakpoint-s) {
+            max-width: 75%;
+        }
+
+        .time {
+            float: left;
+            color: $black;
+            min-width: 4em;
+        }
+
+        .txtInfo {
+            float: left;
+            width: 80%;
+        }
+        
+        .other-info {
+            .bloc-left {
+                float: left;
+                width: 4%;
+            }
+            .bloc-right {
+                float:left;
+                width: 96%;
+            }
+        }
+    }
+}
+
+.section-type-details {
+    &.bg {
+        background: $white;
+    }
+
+    li {
+        &.clearfix {
+            padding-bottom: 0.313em
+        }
+        .time {
+            float: left;
+            color: $black;
+            min-width: 4em;
+        }
+
+        .stop {
+            float: left;
+            width: 12em;
+        }
+        
+        &.duration {
+            padding-left: 3em;
+        }
+
+        @media (min-width: $breakpoint-s) {
+            .stop {
+                width: 73%;
+            }
+            
+            &.duration {
+                padding-left: 4em;
+            }
+        }
+    }
+}
