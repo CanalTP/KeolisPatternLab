@@ -1,12 +1,17 @@
 <div class="field-container clearfix">
-    <label for="text">Text Input <abbr title="Required">*</abbr></label>
+    <label class="hide" for="text">Text Input <abbr title="Required">*</abbr></label>
     <div class="icon-inside-input left">
-        <input id="text" type="text" placeholder="Text Input">
+        <span class="inner-iput-text">De</span>
+        <input id="text" type="text" placeholder="Text Input" class="inner-icons">
         <span class="icon-clear">x</span>
+        <a title="Ajouter en favoris" href="#" class="input-favoris" id="favoris">
+            <span class="keolis-icon-star-empty"></span>
+            <span class="sr-only">favoris</span>
+        </a>
     </div>
     <ul class="iconable-group input-group-btn left">
         <li><a title="Se géolocaliser" href="#" class="btn" id="geolocButton">
-            <span class="icon-journey-location"></span>
+            <span class="keolis-icon-geoloc"></span>
             <span class="sr-only">Se géolocaliser</span>
         </a></li>
     </ul>
