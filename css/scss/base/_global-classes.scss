@@ -19,26 +19,7 @@ body {
     padding-top: 138px;
 }
 
-
-/* Completely remove from the flow and screen readers. */
-.is-hidden {
-    display: none !important;
-    visibility: hidden !important;
-}
-
-/* Completely remove from the flow but leave available to screen readers. */
-.is-vishidden {
-    position: absolute !important;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
-}
-
 /* Floats */
-
 .right-search {
     float: right;
     padding: 0 0 $pad 0;
@@ -96,12 +77,6 @@ body {
 .font-secondary,
 .text-bold {
     font-family: $font-secondary;
-}
-
-.highlight {
-    border-bottom: $pad-quarter solid $color-second;
-    font-family:$font-third;
-    color: $black;
 }
 
 // float for element
@@ -182,4 +157,9 @@ body {
             top: 60px;
         }
     }
+}
+
+// screen reader
+.sr-only {
+    display: none;
 }

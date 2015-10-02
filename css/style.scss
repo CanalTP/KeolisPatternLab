@@ -54,6 +54,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  */
 
 
+@import "compass/reset";
 @import "compass/utilities/general/clearfix";
 @import "compass/utilities/general/float";
 @import "compass/utilities/color/contrast";
@@ -61,14 +62,9 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 @import "compass/css3/transform";
 @import "scss/generic/variables";
 @import "scss/generic/mixins";
-@import "scss/generic/reset";
 @import "scss/generic/font/keolis-icons";
-@import "scss/generic/font/nmp";
 @import "scss/generic/font/museo";
 @import "scss/generic/font/proxima-nova";
-
-
-
 
 
 /*------------------------------------*\
@@ -76,17 +72,13 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 \*------------------------------------*/
 @import "scss/base/global-classes";
 @import "scss/base/main";
-@import "scss/base/links";
 @import "scss/base/headings";
 @import "scss/base/text";
 @import "scss/base/lists";
+@import "scss/base/links";
 @import "scss/base/media";
 @import "scss/base/forms";
 @import "scss/base/tables";
-@import "scss/base/animation";
-
-
-
 
 
 /*------------------------------------*\
@@ -114,7 +106,6 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
-@import "scss/objects/icons";
 @import "scss/objects/buttons";
 @import "scss/objects/blocks";
 @import "scss/objects/lists";
@@ -125,5 +116,4 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 @import "scss/objects/messaging";
 @import "scss/objects/frise";
 @import "scss/objects/co2";
-
-
+@import "scss/objects/toolbox";
