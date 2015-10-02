@@ -75,6 +75,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 @import "scss/base/headings";
 @import "scss/base/text";
 @import "scss/base/lists";
+@import "scss/base/links";
 @import "scss/base/media";
 @import "scss/base/forms";
 @import "scss/base/tables";
@@ -115,3 +116,6 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 @import "scss/objects/messaging";
 @import "scss/objects/frise";
 @import "scss/objects/co2";
+@import "scss/objects/toolbox";
+@import "scss/objects/journey_details";
+@import "scss/objects/journey_summary";
