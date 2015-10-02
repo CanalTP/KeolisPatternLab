@@ -1,0 +1,21 @@
+.info-points li {
+    padding: 0 0 0.8em 0;
+    &.left {
+        float: left;
+    }
+    &.right {
+        float: right;
+    }    
+    &.line-summary {
+        position: absolute;
+        left: 4em;
+        right: 4em;
+        hr {
+            display: block;
+            width: 100%;
+            bottom: -1.4em;
+            position: absolute;
+        }
+    }
+}
+
