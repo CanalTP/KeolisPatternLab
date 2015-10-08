@@ -66,5 +66,11 @@ input[type=submit].btn, button.btn, a.btn, .btn {
 .group-date {
     .ui-datepicker-trigger {
         padding: 0.4em;
+        &.input-icons {
+            padding: 0;
+            top: 0;
+            border: none;
+            background: none;
+        }
     }
 }

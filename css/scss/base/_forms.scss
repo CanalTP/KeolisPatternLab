@@ -34,7 +34,7 @@ form {
     width: 100%;
     border: 1px solid $gray-light-2;
     padding: $pad-half 0.65rem;
-    @include border-radius(0.15em);
+    @include border-radius(0.25em);
   }
 
   input[type=text], input[type=search], input[type=url], input[type=number], textarea {
@@ -213,7 +213,7 @@ input.inner-icons {
         padding: 0.465em 0.563em;
     }
 }
-.radio_left {
+.radio_fields {
     input[type="radio"] {
         width: auto;
     }
