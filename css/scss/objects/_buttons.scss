@@ -1,17 +1,18 @@
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
-input[type=submit].btn, button.btn, a.btn, .btn {
+//input[type=submit].btn, button.btn, a.btn,
+.btn {
     font-size: $font-size-small-2;
     font-family: $font;
     font-weight: bold;
     line-height: 1.5;
     text-align: center;
+    text-transform: uppercase;
     color: $black;
 
     display: inline-block;
     z-index: 1;
-    width: auto;
     min-height: 2.3rem;
     padding: 0.75em 1em;
     background: $white;
@@ -48,6 +49,11 @@ input[type=submit].btn, button.btn, a.btn, .btn {
         background: $gray-light-2;
         color: $gray;
         cursor: default;
+    }
+
+    &.secondary {
+        background-color: $color-second;
+        color: $white;
     }
 }
 .input-group-btn {
