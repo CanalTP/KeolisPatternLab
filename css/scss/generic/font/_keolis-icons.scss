@@ -21,6 +21,7 @@
     line-height: 1;
     position: relative;
     z-index: 1;
+    display: inline-block;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -85,8 +86,19 @@
 .keolis-icon-location:before {
     content: $icon-location;
 }
-.keolis-icon-arrow-right:after {
-    content: $icon-arrow-right;
+[class^="keolis-icon-arrow"] {
+    &:after {
+        content: $icon-arrow-right;
+    }
+    &[class$="bottom"] {
+        @include transform(rotate(90deg));
+    }
+    &[class$="left"] {
+        @include transform(rotate(180deg));
+    }
+    &[class$="top"] {
+        @include transform(rotate(270deg));
+    }
 }
 .keolis-icon-reverse:before {
     content: $icon-reverse;

@@ -1,0 +1,30 @@
+.fare-headers {
+    padding: $pad 0;
+    .fare-results {
+        float: left;
+    }
+    .fare-pagination {
+        float: right;
+    }
+}
+.fare-row {
+    background-color: $white;
+    border: 1px solid $color-second;
+    margin-bottom: $space;
+
+    [class^="col"],
+    .fare {
+        padding: $pad;
+        &.fare {
+            padding-top: $pad-double;
+            padding-bottom: $pad-double;
+            background-color: $gray-light;
+        }
+    }
+    img {
+        max-width: 100%;
+    }
+    h4 {
+        margin-bottom: $space-half;
+    }
+}

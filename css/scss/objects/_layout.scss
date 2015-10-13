@@ -84,45 +84,34 @@
     /*******************/
     $widthParent: percentage($i / $grid-columns);
     .col-#{$i} {
-    	width: 100%;
-    	@media all and (min-width: $bp-med-2) {
-        	width: $widthParent;
+        width: 100%;
+        @include breakpoint($bp-med-2) {
+            width: $widthParent;
         }
         @for $j from 1 through $i {
             $widthChild: percentage($j / $i);
             & > .col-#{$j}, & > div > .col-#{$j} {
                 width: 100%;
-                @media all and (min-width: $bp-med-2) {
-                	width: $widthChild;
+                @include breakpoint($bp-med-2) {
+                    width: $widthChild;
                 }
             }
         }
     }
 }
+
+$breakpoints: $bp-small-2, $bp-med-2, $bp-large-2, $bp-xl, $bp-xxxl;
 @for $i from 1 through $grid-columns {
     /****************/
     /* #{$i} row(s) */
     /****************/
-    .row-#{$i} > div {
-        @media all and (min-width: $bp-small-2)  {
-            $minHeight: $grid-row-height * ($bp-small-2 / $bp-xl) * $i;
-            min-height: #{$minHeight - $grid-gutter-width * 2}em;
-        }
-        @media all and (min-width: $bp-med-2) {
-            $minHeight: $grid-row-height * ($bp-med-2 / $bp-xl) * $i;
-            min-height: #{$minHeight - $grid-gutter-width * 2}em;
-        }
-        @media all and (min-width: $bp-large-2) {
-            $minHeight: $grid-row-height * ($bp-large-2 / $bp-xl) * $i;
-            min-height: #{$minHeight - $grid-gutter-width * 2}em;
-        }
-        @media all and (min-width: $bp-xl) {
-            $minHeight: $grid-row-height * $i;
-            min-height: #{$minHeight - $grid-gutter-width * 2}em;
-        }
-        @media all and (min-width: $bp-xxxl) {
-            $minHeight: $grid-row-height * ($bp-xxxl / $bp-xl) * $i;
-            min-height: #{$minHeight - $grid-gutter-width * 2}em;
+    @for $j from 1 through length($breakpoints) {
+        $breakpoint: nth($breakpoints, $j);
+        .row-#{$i} > div, .row-#{$i} > div > iframe {
+            @include breakpoint($breakpoint) {
+                $minHeight: $grid-row-height * ($breakpoint / $bp-xl) * $i;
+                min-height: #{$minHeight - $grid-gutter-width * 2}em;
+            }
         }
     }
 }

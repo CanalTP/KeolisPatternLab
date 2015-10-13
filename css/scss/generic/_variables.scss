@@ -36,6 +36,8 @@ $font-color-contrast-third: contrast-color($color-third, $font-color-dark, $font
 $font-color-accent: $color-main;
 //header
 $color-header: $white;
+// Select background
+$select-background: $white;
 //  main-container
 $color-body: $gray-light ;
 $border-color: $gray-light-2;
@@ -65,16 +67,18 @@ $grid-row-height:           10; // em
 $grid-gutter-width:         0.5 !default; // em
 
 //Defaults
-$space : 1em;
-$space-and-half : $space*1.5;
-$space-double : $space*2;
-$space-quad : $space*4;
-$space-half : $space/2;
-$pad : 1em;
-$pad-and-half : $pad*1.5;
-$pad-double : $pad*2;
-$pad-half : $pad/2;
-$pad-quarter :$pad/4;
+$space: 1em;
+$space-and-half: $space*1.5;
+$space-double: $space*2;
+$space-quad: $space*4;
+$space-half: $space/2;
+$space-quarter: $space/4;
+$pad: 1em;
+$pad-and-half: $pad*1.5;
+$pad-double: $pad*2;
+$pad-quad: $pad*4;
+$pad-half: $pad/2;
+$pad-quarter: $pad/4;
 
 //Borders
 $border-light: 1px;
