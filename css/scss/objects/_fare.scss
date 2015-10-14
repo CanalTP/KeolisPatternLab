@@ -16,15 +16,19 @@
     .fare {
         padding: $pad;
         &.fare {
-            padding-top: $pad-double;
-            padding-bottom: $pad-double;
             background-color: $gray-light;
+            p {
+                margin-bottom: 0;
+            }
         }
+        .btn {
+            margin-top: $space-half;
+        }
+    }
+    :not(.fare) > h4 {
+        margin-bottom: $space-half;
     }
     img {
         max-width: 100%;
-    }
-    h4 {
-        margin-bottom: $space-half;
     }
 }
