@@ -89,6 +89,10 @@ body {
     float: left;
 }
 // border for element
+hr {
+    border: 1px solid $gray-light;
+    border-bottom: 0;
+}
 ///top
 .hr-top  {
     border-top: $border-light solid;

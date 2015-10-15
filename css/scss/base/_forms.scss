@@ -11,6 +11,10 @@ form {
         padding : 0.465em 0.563em;
         color: $black;
     }
+
+    hr {
+        margin: 0 1em;
+    }
   }
 
   fieldset {
@@ -280,5 +284,12 @@ input.inner-icons {
         }
 
 
+    }
+}
+.element-type-filter-form form {
+    background-color: $gray-light-3;
+    padding: $space;
+    .element-type-filter {
+        padding: 0;
     }
 }

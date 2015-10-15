@@ -34,6 +34,14 @@
     &:target > ul {
         display: block;
     }
+
+    & h1 {
+        margin: 0;
+    }
+
+    & select[name="lang"] {
+        padding: 0;
+    }
 }
 
 .link-account {
