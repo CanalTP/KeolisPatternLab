@@ -101,17 +101,28 @@ li.link-account {
 //Pagination
 .pagination {
     overflow: hidden;
-
     li {
         float: left;
-        border-right: $border-light solid $gray-light-2;
-
-        &:last-child {
-                border: 0;
+        &[class^="pagination"] {
+            &.pagination-previous {
+                i {
+                    float: left;
+                }
+                padding-right: $pad;
+            }
+            &.pagination-next {
+                i {
+                    float: right;
+                }
+                padding-left: $pad;
+            }
         }
-    }
-
-    a {
-        padding: $pad;
+        a {
+            color: $color-second;
+            text-decoration: none;
+        }
+        a, span {
+            padding: $pad-half;
+        }
     }
 }

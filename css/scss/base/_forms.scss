@@ -11,6 +11,10 @@ form {
         padding : 0.465em 0.563em;
         color: $black;
     }
+
+    hr {
+        margin: 0 1em;
+    }
   }
 
   fieldset {
@@ -240,7 +244,7 @@ input.inner-icons {
     & header h1 {
         margin: 1em auto;
     }
-    
+
     & .field-container {
         margin: 1.4em  auto 0;
         text-align: center;
@@ -280,5 +284,12 @@ input.inner-icons {
         }
 
 
+    }
+}
+.element-type-filter-form form {
+    background-color: $gray-light-3;
+    padding: $space;
+    .content-element {
+        padding: 0;
     }
 }

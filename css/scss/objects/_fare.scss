@@ -1,0 +1,34 @@
+.fare-headers {
+    padding: $pad 0;
+    .fare-results {
+        float: left;
+    }
+    .fare-pagination {
+        float: right;
+    }
+}
+.fare-row {
+    background-color: $white;
+    border: 1px solid $color-second;
+    margin-bottom: $space;
+
+    [class^="col"],
+    .fare {
+        padding: $pad;
+        &.fare {
+            background-color: $gray-light-3;
+            p {
+                margin-bottom: 0;
+            }
+        }
+        .btn {
+            margin-top: $space-half;
+        }
+    }
+    :not(.fare) > h4 {
+        margin-bottom: $space-half;
+    }
+    img {
+        max-width: 100%;
+    }
+}

@@ -7,4 +7,9 @@ a {
     &:hover, &:focus {
         color: $gray;
     }
+
+    &.highlight {
+        color: $color-second;
+        text-decoration: underline;
+    }
 }

@@ -1,8 +1,7 @@
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
-//input[type=submit].btn, button.btn, a.btn,
-.btn {
+input[type=submit].btn, button.btn, a.btn, .btn {
     font-size: $font-size-small-2;
     font-family: $font;
     font-weight: bold;
@@ -17,12 +16,12 @@
     padding: 0.75em 1em;
     background: $white;
     border: none;
-    border-radius: 0.15em;
+    @include border-radius(0.15em);
 
     cursor: pointer;
 
     &:hover, &:focus {
-        background: #f2f2f2;
+        background: darken($white, 5%);
         color: $black;
     }
 
@@ -35,10 +34,10 @@
     }
 
     &:not(.only-icon):after {
-        margin-left: 0.25rem;
+        margin-left: $space-quarter;
     }
     &:not(.only-icon):before {
-        margin-right: 0.25rem;
+        margin-right: $space-quarter;
     }
 
     & * {
@@ -51,9 +50,18 @@
         cursor: default;
     }
 
+    &.btn-social {
+        background-color: none;
+    }
+
     &.secondary {
         background-color: $color-second;
         color: $white;
+    }
+
+    &.btn-highlight {
+        background: $color-second;
+        color: $font-color-contrast-second;
     }
 }
 .input-group-btn {
