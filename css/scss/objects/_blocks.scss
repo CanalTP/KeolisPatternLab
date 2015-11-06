@@ -66,21 +66,38 @@
     }
 
 }
+
+.wrap-content {
+    padding: 0.5em;
+}
+
 //preface
+.wrap-preface {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    min-height: 30em;
+}
 .preface {
-    left: 1em;
-    position: absolute;
-    top: 1em;
-    width: 12em;
     z-index: 100;
-	.font-secondary {
-	    display:block;
-	}
-	&.preface-default {
-    	padding: 1em;
-	}
-	.title-light {
-	    line-height: 1.25em;
-	    margin: 0.5em 0;
-	}
+    position: absolute;
+    width: 100%;
+    @media all and (max-width: $bp-small-2 ) {
+        bottom: 0;
+    }
+    @media all and (min-width: $bp-small-2 ) {
+        left: 5%;
+        top: 20%;
+        width: 65%;
+    }
+    &.preface-default {
+        padding: 1em;
+    }
+}
+// img actualité
+.img-article {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
 }

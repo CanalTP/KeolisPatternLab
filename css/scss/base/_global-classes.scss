@@ -167,3 +167,16 @@ hr {
 .sr-only {
     display: none;
 }
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0.5em 0;
+    display: table;
+    width: 100%;
+}
+.table-row {
+    display: table-row;
+}
+.table-col {
+    display: table-cell;
+}

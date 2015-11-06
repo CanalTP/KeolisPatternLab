@@ -38,92 +38,92 @@
     }
 }
 
-.keolis-icon-traffic-cone:before {
+.icon-traffic-cone:before {
     content: $icon-traffic_cone;
 }
-.keolis-icon-warning-sign:before {
+.icon-warning-sign:before {
     content: $icon-warning_sign;
 }
-.keolis-icon-warning-alert:before {
+.icon-warning-alert:before {
     content: $icon-warning_alert;
 }
-.keolis-icon-mode-car:before {
+.icon-mode-car:before {
     content: $icon-mode_car;
 }
-.keolis-icon-mode-bike:before {
+.icon-mode-bike:before {
     content: $icon-mode_bike;
 }
-.keolis-icon-mode-bus:before {
+.icon-mode-bus:before {
     content: $icon-mode_bus;
 }
-.keolis-icon-mode-subway:before {
+.icon-mode-subway:before {
     content: $icon-mode_subway;
 }
-.keolis-icon-mode-tramway:before {
+.icon-mode-tramway:before {
     content: $icon-mode_tramway;
 }
-.keolis-icon-mode-train:before {
+.icon-mode-train:before {
     content: $icon-mode_train;
 }
-.keolis-icon-mode-walk:before {
+.icon-mode-walk:before {
     content: $icon-mode_walk;
 }
-.keolis-icon-wheelchair:before {
+.icon-wheelchair:before {
     content: $icon-wheelchair;
 }
-.keolis-icon-equipment-wheelchair:before {
+.icon-equipment-wheelchair:before {
     content: $icon-equipment_wheelchair;
 }
-.keolis-icon-parking:before {
+.icon-parking:before {
     content: $icon-parking;
 }
-.keolis-icon-hamburger:before {
+.icon-hamburger:before {
     content: $icon-hambuger;
 }
-.keolis-icon-geoloc:before {
+.icon-geoloc:before {
     content: $icon-geoloc;
 }
-.keolis-icon-location:before {
+.icon-location:before {
     content: $icon-location;
 }
-[class^="keolis-icon-arrow"] {
+[class^="icon-arrow"] {
     &:after {
         content: $icon-arrow-right;
     }
-    &[class$="bottom"] {
+    &[class*="bottom"] {
         @include transform(rotate(90deg));
     }
-    &[class$="left"] {
+    &[class*="left"] {
         @include transform(rotate(180deg));
     }
-    &[class$="top"] {
+    &[class*="top"] {
         @include transform(rotate(270deg));
     }
 }
-.keolis-icon-reverse:before {
+.icon-reverse:before {
     content: $icon-reverse;
 }
-.keolis-icon-facebook:before {
+.icon-facebook:before {
     content: $icon-facebook;
 }
-.keolis-icon-twitter:before {
+.icon-twitter:before {
     content: $icon-twitter;
 }
-.keolis-icon-calendar:before {
+.icon-calendar:before {
     content: $icon-calendar;
 }
-.keolis-icon-print:before {
+.icon-print:before {
     content: $icon-print;
 }
-.keolis-icon-download:before {
+.icon-download:before {
     content: $icon-download;
 }
-.keolis-icon-mail:before {
+.icon-mail:before {
     content: $icon-mail;
 }
-.keolis-icon-star:before {
+.icon-star:before {
     content: $icon-star;
 }
-.keolis-icon-star-empty:before {
+.icon-star-empty:before {
     content: $icon-star_empty;
 }
