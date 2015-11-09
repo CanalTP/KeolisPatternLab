@@ -87,6 +87,7 @@
     content: $icon-location;
 }
 [class^="keolis-icon-arrow"] {
+    font-size: 1rem;
     &:after {
         content: $icon-arrow-right;
     }

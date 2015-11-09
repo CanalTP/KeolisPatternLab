@@ -5,18 +5,16 @@ input[type=submit].btn, button.btn, a.btn, .btn {
     font-size: $font-size-small-2;
     font-family: $font;
     font-weight: bold;
-    line-height: 1.5;
     text-align: center;
     text-transform: uppercase;
     color: $black;
 
     display: inline-block;
     z-index: 1;
-    min-height: 2.3rem;
     padding: 0.75em 1em;
     background: $white;
     border: none;
-    @include border-radius(0.15em);
+    @include border-radius(0.15rem);
 
     cursor: pointer;
 
@@ -62,6 +60,12 @@ input[type=submit].btn, button.btn, a.btn, .btn {
     &.btn-highlight {
         background: $color-second;
         color: $font-color-contrast-second;
+    }
+}
+.btn-small {
+    padding: 0.5em !important;
+    [class^="keolis-icon-"], [class*=" keolis-icon-"] {
+        font-size: 1em;
     }
 }
 .input-group-btn {

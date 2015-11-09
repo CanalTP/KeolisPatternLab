@@ -1,0 +1,66 @@
+.element-type-article {
+    .element-style-link {
+        display: table;
+        width: 100%;
+        vertical-align: middle;
+        background-color: $color-second;
+        overflow: hidden;
+        padding: 0 !important;
+        position: relative;
+
+        .article-link {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 1em;
+
+            &.no-image {
+                padding: 0;
+            }
+
+            .article-image {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                min-width: 100%;
+                min-height: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                @include transform(translate(-50%, -50%));
+                @include transition(all, 0.5s, ease-in-out);
+
+                &:hover {
+                    @include transform(translate(-50%, -50%) scale(1.05));
+                }
+            }
+
+            .preface {
+                position: relative;
+                background-color: $color-second;
+                color: white;
+                top: 0;
+                left: 0;
+                width: auto;
+
+                .article-title {
+                    font-size: 0.875em;
+                }
+                .article-title,
+                .article-description {
+                    margin-bottom: $space-half;
+                }
+                .btn {
+                    color: $color-second;
+                }
+            }
+
+            &:not(.no-image) {
+                .preface {
+                    @media all and (min-width: $bp-xl) {
+                        width: 65%;
+                    }
+                }
+            }
+        }
+    }
+}
