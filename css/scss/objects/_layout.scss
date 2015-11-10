@@ -111,6 +111,9 @@ $breakpoints: $bp-small-2, $bp-med-2, $bp-large-2, $bp-xl, $bp-xxxl;
             @include breakpoint($breakpoint) {
                 $minHeight: $grid-row-height * ($breakpoint / $bp-xl) * $i;
                 min-height: #{$minHeight - $grid-gutter-width * 2}em;
+                &.element-style-table {
+                    height: #{$minHeight - $grid-gutter-width * 2}em;
+                }
             }
         }
     }

@@ -1,38 +1,24 @@
 .element-type-article {
-    .element-style-link {
+    overflow: hidden;
+    .element-style-table {
         display: table;
+        .article-link {
+            display: table-cell;
+        }
+    }
+    .element-style-link {
         width: 100%;
         vertical-align: middle;
         background-color: $color-second;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         overflow: hidden;
         padding: 0 !important;
         position: relative;
 
         .article-link {
-            display: table-cell;
             vertical-align: middle;
-            padding: 1em;
-
-            &.no-image {
-                padding: 0;
-            }
-
-            .article-image {
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                min-width: 100%;
-                min-height: 100%;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                @include transform(translate(-50%, -50%));
-                @include transition(all, 0.5s, ease-in-out);
-
-                &:hover {
-                    @include transform(translate(-50%, -50%) scale(1.05));
-                }
-            }
 
             .preface {
                 position: relative;
@@ -56,6 +42,7 @@
 
             &:not(.no-image) {
                 .preface {
+                    margin: 1em;
                     @media all and (min-width: $bp-xl) {
                         width: 65%;
                     }

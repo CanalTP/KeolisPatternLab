@@ -1,7 +1,6 @@
 <div class="content-element element-type-article col-{{customAttributes.width}}{{^customAttributes.width}}4{{/customAttributes.width}} row-{{customAttributes.height}}{{^customAttributes.height}}1{{/customAttributes.height}}">
-    <div class="element-style-link">
+    <div class="element-style-link element-style-table" style="background-image: url('{{Object.fields.image.uri}}');">
         <a href="#" class="article-link {{^Object.fields.image.uri}}no-image{{/Object.fields.image.uri}}" title="Lire la suite">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA" class="article-image" style="background-image: url('{{Object.fields.image.uri}}');" alt="">
             <div class="preface preface-default clearfix">
                 <h2 class="uppercase article-title"><strong>{{Object.fields.title}}{{^Object.fields.title}}Article #1{{/Object.fields.title}}</strong></h2>
                 <div class="article-description text">{{Object.fields.description}}{{^Object.fields.description}}Lorem ipsum ...{{/Object.fields.description}}</div>
