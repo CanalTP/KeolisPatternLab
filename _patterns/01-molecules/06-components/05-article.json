@@ -1,0 +1,15 @@
+{
+    "Object": {
+        "fields": {
+            "image": {
+                "uri": "http://placeimg.com/300/300/arch"
+            },
+            "description": "Toutes les solutions de transport dans votre poche !",
+            "title": "Application mobile"
+        }
+    },
+    "customAttributes": {
+        "width": 4,
+        "height": 1
+    }
+}

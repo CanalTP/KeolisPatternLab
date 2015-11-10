@@ -1,0 +1,160 @@
+{
+    "articles-x1": [
+        {
+            "Object": {
+                "fields": {
+                    "image": {
+                        "uri": "http://placeimg.com/300/300/arch"
+                    },
+                    "description": "Toutes les solutions de transport dans votre poche !",
+                    "title": "Application mobile"
+                }
+            },
+            "customAttributes": {
+                "width": 10,
+                "height": 3
+            }
+        }
+    ],
+    "articles-x2": [
+        {
+            "Object": {
+                "fields": {
+                    "image": {
+                        "uri": "http://placeimg.com/300/300/arch"
+                    },
+                    "description": "Toutes les solutions de transport dans votre poche !",
+                    "title": "Application mobile"
+                }
+            },
+            "customAttributes": {
+                "width": 6,
+                "height": 3
+            }
+        },
+        {
+            "Object": {
+                "fields": {
+                    "image": {
+                        "uri": null
+                    },
+                    "description": "A l'approche de l'hiver, pensez malin!",
+                    "title": "Carte seniors"
+                }
+            },
+            "customAttributes": {
+                "width": 4,
+                "height": 3
+            }
+        }
+    ],
+    "articles-x3": [
+        {
+            "Object": {
+                "fields": {
+                    "image": {
+                        "uri": "http://placeimg.com/300/300/arch"
+                    },
+                    "description": "Toutes les solutions de transport dans votre poche !",
+                    "title": "Application mobile"
+                }
+            },
+            "customAttributes": {
+                "width": 6,
+                "height": 3
+            }
+        },
+        {
+            "Object": {
+                "fields": {
+                    "image": {
+                        "uri": null
+                    },
+                    "description": "A l'approche de l'hiver, pensez malin!",
+                    "title": "Carte seniors"
+                }
+            },
+            "customAttributes": {
+                "width": 4,
+                "height": 2
+            }
+        },
+        {
+            "Object": {
+                "fields": {
+                    "image": {
+                        "uri": "http://placeimg.com/400/300/people"
+                    },
+                    "description": "",
+                    "title": "Nouvelle ligne"
+                }
+            },
+            "customAttributes": {
+                "width": 4,
+                "height": 1
+            }
+        }
+    ],
+    "articles-x4": [
+        {
+            "Object": {
+                "fields": {
+                    "image": {
+                        "uri": "http://placeimg.com/300/300/arch"
+                    },
+                    "description": "Toutes les solutions de transport dans votre poche !",
+                    "title": "Application mobile"
+                }
+            },
+            "customAttributes": {
+                "width": 6,
+                "height": 3
+            }
+        },
+        {
+            "Object": {
+                "fields": {
+                    "image": {
+                        "uri": null
+                    },
+                    "description": "A l'approche de l'hiver, pensez malin!",
+                    "title": "Carte seniors"
+                }
+            },
+            "customAttributes": {
+                "width": 4,
+                "height": 1
+            }
+        },
+        {
+            "Object": {
+                "fields": {
+                    "image": {
+                        "uri": "http://placeimg.com/400/300/people"
+                    },
+                    "description": "",
+                    "title": "Nouvelle ligne"
+                }
+            },
+            "customAttributes": {
+                "width": 4,
+                "height": 1
+            }
+        },
+        {
+            "Object": {
+                "fields": {
+                    "image": {
+                        "uri": null
+                    },
+                    "description": "Nouvelle entité pour une nouvelle aire...",
+                    "title": "Kisio digital"
+                }
+            },
+            "customAttributes": {
+                "width": 4,
+                "height": 1
+            }
+        }
+    ]
+}
