@@ -9,7 +9,6 @@ form {
 
     & input {
         padding : 0.465em 0.563em;
-        color: $black;
     }
 
     hr {
@@ -113,7 +112,11 @@ input {
     border-color: $valid;
 }
 
-
+input,
+select,
+option {
+    color: $gray-dark;
+}
 /*------------------------------------*\
     $SPECIFIC FORMS
 \*------------------------------------*/
