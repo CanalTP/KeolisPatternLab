@@ -8,10 +8,10 @@
 				],
 				"attrs": [],
 				"isMulticolor": false,
-				"grid": 0,
 				"tags": [
 					"traffic_cone"
-				]
+				],
+				"grid": 0
 			},
 			"attrs": [],
 			"properties": {
@@ -21,7 +21,7 @@
 				"code": 58880,
 				"name": "traffic_cone"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 0
 		},
@@ -32,10 +32,10 @@
 				],
 				"attrs": [],
 				"isMulticolor": false,
-				"grid": 0,
 				"tags": [
 					"warning_sign"
-				]
+				],
+				"grid": 0
 			},
 			"attrs": [],
 			"properties": {
@@ -45,7 +45,7 @@
 				"code": 58881,
 				"name": "warning_sign"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 1
 		},
@@ -70,7 +70,7 @@
 				"code": 58882,
 				"name": "warning_alert"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 2
 		},
@@ -100,7 +100,7 @@
 				"code": 58883,
 				"name": "mode_car"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 3
 		},
@@ -130,7 +130,7 @@
 				"code": 58884,
 				"name": "mode_bike"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 4
 		},
@@ -160,7 +160,7 @@
 				"code": 58885,
 				"name": "mode_bus"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 5
 		},
@@ -190,7 +190,7 @@
 				"code": 58886,
 				"name": "mode_subway"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 6
 		},
@@ -220,7 +220,7 @@
 				"code": 58887,
 				"name": "mode_tramway"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 7
 		},
@@ -250,7 +250,7 @@
 				"code": 58888,
 				"name": "mode_train"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 8
 		},
@@ -280,7 +280,7 @@
 				"code": 58889,
 				"name": "mode_walk"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 9
 		},
@@ -310,7 +310,7 @@
 				"code": 58890,
 				"name": "wheelchair"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 10
 		},
@@ -340,7 +340,7 @@
 				"code": 58891,
 				"name": "equipment_wheelchair"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 11
 		},
@@ -370,7 +370,7 @@
 				"code": 58892,
 				"name": "parking"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 12
 		},
@@ -395,7 +395,7 @@
 				"code": 58893,
 				"name": "hambuger"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 13
 		},
@@ -428,7 +428,7 @@
 				"code": 58894,
 				"name": "geoloc"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 14
 		},
@@ -439,10 +439,10 @@
 				],
 				"attrs": [],
 				"isMulticolor": false,
-				"grid": 0,
 				"tags": [
 					"location"
-				]
+				],
+				"grid": 0
 			},
 			"attrs": [],
 			"properties": {
@@ -452,7 +452,7 @@
 				"code": 58895,
 				"name": "location"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 15
 		},
@@ -463,10 +463,10 @@
 				],
 				"attrs": [],
 				"isMulticolor": false,
-				"grid": 0,
 				"tags": [
 					"arrow-right"
-				]
+				],
+				"grid": 0
 			},
 			"attrs": [],
 			"properties": {
@@ -476,7 +476,7 @@
 				"code": 58896,
 				"name": "arrow-right"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 16
 		},
@@ -501,7 +501,7 @@
 				"code": 58897,
 				"name": "reverse"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 17
 		},
@@ -526,7 +526,7 @@
 				"code": 58898,
 				"name": "facebook"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 18
 		},
@@ -535,9 +535,9 @@
 				"paths": [
 					"M1240.34 133.426c-44.91 19.922-93.18 33.372-143.834 39.43 51.708-30.988 91.422-80.062 110.112-138.544-48.39 28.698-101.982 49.536-159.036 60.768-45.672-48.674-110.766-79.080-182.794-79.080-138.302 0-250.436 112.126-250.436 250.428 0 19.63 2.214 38.738 6.484 57.074-208.13-10.44-392.662-110.146-516.174-261.658-21.558 36.98-33.914 79.998-33.914 125.89 0 86.888 44.214 163.54 111.406 208.444-41.052-1.302-79.664-12.57-113.436-31.316-0.028 1.038-0.028 2.092-0.028 3.146 0 121.336 86.326 222.55 200.894 245.568-21.010 5.73-43.138 8.776-65.978 8.776-16.142 0-31.828-1.572-47.116-4.49 31.872 99.494 124.354 171.89 233.944 173.91-85.712 67.174-193.69 107.214-311.024 107.214-20.214 0-40.15-1.188-59.744-3.502 110.83 71.058 242.464 112.524 383.892 112.524 460.638 0 712.534-381.594 712.534-712.54 0-10.854-0.242-21.658-0.726-32.404 48.944-35.308 91.394-79.408 124.972-129.634v0z"
 				],
+				"width": 1260,
 				"attrs": [],
 				"isMulticolor": false,
-				"width": 1260,
 				"tags": [
 					"uniE65D"
 				],
@@ -552,7 +552,7 @@
 				"code": 58899,
 				"name": "twitter"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 19
 		},
@@ -577,7 +577,7 @@
 				"code": 58900,
 				"name": "calendar"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 20
 		},
@@ -610,7 +610,7 @@
 				"code": 58901,
 				"name": "print"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 21
 		},
@@ -635,7 +635,7 @@
 				"code": 58902,
 				"name": "download"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 22
 		},
@@ -660,7 +660,7 @@
 				"code": 58903,
 				"name": "mail"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 23
 		},
@@ -685,7 +685,7 @@
 				"code": 58904,
 				"name": "star"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 24
 		},
@@ -710,9 +710,37 @@
 				"code": 58905,
 				"name": "star_empty"
 			},
-			"setIdx": 1,
+			"setIdx": 0,
 			"setId": 0,
 			"iconIdx": 25
+		},
+		{
+			"icon": {
+				"paths": [
+					"M192.547 975.863l140.069-385.094h-280.103z",
+					"M157.538 65.676h70.017v525.093h-70.017v-525.093z",
+					"M892.718 450.735l-140.034-385.094-139.999 385.094z",
+					"M717.675 450.77h70.017v525.093h-70.017v-525.093z"
+				],
+				"width": 945,
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"reverse-2"
+				],
+				"grid": 0
+			},
+			"attrs": [],
+			"properties": {
+				"order": 45,
+				"id": 148,
+				"prevSize": 32,
+				"code": 58906,
+				"name": "reverse-2"
+			},
+			"setIdx": 0,
+			"setId": 0,
+			"iconIdx": 26
 		}
 	],
 	"height": 1024,
@@ -725,7 +753,7 @@
 		"showQuickUse2": true,
 		"showSVGs": true,
 		"fontPref": {
-			"prefix": "icon-",
+			"prefix": "keolis-icon-",
 			"metadata": {
 				"fontFamily": "keolis-icons",
 				"majorVersion": 1,

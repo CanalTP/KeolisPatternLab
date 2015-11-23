@@ -3,6 +3,13 @@
     & > li {
         border-bottom: 1px solid $gray-light;
     }
+    &.th0 {
+        & > li {
+            border: 1px solid $gray-med-2;
+            background-color: $white;
+        }
+    }
+
 }
 
 .acc-handle {
@@ -44,5 +51,30 @@
 .state-active {
     &.acc-panel-border {
         border: 1px solid $color-second-highlight;
+    }
+}
+
+/************* style th0 ****************/
+.th0 {
+    .acc-handle {
+        background: $white;
+        color: $gray-med;
+
+        &:after {
+            font-family: "keolis-icons";
+            content: $icon-arrow-right;
+            top: 50%;
+            color: $color-second;
+        }
+
+        &:hover {
+            color: $color-second;
+            background-color: $font-color-contrast-second;
+        }
+
+        &.active {
+            color: $gray-med;
+            background: $white;
+        }
     }
 }

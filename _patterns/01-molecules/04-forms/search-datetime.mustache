@@ -1,35 +1,43 @@
 <div id="search_datetime" class="search_datetime clearfix field-container">
     <div class="group-date clearfix">
-        <input type="text" value="29/09/2015" required="required" name="search[datetime][date]" id="search_datetime_date" class="hasDatepicker">
-        <button type="button" class="ui-datepicker-trigger input-icons pos-right" aria-haspopup="true" title="Ouvrir le calendrier">
-            <span class="keolis-icon-calendar" title="Ouvrir le calendrier"></span>
-            <span class="sr-only">Ouvrir le calendrier</span>
-        </button>
+        <input type="text" value="Mercredi 24 juin 2015" required="required" name="search[datetime][date]" id="search_datetime_date" class="hasDatepicker">
+        <ul class="list-input-icons">
+            <li><button type="button" class="ui-datepicker-trigger input-icons pos-right" aria-haspopup="true" title="Ouvrir le calendrier">
+                <span class="keolis-icon-calendar" title="Ouvrir le calendrier"></span>
+                <span class="sr-only">Ouvrir le calendrier</span>
+            </button></li>
+        </ul>
     </div>
     <div class="group-time clearfix">
-        <select title="Sens horaire" name="search[datetime_represents]" id="search_datetime_represents">
+        <span class="wrap-select arrow">
+            <select title="Sens horaire" name="search[datetime_represents]" id="search_datetime_represents">
                 <option value="departure">Partir après</option>
                 <option value="arrival">Arriver avant</option>
-        </select>
+            </select>
+        </span>
         <span class="fixed-field-date">
-            <select required="required" name="search[datetime][time][hour]" id="search_datetime_time_hour" title="Selectionnez l'heure">
-                <option value="0">00</option>
-                <option value="1">01</option>
-                <option value="2">02</option>
-                <option value="3">03</option>
-                <option value="4">04</option>
-                <option value="9">...</option>
-                </option><option value="23">23</option>
-            </select>
+            <span class="wrap-select arrow">
+                <select required="required" name="search[datetime][time][hour]" id="search_datetime_time_hour" title="Selectionnez l'heure">
+                    <option value="0">00</option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="9">...</option>
+                    </option><option value="23">23</option>
+                </select>
+            </span>
             <abbr title="Heures">h</abbr>
-            <select required="required" name="search[datetime][time][minute]" id="search_datetime_time_minute" title="Selectionnez les minutes">
-                <option value="0">00</option>
-                <option value="5">05</option>
-                <option value="10">10</option>
-                <option value="15">15</option>
-                <option value="20">...</option>
-                <option value="55">55</option>
-            </select>
+            <span class="wrap-select arrow">
+                <select required="required" name="search[datetime][time][minute]" id="search_datetime_time_minute" title="Selectionnez les minutes">
+                    <option value="0">00</option>
+                    <option value="5">05</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">...</option>
+                    <option value="55">55</option>
+                </select>
+            </span>
         </span>
     </div>
 </div>

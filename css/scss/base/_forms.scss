@@ -15,50 +15,50 @@ form {
     hr {
         margin: 0 1em;
     }
-  }
+}
 
-  fieldset {
+fieldset {
     border: 0;
     padding: 0;
     margin: 0;
-  }
+}
 
-  label {
+label {
     display: block;
     padding-bottom: $space-half;
-      color: $gray-dark-2;
-  }
+    color: $gray-dark-2;
+}
 
-  button, input, select, textarea {
+button, input, select, textarea {
     font-family: inherit;
     font-size: 100%;
     margin: 0 1px 0;
-  }
+}
 
-  input, textarea, select {
+input, textarea, select {
     width: 100%;
-    border: 1px solid $gray-light;
+    border: 1px solid $gray-med-2;
     padding: $pad-half 0.65rem;
     background-color: $white;
     @include border-radius(0.25em);
 
-      &:active {
-          background-color: $white;
-      }
-  }
+    &:active {
+        background-color: $white;
+    }
+}
 
-  input[type=text], input[type=search], input[type=url], input[type=number], textarea {
+input[type=text], input[type=search], input[type=url], input[type=number], textarea {
     -webkit-appearance: none;
-  }
+}
 
-  button, input[type="submit"] {
+button, input[type="submit"] {
     padding: $pad-half;
     background: $gray-dark;
     border: 1px solid $gray;
     cursor: pointer;
-  }
+}
 
-  input {
+input {
     &[type="checkbox"], &input[type="radio"] {
       width: auto;
       margin-right: 0.3em;
@@ -79,53 +79,66 @@ form {
       padding: 0.465em 0.563em;
       float: left;
     }
-  }
+}
 
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    font-style: italic;
+}
+:-ms-input-placeholder {
+    font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-style: italic;
+}
 
-  //Form Field Container
-  .field-container {
+//Form Field Container
+.field-container {
     margin-bottom: $space;
-  }
+}
 
-  .inline-form {
+.inline-form {
     fieldset, .inline-container {
       position: relative;
     }
+}
 
-
-  }
-
-  /* Validation */
-  .has-error, .is-error {
+/* Validation */
+.has-error, .is-error {
     border-color: $error;
-  }
-  .is-valid {
+}
+.is-valid {
     border-color: $valid;
-  }
+}
 
 
-  /*------------------------------------*\
-      $SPECIFIC FORMS
-  \*------------------------------------*/
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
 
-  /* Search Form */
-  .search-field {
+/* Search Form */
+.st0{
+    background-color: $gray-light-3;
+    padding: 1.5em 1em;
+}
+.search-field {
     padding-right: 3em;
-  }
-  .inline-form .search-submit {
+}
+.inline-form .search-submit {
     background: none;
     padding: 0.78em 1em;
     border: 0;
     border-left: 1px solid $gray;
     color: $gray;
-  }
-  .options {
+}
+.options {
     legend {
-      font-weight: bold;
-      margin-bottom: 0.5em;
+      margin-bottom: $space;
     }
-  }
-  .checkox-list {
+}
+.checkox-list {
     .checkbox-item {
         float: left;
         margin-right: 1em;
@@ -142,31 +155,23 @@ form {
     [class*=" keolis-icon-"] {
         font-size: $font-size-large;
     }
-  }
+}
   .field-container {
-      &.autocomplete,
-      &.btn-container {
-          float: left;
-      }
-      @media all and (min-width: $bp-large-2) {
+    &.autocomplete,
+    &.btn-container {
+        float: left;
+    }
+    @media all and (min-width: $bp-large-2) {
         &.autocomplete {
-          width: 45%;
-          margin-right: 2em;
+            width: 45%;
+            margin-right: 2em;
             &:last-child {
-              margin-right: 0;
+                margin-right: 0;
             }
         }
-      }
+    }
   }
 
-.journey-reverse {
-    position: relative;
-    a {
-        left: 0;
-        position: absolute;
-        top: 1.5em;
-    }
-}
 .group-field-container {
     &.icon-left {
         margin-left: 3em;
@@ -175,30 +180,30 @@ form {
         }
     }
 }
+.field-container,
+.group-field-container {
+    abbr {
+        text-decoration: none;
+    }
+}
   /***** text input with icon ***/
 input.inner-icons {
-    padding: 0.5em 3.5em;
+    padding: 0.5em 4em 0.5em 3.5em;
 }
 .inner-iput-text {
     position: absolute;
     left: 1em;
     top: 0.45em;
+    font-family: $font-bold;
 }
 .icon-clear {
-    position: absolute;
-    right: 1.85em;
-    top: 0.45em;
+    line-height: 1em;
+    display: inline-block;
 }
-.input-icons {
-    position: absolute;
-    top: 0.55em;
-    &.pos-right{
-        right: 0.35em;
-    }
-}
+
 .icon-inside-input {
     position: relative;
-    width: 92%;
+    width: 100%;
 }
 .iconable-group {
     li {
@@ -210,15 +215,28 @@ input.inner-icons {
         }
     }
 }
+.list-input-icons {
+    position: absolute;
+    right: 0;
+    top: 0;
+    li {
+        float: left;
+        padding: 0.25em;
+        span, a {
+            vertical-align: middle;
+            color: $color-second;
+        }
+    }
+}
 .group-date {
-    margin-right: 0.5em;
     margin-bottom: 0.5em;
     position: relative;
-}
-.group-time,
-.group-date {
+    width: 100%;
     input, select, textarea {
         padding: 0.465em 0.563em;
+    }
+    input.hasDatepicker {
+        padding-right: 2em;
     }
 }
 .radio_fields {
@@ -280,10 +298,7 @@ input.inner-icons {
 
         .field-container {
             width: 50%;
-
         }
-
-
     }
 }
 .element-type-filter-form form {
@@ -293,3 +308,61 @@ input.inner-icons {
         padding: 0;
     }
 }
+.group-time {
+    span, abbr {
+        margin-right: 0.5em;
+    }
+    span:last-child {
+        margin-right: 0;
+    }
+    select {
+        width: auto;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: $white;
+        padding-left: 0.7em;
+        padding-right: 1.65em;
+        &:-ms-expand {
+            display: none;
+        }
+        &:-moz-focusring {
+            color: transparent;
+            text-shadow: 0 0 0 #000;
+        }
+    }
+    option {
+        padding: 0 0.7em;
+    }
+    .wrap-select {
+        position:relative;
+        background-color:$white;
+        display:inline-block;
+        @include border-radius(0.25em);
+        border: 1px solid $gray-med-2;
+        select {
+            border:none;
+            background-color:transparent;
+            color:inherit;
+            width:100%;
+            height:100%;
+        }
+        &.arrow {
+            &:after {
+                font-family: "keolis-icons";
+                content: $icon-arrow-right;
+                color: $color-second;
+                @include transform(rotate(90deg));
+                pointer-events: none;
+                position:absolute;
+                top:0.5em;
+                right: 0.5em;
+            }
+        }
+    }
+}
+ @media all and (max-width: $bp-small-1) {
+    .fixed-field-date {
+        display: block;
+    }
+ }

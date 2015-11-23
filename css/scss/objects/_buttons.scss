@@ -55,11 +55,18 @@ input[type=submit].btn, button.btn, a.btn, .btn {
     &.secondary {
         background-color: $color-second;
         color: $white;
+        &:hover, &:focus {
+            background: $color-second-highlight;
+            color: $font-color-contrast-second-highlight;
+        }
     }
 
     &.btn-highlight {
         background: $color-second;
         color: $font-color-contrast-second;
+    }
+    &.full-width {
+        width: 100%;
     }
 }
 .btn-small {
@@ -86,9 +93,23 @@ input[type=submit].btn, button.btn, a.btn, .btn {
         padding: 0.4em;
         &.input-icons {
             padding: 0;
-            top: 0;
+            @include font-size(1.25);
             border: none;
             background: none;
+        }
+    }
+}
+.journey-reverse {
+    position: relative;
+    a {
+        left: 0;
+        position: absolute;
+        top: 0.85em;
+        @include font-size(1.85);
+        padding: 0 0.25em;
+        color: $black;
+        &:hover {
+            color: $color-second;
         }
     }
 }
