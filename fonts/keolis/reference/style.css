@@ -1,15 +1,15 @@
 @font-face {
 	font-family: 'keolis-icons';
-	src:url('fonts/keolis-icons.eot?onzxen');
-	src:url('fonts/keolis-icons.eot?onzxen#iefix') format('embedded-opentype'),
-		url('fonts/keolis-icons.ttf?onzxen') format('truetype'),
-		url('fonts/keolis-icons.woff?onzxen') format('woff'),
-		url('fonts/keolis-icons.svg?onzxen#keolis-icons') format('svg');
+	src:url('fonts/keolis-icons.eot?scynei');
+	src:url('fonts/keolis-icons.eot?scynei#iefix') format('embedded-opentype'),
+		url('fonts/keolis-icons.ttf?scynei') format('truetype'),
+		url('fonts/keolis-icons.woff?scynei') format('woff'),
+		url('fonts/keolis-icons.svg?scynei#keolis-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="keolis-icon-"], [class*=" keolis-icon-"] {
 	font-family: 'keolis-icons';
 	speak: none;
 	font-style: normal;
@@ -23,82 +23,85 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-traffic_cone:before {
+.keolis-icon-traffic_cone:before {
 	content: "\e600";
 }
-.icon-warning_sign:before {
+.keolis-icon-warning_sign:before {
 	content: "\e601";
 }
-.icon-warning_alert:before {
+.keolis-icon-warning_alert:before {
 	content: "\e602";
 }
-.icon-mode_car:before {
+.keolis-icon-mode_car:before {
 	content: "\e603";
 }
-.icon-mode_bike:before {
+.keolis-icon-mode_bike:before {
 	content: "\e604";
 }
-.icon-mode_bus:before {
+.keolis-icon-mode_bus:before {
 	content: "\e605";
 }
-.icon-mode_subway:before {
+.keolis-icon-mode_subway:before {
 	content: "\e606";
 }
-.icon-mode_tramway:before {
+.keolis-icon-mode_tramway:before {
 	content: "\e607";
 }
-.icon-mode_train:before {
+.keolis-icon-mode_train:before {
 	content: "\e608";
 }
-.icon-mode_walk:before {
+.keolis-icon-mode_walk:before {
 	content: "\e609";
 }
-.icon-wheelchair:before {
+.keolis-icon-wheelchair:before {
 	content: "\e60a";
 }
-.icon-equipment_wheelchair:before {
+.keolis-icon-equipment_wheelchair:before {
 	content: "\e60b";
 }
-.icon-parking:before {
+.keolis-icon-parking:before {
 	content: "\e60c";
 }
-.icon-hambuger:before {
+.keolis-icon-hambuger:before {
 	content: "\e60d";
 }
-.icon-geoloc:before {
+.keolis-icon-geoloc:before {
 	content: "\e60e";
 }
-.icon-location:before {
+.keolis-icon-location:before {
 	content: "\e60f";
 }
-.icon-arrow-right:before {
+.keolis-icon-arrow-right:before {
 	content: "\e610";
 }
-.icon-reverse:before {
+.keolis-icon-reverse:before {
 	content: "\e611";
 }
-.icon-facebook:before {
+.keolis-icon-facebook:before {
 	content: "\e612";
 }
-.icon-twitter:before {
+.keolis-icon-twitter:before {
 	content: "\e613";
 }
-.icon-calendar:before {
+.keolis-icon-calendar:before {
 	content: "\e614";
 }
-.icon-print:before {
+.keolis-icon-print:before {
 	content: "\e615";
 }
-.icon-download:before {
+.keolis-icon-download:before {
 	content: "\e616";
 }
-.icon-mail:before {
+.keolis-icon-mail:before {
 	content: "\e617";
 }
-.icon-star:before {
+.keolis-icon-star:before {
 	content: "\e618";
 }
-.icon-star_empty:before {
+.keolis-icon-star_empty:before {
 	content: "\e619";
+}
+.keolis-icon-reverse-2:before {
+	content: "\e61a";
 }
 

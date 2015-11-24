@@ -12,7 +12,7 @@ $color-third: #CA430B;
 $white : #FFF;
 $black : #000;
 $gray : #666A74;
-$gray-med : #666;
+$gray-med : #606060;
 $gray-med-2: #b0b0b0;
 $gray-light : lighten($black, 86); //#b4b4b4
 $gray-light-3: #ebebeb;
@@ -46,7 +46,9 @@ $color-footer: $gray;
 $border-footer-color: $gray-dark;
 
 //Typography
-$font : "Proxima Nova Thin","Arial",sans-serif;
+$font : "Proxima Nova Regular","Arial",sans-serif;
+$font-thin : "Proxima Nova Thin","Arial",sans-serif;
+$font-bold : "Proxima Nova bold","Arial",sans-serif;
 $font-secondary : "Museo","Arial",sans-serif;
 $font-third: "Proxima Nova Black","Arial",sans-serif;
 
@@ -88,12 +90,14 @@ $border-thick: 7px;
 
 //Breakpoints
 $bp-small : 24em;
+$bp-small-1 : 27em;
 $bp-small-2 : 29.75em;
 $bp-small-3 : 39.8em;
 $bp-med : 46.8em;
 $bp-med-2 : 48em;
 $bp-large : 50em;
 $bp-large-2 : 66em;
+$bp-large-3 : 71em;
 $bp-xl : 73em;
 $bp-xxl : 89em;
 $bp-xxxl : 93em;

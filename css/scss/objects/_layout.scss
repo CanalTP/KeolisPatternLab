@@ -4,9 +4,9 @@
 
 /* Layout Container */
 .lc {
-	max-width: $max-width;
-	margin: 0 auto;
-	padding: $pad-half;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: $pad-half;
 }
 
 /**
@@ -24,18 +24,27 @@
 // container , wrapper, iiner-wrapper
 .ctp-container, .wrapper {
     @include container-fixed;
-
-    @media all and (min-width: $bp-med-2) {
+     width: 100%;
+    /*@media all and (min-width: $bp-med-2) {
         width: 95%;
-    }
+    }*/
     @media all and (min-width: $bp-xxxl) {
-        width: 90em;
+        width: 91em;
+    }
+
+
+
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    @media all and (min-width: $bp-xxxl) {
+        width: 91em;
     }
     &.inner-wrapper {
         width: 100%;
     }
 }
-
 // col
 .ctp-col {
     @include content-col;
@@ -64,16 +73,13 @@
         padding : 0;
     }
 }
-// block sm 2
-.block-sm-2 {
-    width: 100%;
-    padding : 1em;
-    @media all and (min-width: $bp-med-2) {
-        width: 18%;
-        padding : 0;
-    }
-}
 
+
+[class^="col-"],
+[class*=" col-"] {
+    float: left;
+    padding: 0.5em;
+}
 // Absolute grid system
 //
 // Rows and Cols
@@ -115,6 +121,21 @@ $breakpoints: $bp-small-2, $bp-med-2, $bp-large-2, $bp-xl, $bp-xxxl;
                     height: #{$minHeight - $grid-gutter-width * 2}em;
                 }
             }
+        }
+    }
+}
+
+// col for tablet
+
+@for $i from 1 through $grid-columns {
+    /*******************/
+    /* #{$i} column(s) */
+    /*******************/
+    $widthParent: percentage($i / $grid-columns);
+
+    @include breakpoint($bp-med-2 $bp-large-3) {
+        .col-md-#{$i} {
+            width: $widthParent;
         }
     }
 }
