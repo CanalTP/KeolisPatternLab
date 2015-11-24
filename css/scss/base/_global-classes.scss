@@ -130,11 +130,6 @@ hr {
     text-transform: uppercase;
 }
 // btn soscial
-
-// alt txt
-.ctp-txt-alt {
-    padding-right: 1em;
-}
 .shade {
     & > .inner-shade::after {
         background: #fff none repeat scroll 0 0;
@@ -166,4 +161,24 @@ hr {
 // screen reader
 .sr-only {
     display: none;
+}
+
+.odd {
+    background-color: $color-second-highlight-2;
+}
+.administrative_region {
+    background-image: url("../images/pic-administrative_region.png");
+    background-repeat: no-repeat;
+}
+.stop_area {
+    background-image: url("../images/pic-stop_area.png");
+    background-repeat: no-repeat;
+}
+.poi {
+    background-image: url("../images/pic-poi.png");
+    background-repeat: no-repeat;
+}
+.address {
+    background-image: url("../images/pic-address.png");
+    background-repeat: no-repeat;
 }
