@@ -1,0 +1,42 @@
+.flash-message {
+    background: $gray-light no-repeat 10px center;
+    margin-bottom: $space-half;
+    padding: $pad;
+    border: 1px solid $gray-light-2;
+    @include border-radius(0.25em);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &.flash-error {
+        color: darken(#a94442, 6);
+        background-color: #f2dede;
+        border-color: #ebccd1;
+    }
+    &.flash-warning {
+        color: darken(#8a6d3b, 6);
+        background-color: #fcf8e3;
+        border-color: #faebcc;
+    }
+    &.flash-notice {
+        color: darken(#31708f, 6);
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+    }
+    &.flash-success {
+        color: darken(#3c763d, 6);
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+    }
+    &[class*="flash-icon-"] {
+        padding-left: 3.325em;
+    }
+    &.flash-icon-tick {
+        background-image: url('../images/design/alert-tick.png');
+        background-position: 1em;
+    }
+    ul {
+        list-style-type: none;
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+    }
+}
