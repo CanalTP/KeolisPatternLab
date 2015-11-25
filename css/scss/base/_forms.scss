@@ -44,9 +44,18 @@ input, textarea, select {
     &:active {
         background-color: $white;
     }
-}
 
-input[type=text], input[type=search], input[type=url], input[type=number], textarea {
+    &:focus {
+        border-color: $color-second;
+    }
+  }
+
+
+input[type=text],
+input[type=search],
+input[type=url],
+input[type=number],
+textarea {
     -webkit-appearance: none;
 }
 
@@ -59,24 +68,24 @@ button, input[type="submit"] {
 
 input {
     &[type="checkbox"], &input[type="radio"] {
-      width: auto;
-      margin-right: 0.3em;
+        width: auto;
+        margin-right: 0.3em;
     }
 
     &input[type="search"] {
-      -webkit-appearance: none;
-      border-radius: 0;
+        -webkit-appearance: none;
+        border-radius: 0;
     }
 
     &input[type="search"]::-webkit-search-cancel-button,
     &input[type="search"]::-webkit-search-decoration {
-      -webkit-appearance: none;
+        -webkit-appearance: none;
     }
 
     &.hasDatepicker {
-      margin: 0 0em 0.5em 0;
-      padding: 0.465em 0.563em;
-      float: left;
+        margin: 0 0em 0.5em 0;
+        padding: 0.465em 0.563em;
+        float: left;
     }
 }
 
@@ -100,7 +109,7 @@ input {
 
 .inline-form {
     fieldset, .inline-container {
-      position: relative;
+        position: relative;
     }
 }
 
@@ -158,8 +167,69 @@ option {
     [class*=" keolis-icon-"] {
         font-size: $font-size-large;
     }
+  }
+.radio-list {
+    margin-bottom:$space;
+
+    &.items-left{
+        input[type="radio"] + label:before {
+            margin-right: $space;
+        }
+    }
+    input[type="radio"] {
+        width: auto;
+        visibility: hidden;
+        position: absolute;
+
+        &:checked + label:before {
+            box-shadow: inset 0 0 0 $color-second, inset 0 0 0 $color-second, inset 0 0 0 5px $color-second;
+            border: 1px solid $color-second;
+            background-color: $white;
+
+        }
+    }
+    input[type="radio"] + label {
+        display: inline;
+        cursor: pointer;
+
+        &:before{
+            height: 18px;
+            width: 18px;
+            content: " ";
+            display: inline-block;
+            vertical-align: sub;
+            transition: 0.3s;
+            border: 1px solid $gray-med;
+            @include border-radius(50%);
+        }
+    }
+    .radio-item {
+        padding: $pad;
+    }
 }
-  .field-container {
+.group-list {
+    background-color: $white;
+    border: 1px solid $gray-med-2;
+    @include border-radius(0.25em 0.25em 0 0);
+    margin-bottom: 1em;
+}
+.title-radio-list {
+    border-bottom: 1px solid $gray-med-2;
+    padding: $pad;
+    text-transform: uppercase;
+    font-family: $font-bold;
+}
+.subtitle-radio-list {
+    padding: $pad;
+    font-family: $font-bold;
+
+    &.title-icon {
+        background-position: 0 49%;
+        margin-left: 1em;
+        padding: 1em 1em 1em 2.25em;
+    }
+}
+.field-container {
     &.autocomplete,
     &.btn-container {
         float: left;
@@ -168,16 +238,18 @@ option {
         &.autocomplete {
             width: 45%;
             margin-right: 2em;
+
             &:last-child {
                 margin-right: 0;
             }
         }
     }
-  }
+}
 
 .group-field-container {
     &.icon-left {
         margin-left: 3em;
+
         @media all and (min-width: $bp-med) {
             margin-left: 4em;
         }
@@ -213,6 +285,7 @@ input.inner-icons {
         display: inline;
         float: left;
         margin-right: 0.5em;
+
         &:last-child {
             margin-right: 0em;
         }
@@ -222,9 +295,11 @@ input.inner-icons {
     position: absolute;
     right: 0;
     top: 0;
+
     li {
         float: left;
         padding: 0.25em;
+
         span, a {
             vertical-align: middle;
             color: $color-second;
@@ -235,9 +310,13 @@ input.inner-icons {
     margin-bottom: 0.5em;
     position: relative;
     width: 100%;
-    input, select, textarea {
+
+    input,
+    select,
+    textarea {
         padding: 0.465em 0.563em;
     }
+
     input.hasDatepicker {
         padding-right: 2em;
     }
@@ -246,6 +325,7 @@ input.inner-icons {
     input[type="radio"] {
         width: auto;
     }
+
     label {
         display: inline;
     }
@@ -281,8 +361,10 @@ input.inner-icons {
         }
 
         header {
+
             & div {
                 width: 50%;
+
                 & h1 {
                     width: 50%;
                 }
@@ -307,17 +389,21 @@ input.inner-icons {
 .element-type-filter-form form {
     background-color: $gray-light-3;
     padding: $space;
+
     .content-element {
         padding: 0;
     }
 }
 .group-time {
-    span, abbr {
+    span,
+    abbr {
         margin-right: 0.5em;
     }
+
     span:last-child {
         margin-right: 0;
     }
+
     select {
         width: auto;
         appearance: none;
@@ -326,23 +412,28 @@ input.inner-icons {
         background: $white;
         padding-left: 0.7em;
         padding-right: 1.65em;
+
         &:-ms-expand {
             display: none;
         }
+
         &:-moz-focusring {
             color: transparent;
             text-shadow: 0 0 0 #000;
         }
     }
+
     option {
         padding: 0 0.7em;
     }
+
     .wrap-select {
         position:relative;
         background-color:$white;
         display:inline-block;
         @include border-radius(0.25em);
         border: 1px solid $gray-med-2;
+
         select {
             border:none;
             background-color:transparent;
@@ -350,6 +441,7 @@ input.inner-icons {
             width:100%;
             height:100%;
         }
+
         &.arrow {
             &:after {
                 font-family: "keolis-icons";
@@ -364,8 +456,8 @@ input.inner-icons {
         }
     }
 }
- @media all and (max-width: $bp-small-1) {
-    .fixed-field-date {
-        display: block;
-    }
- }
+@media all and (max-width: $bp-small-1) {
+   .fixed-field-date {
+       display: block;
+   }
+}
