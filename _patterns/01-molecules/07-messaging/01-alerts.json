@@ -1,0 +1,36 @@
+{
+    "alerts": [
+        {
+            "title": null,
+            "type": "notice",
+            "icon": true,
+            "messages": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis cursus nulla. Donec varius et lorem eget molestie. Curabitur lacus nulla, posuere molestie commodo a, suscipit non mi. Duis sed tempor est. Proin at rutrum libero. Integer vehicula mi congue lobortis ultrices. Etiam vulputate sapien ac felis accumsan varius. Quisque congue leo eget orci rhoncus tempor."
+            ]
+        },
+        {
+            "title": null,
+            "type": "warning",
+            "icon": true,
+            "messages": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis cursus nulla. Donec varius et lorem eget molestie. Curabitur lacus nulla, posuere molestie commodo a, suscipit non mi. Duis sed tempor est. Proin at rutrum libero. Integer vehicula mi congue lobortis ultrices. Etiam vulputate sapien ac felis accumsan varius. Quisque congue leo eget orci rhoncus tempor."
+            ]
+        },
+        {
+            "title": null,
+            "type": "error",
+            "icon": true,
+            "messages": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis cursus nulla. Donec varius et lorem eget molestie. Curabitur lacus nulla, posuere molestie commodo a, suscipit non mi. Duis sed tempor est. Proin at rutrum libero. Integer vehicula mi congue lobortis ultrices. Etiam vulputate sapien ac felis accumsan varius. Quisque congue leo eget orci rhoncus tempor."
+            ]
+        },
+        {
+            "title": null,
+            "type": "success",
+            "icon": true,
+            "messages": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis cursus nulla. Donec varius et lorem eget molestie. Curabitur lacus nulla, posuere molestie commodo a, suscipit non mi. Duis sed tempor est. Proin at rutrum libero. Integer vehicula mi congue lobortis ultrices. Etiam vulputate sapien ac felis accumsan varius. Quisque congue leo eget orci rhoncus tempor."
+            ]
+        }
+    ]
+}
