@@ -407,8 +407,7 @@ input.inner-icons {
     select {
         width: auto;
         appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
+        @include appearance(none);
         background: $white;
         padding-left: 0.7em;
         padding-right: 1.65em;
