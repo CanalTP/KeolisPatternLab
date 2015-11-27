@@ -1,0 +1,43 @@
+.summary-from,
+.summary-to{
+    width: 100%;
+    float: left;
+
+    .favoris {
+        float: right;
+        [class^="keolis-icon-"],
+        [class*="keolis-icon-"] {
+            @include font-size(1.25);
+        }
+    }
+}
+.search_datetime {
+    & > p {
+       float: left;
+       margin-right: $space;
+
+       &:last-child {
+           margin-right: 0;
+       }
+    }
+}
+.summary-label {
+    float: left;
+    width: 88%;
+    word-wrap: break-word;
+
+    strong {
+        padding-right: $pad;
+    }
+}
+.search-summary {
+    .field-container {
+        margin-bottom: 0;
+        padding: $pad 0;
+    }
+    .journey-reverse {
+        a {
+            top: 1.25em;
+        }
+    }
+}
