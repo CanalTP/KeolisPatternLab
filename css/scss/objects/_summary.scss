@@ -23,6 +23,8 @@
 }
 .summary-label {
     float: left;
+    width: 88%;
+    word-wrap: break-word;
 
     strong {
         padding-right: $pad;

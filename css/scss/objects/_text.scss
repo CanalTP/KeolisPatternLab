@@ -46,3 +46,6 @@ strong {
 .ctp-container p {
     margin-bottom: $space;
 }
+.small-text {
+   @include font-size(0.875);
+}
