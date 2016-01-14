@@ -1,0 +1,28 @@
+.breadcrumb {
+    background-color: $color-second;
+    font-size: 0.875em;
+    color: $white;
+    margin-bottom: $space;
+
+    @media (max-width: $bp-med-2) {
+        display: none;
+    }
+
+    ul {
+        padding: $pad-half $pad;
+
+        li {
+            display: inline-block;
+
+            a {
+                text-decoration: underline;
+                color: $white;
+            }
+
+            &:nth-child(1n+3):before {
+                content: "/";
+                padding-left: $pad-quarter;
+            }
+        }
+    }
+}
