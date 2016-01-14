@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'keolis-icons';
-	src:url('fonts/keolis-icons.eot?scynei');
-	src:url('fonts/keolis-icons.eot?scynei#iefix') format('embedded-opentype'),
-		url('fonts/keolis-icons.ttf?scynei') format('truetype'),
-		url('fonts/keolis-icons.woff?scynei') format('woff'),
-		url('fonts/keolis-icons.svg?scynei#keolis-icons') format('svg');
+	src:url('fonts/keolis-icons.eot?zde6ok');
+	src:url('fonts/keolis-icons.eot?zde6ok#iefix') format('embedded-opentype'),
+		url('fonts/keolis-icons.ttf?zde6ok') format('truetype'),
+		url('fonts/keolis-icons.woff?zde6ok') format('woff'),
+		url('fonts/keolis-icons.svg?zde6ok#keolis-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -24,84 +24,132 @@
 }
 
 .keolis-icon-traffic_cone:before {
-	content: "\e600";
+    content: "\e600";
 }
 .keolis-icon-warning_sign:before {
-	content: "\e601";
+    content: "\e601";
 }
 .keolis-icon-warning_alert:before {
-	content: "\e602";
+    content: "\e602";
 }
 .keolis-icon-mode_car:before {
-	content: "\e603";
+    content: "\e603";
 }
 .keolis-icon-mode_bike:before {
-	content: "\e604";
+    content: "\e604";
 }
 .keolis-icon-mode_bus:before {
-	content: "\e605";
+    content: "\e605";
 }
 .keolis-icon-mode_subway:before {
-	content: "\e606";
+    content: "\e606";
 }
 .keolis-icon-mode_tramway:before {
-	content: "\e607";
+    content: "\e607";
 }
 .keolis-icon-mode_train:before {
-	content: "\e608";
+    content: "\e608";
 }
 .keolis-icon-mode_walk:before {
-	content: "\e609";
+    content: "\e609";
 }
 .keolis-icon-wheelchair:before {
-	content: "\e60a";
+    content: "\e60a";
 }
 .keolis-icon-equipment_wheelchair:before {
-	content: "\e60b";
+    content: "\e60b";
 }
 .keolis-icon-parking:before {
-	content: "\e60c";
+    content: "\e60c";
 }
 .keolis-icon-hambuger:before {
-	content: "\e60d";
+    content: "\e60d";
 }
 .keolis-icon-geoloc:before {
-	content: "\e60e";
+    content: "\e60e";
 }
 .keolis-icon-location:before {
-	content: "\e60f";
+    content: "\e60f";
 }
 .keolis-icon-arrow-right:before {
-	content: "\e610";
+    content: "\e610";
 }
 .keolis-icon-reverse:before {
-	content: "\e611";
-}
-.keolis-icon-facebook:before {
-	content: "\e612";
-}
-.keolis-icon-twitter:before {
-	content: "\e613";
+    content: "\e611";
 }
 .keolis-icon-calendar:before {
-	content: "\e614";
+    content: "\e614";
 }
 .keolis-icon-print:before {
-	content: "\e615";
+    content: "\e615";
 }
 .keolis-icon-download:before {
-	content: "\e616";
+    content: "\e616";
 }
 .keolis-icon-mail:before {
-	content: "\e617";
+    content: "\e617";
 }
 .keolis-icon-star:before {
-	content: "\e618";
+    content: "\e618";
 }
 .keolis-icon-star_empty:before {
-	content: "\e619";
+    content: "\e619";
 }
-.keolis-icon-reverse-2:before {
-	content: "\e61a";
+.keolis-icon-cog:before {
+    content: "\e61a";
+}
+.keolis-icon-login:before {
+    content: "\e61b";
+}
+.keolis-icon-logout:before {
+    content: "\e61c";
+}
+.keolis-icon-clock:before {
+    content: "\e61d";
+}
+.keolis-icon-facebook:before {
+    content: "\e612";
+}
+.keolis-icon-twitter:before {
+    content: "\e613";
+}
+.keolis-icon-youtube:before {
+    content: "\e900";
+}
+.keolis-icon-viadeo:before {
+    content: "\e901";
+}
+.keolis-icon-in:before {
+    content: "\e61f";
+}
+.keolis-icon-yahoo:before {
+    content: "\e61e";
+}
+.keolis-icon-outlook:before {
+    content: "\e620";
+}
+.keolis-icon-google_plus:before {
+    content: "\e621";
+}
+.keolis-icon-google:before {
+    content: "\e622";
+}
+.keolis-icon-detour:before {
+    content: "\e623";
+}
+.keolis-icon-rss:before {
+    content: "\e624";
+}
+.keolis-icon-pdf:before {
+    content: "\e625";
+}
+.keolis-icon-fast_walker:before {
+    content: "\e626";
+}
+.keolis-icon-standard:before {
+    content: "\e627";
+}
+.keolis-icon-slow_walker:before {
+    content: "\e628";
 }
 
