@@ -50,4 +50,64 @@
             }
         }
     }
+    .element-style-default {
+        h1.article-title {
+            font-family: 'Museo';
+            @include font-size(1.75);
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0.25em 0 0.25em 0;
+            color: $color-second;
+        }
+        .text {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1.17em;
+            }
+            h4 {
+                font-size: 1em;
+            }
+            h5 {
+                font-size: 0.83em;
+            }
+            h6 {
+                font-size: 0.67em;
+            }
+            a {
+                text-decoration: underline;
+                color: $color-second;
+            }
+            #{headings()} {
+                font-weight: bolder;
+                margin-bottom: $space;
+                margin-top: $space;
+                color: $gray-dark;
+            }
+            ul {
+                list-style: none;
+                ul {
+                    padding-left: 2em;
+                }
+            }
+            li:before {
+                content: "•";
+                padding-right: 0.75em;
+                font-size: 2em;
+                color: black;
+            }
+            p, ul, ol {
+                margin-bottom: 0;
+                line-height: 1.25em;
+            }
+        }
+        .publication-date {
+            @include font-size(0.8);
+            color: $color-second;
+        }
+    }
 }
