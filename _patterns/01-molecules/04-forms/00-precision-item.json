@@ -5,7 +5,12 @@
     },
     "items": [
         {
-            "type": "stop_area",
+            "legend": {
+                "type": "stop_area",
+                "attributes": {
+                    "class": "subtitle-radio-list"
+                }
+            },
             "items": [
                 {
                     "label": "Gare (Rennes)",
@@ -76,7 +81,12 @@
             }
         },
         {
-            "type": "address",
+            "legend": {
+                "type": "address",
+                "attributes": {
+                    "class": "subtitle-radio-list"
+                }
+            },
             "items": [
                 {
                     "label": "Rennes (35000)",

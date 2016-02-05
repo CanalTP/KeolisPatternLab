@@ -2,7 +2,7 @@
     {% set data = {'state': state|default(''), 'required': required|default(false), 'label': label, 'label_position': 'after'} %}
     {% if type|default(null) is not empty %}
         {% if type == 'autocomplete' %}
-            {% include 'atoms-link-autocomplete' with data|merge({'attributes': {'id': attributes.id}}) only %}
+            {% include 'atoms-link' with data|merge({'attributes': {'id': attributes.id}}) only %}
         {% else %}
             {% include 'atoms-input' with data|merge({'attributes': {'type': type|default(null), 'id': attributes.id, 'name': attributes.name}}) only %}
         {% endif %}

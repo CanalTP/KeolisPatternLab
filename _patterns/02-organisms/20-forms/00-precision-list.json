@@ -6,7 +6,12 @@
         },
         "items": [
             {
-                "type": "stop_area",
+                "legend": {
+                    "type": "stop_area",
+                    "attributes": {
+                        "class": "subtitle-radio-list title-icon stop_area"
+                    }
+                },
                 "items": [
                     {
                         "label": "Gare (Rennes)",
@@ -77,7 +82,12 @@
                 }
             },
             {
-                "type": "address",
+                "legend": {
+                    "type": "address",
+                    "attributes": {
+                        "class": "subtitle-radio-list title-icon address"
+                    }
+                },
                 "items": [
                     {
                         "label": "Rennes (35000)",
@@ -111,7 +121,12 @@
         },
         "items": [
             {
-                "type": "stop_area",
+                "legend": {
+                    "type": "stop_area",
+                    "attributes": {
+                        "class": "subtitle-radio-list title-icon stop_area"
+                    }
+                },
                 "items": [
                     {
                         "label": "Gare (Rennes)",
@@ -182,7 +197,12 @@
                 }
             },
             {
-                "type": "address",
+                "legend": {
+                    "type": "address",
+                    "attributes": {
+                        "class": "subtitle-radio-list title-icon address"
+                    }
+                },
                 "items": [
                     {
                         "label": "Rennes (35000)",

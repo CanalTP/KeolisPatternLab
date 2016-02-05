@@ -1,12 +1,15 @@
 require('jquery-ui');
 require('00-atoms/03-lists/00-item.twig');
-require('00-atoms/02-text/08-link-autocomplete.twig');
+require('00-atoms/02-text/07-link.twig');
+require('00-atoms/05-forms/09-legend.twig');
 var Backbone = require('backbone'),
     _ = require('underscore'),
     jQuery = require('jquery'),
     Places = require('../collections/places'),
+    Translator = require('kisio/translator'),
     InputIconable = require('kisio/input-iconable'),
-    itemTemplate = require('00-atoms/03-lists/02-item-autocomplete.twig');
+    itemTemplate = require('00-atoms/03-lists/02-item-autocomplete.twig'),
+    legendTemplate = require('00-atoms/03-lists/03-item-legend.twig');
 
 /**
  * Fix the resizeMenu method that needs a fix width
@@ -115,7 +118,7 @@ var AutocompleteView = Backbone.View.extend({
             search: function() {
                 self.setLoading(true);
             },
-            open: function() {resizeInput
+            open: function() {
                 self.setLoading(false);
                 self.$el.addClass(self.parameters.openedClassName);
             },
@@ -238,6 +241,12 @@ var AutocompleteView = Backbone.View.extend({
     renderItem: function(list, item) {
         var html = itemTemplate.render(item);
         var listItem = jQuery(html);
+        if (!list.find('legend:last-child').size() || !list.find('legend:last-child').is('.'+item.type)) {
+            var legendLabel = Translator.trans('places.autocomplete.title.'+item.type.toLowerCase()).replace('%value%', '');
+            var legendHtml = legendTemplate.render({'label': legendLabel, 'type': item.type, 'attributes': {'class': 'subtitle-radio-list'}});
+            var legendItem = jQuery(legendHtml);
+            legendItem.appendTo(list);
+        }
 
         return listItem.appendTo(list);
     },

@@ -5,7 +5,7 @@
     {% for group in items %}
         <fieldset>
             {% if group is defined and group is not empty %}
-                <legend class="subtitle-radio-list title-icon {{ group.type }}">{{ ('places.type.' ~ group.type)|trans }}</legend>
+                {% include 'atoms-legend' with group.legend|merge({'label': ('places.autocomplete.title.' ~ group.legend.type)|trans('messages', {'%value%': ''})}) only %}
             {% endif %}
             {% include 'atoms-list-standard' with {'items': group.items, 'attributes': group.attributes} only %}
         </fieldset>

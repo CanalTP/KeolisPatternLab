@@ -1,0 +1,3 @@
+<li {% for key, value in attributes|default([]) %} {{ key }}="{{ value }}"{% endfor %}>
+    {% include 'atoms-legend' with {'type': type, 'label': label, 'attributes': {'class': 'title-icon ' ~ type}} only %}
+</li>
