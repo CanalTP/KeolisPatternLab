@@ -1,0 +1,43 @@
+{
+    "items": [
+        {
+            "label": "Element 1",
+            "type": "radio",
+            "attributes": {
+                "id": "list-item-1",
+                "name": "list-items"
+            }
+        },{
+            "label": "Element 2",
+            "type": "radio",
+            "attributes": {
+                "id": "list-item-2",
+                "name": "list-items"
+            }
+        },{
+            "label": "Element 3",
+            "type": "radio",
+            "attributes": {
+                "id": "list-item-3",
+                "name": "list-items"
+            }
+        },{
+            "label": "Element 4",
+            "type": "radio",
+            "attributes": {
+                "id": "list-item-4",
+                "name": "list-items"
+            }
+        },{
+            "label": "Element 5",
+            "type": "radio",
+            "attributes": {
+                "id": "list-item-5",
+                "name": "list-items"
+            }
+        }
+    ],
+    "attributes": {
+        "class": "radio-list"
+    }
+}

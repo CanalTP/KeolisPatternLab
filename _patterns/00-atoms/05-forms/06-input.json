@@ -1,0 +1,11 @@
+{
+    "label": "Text Input",
+    "state": "",
+    "attributes": {
+        "id": "input-text",
+        "type": "text",
+        "value": "",
+        "placeholder": "Text Input"
+    },
+    "required": true
+}

@@ -1,0 +1,14 @@
+<li {% for key, value in attributes|default([]) %}{% if key != 'id' and key != 'name' %} {{ key }}="{{ value }}"{% endif %}{% endfor %}>
+    {% set data = {'state': state|default(''), 'required': required|default(false), 'label': label, 'label_position': 'after'} %}
+    {% if type|default(null) is not empty %}
+        {% if type == 'autocomplete' %}
+            {% include 'atoms-link-autocomplete' with data|merge({'attributes': {'id': attributes.id}}) only %}
+        {% else %}
+            {% include 'atoms-input' with data|merge({'attributes': {'type': type|default(null), 'id': attributes.id, 'name': attributes.name}}) only %}
+        {% endif %}
+    {% elseif attributes.href is defined and attributes.href is not empty %}
+        {% include 'atoms-link' with data|merge({'attributes': {'id': attributes.id, 'href': attributes.href|default('#')}}) only %}
+    {% else %}
+        {% include 'atoms-label' with data|merge({'attributes': {'id': attributes.id}}) only %}
+    {% endif %}
+</li>

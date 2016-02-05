@@ -1,0 +1,13 @@
+<div class="group-list">
+    {% if header.label is defined and header.label is not empty %}
+        <h3 class="title-radio-list" title="{{ header.title }}">{{ header.label }}</h3>
+    {% endif %}
+    {% for group in items %}
+        <fieldset>
+            {% if group is defined and group is not empty %}
+                <legend class="subtitle-radio-list title-icon {{ group.type }}">{{ ('places.type.' ~ group.type)|trans }}</legend>
+            {% endif %}
+            {% include 'atoms-list-standard' with {'items': group.items, 'attributes': group.attributes} only %}
+        </fieldset>
+    {% endfor %}
+</div>

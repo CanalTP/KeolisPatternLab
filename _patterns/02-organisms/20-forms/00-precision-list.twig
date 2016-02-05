@@ -1,0 +1,15 @@
+{% if from is defined or to is defined %}
+    <div class="col-4 col-md-6">
+        <div class="st0">
+            <form {% for key, value in attributes|default([]) %} {{ key }}="{{ value }}"{% endfor %}>
+                {% if from is defined %}
+                    {% include 'molecules-precision-item' with from only %}
+                {% endif %}
+                {% if to is defined %}
+                    {% include 'molecules-precision-item' with to only %}
+                {% endif %}
+                {% include 'atoms-button-standard' with {'label': 'Valider', 'attributes': {'type':'submit', 'class':'btn secondary full-width', 'title':'Valider le formulaire'}} only %}
+            </form>
+        </div>
+    </div>
+{% endif %}

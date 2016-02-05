@@ -1,0 +1,102 @@
+<div class="col-4 col-md-6">
+    <form id="" class="st0" action="#" name="search">
+        <fieldset class="journey-specifics">
+            <legend class="hide">Vos critères de recherche</legend>
+            <div class="clearfix">
+                <!-- Btn inverser -->
+                <div class="journey-reverse">
+                    <a class="link-reverse" href="#" title="Inverser le départ et l'arrivée">
+                        <span class="sr-only">Inverser le départ et l'arrivée</span>
+                        <span class="keolis-icon-reverse"></span>
+                    </a>
+                </div>
+                <div class="clearfix group-field-container icon-left">
+                    <!-- Départ -->
+                    <div class="field-container clearfix">
+                        <p class="error">a crappy spray gun from South Miami</p>
+                        <label class="hide" for="text">Text Input <abbr title="Required">*</abbr></label>
+                        <div class="icon-inside-input left">
+                            <span class="inner-iput-text" title="Partir Depuis ">De</span>
+                            <input id="text" type="text" placeholder="Saisir un arrêt, une adresse, une communue" class="inner-icons has-error">
+                            <ul class="list-input-icons">
+                                <li><a title="Se géolocaliser" href="#" class="" id="geolocButton">
+                                    <span class="keolis-icon-geoloc"></span>
+                                    <span class="sr-only">Se géolocaliser</span>
+                                </a></li>
+                                <li><a title="Ajouter en favoris" href="#" class="input-icons pos-right" id="favoris">
+                                    <span class="keolis-icon-star-empty"></span>
+                                    <span class="sr-only">favoris</span>
+                                </a></li>
+                           </ul>
+                        </div>
+                    </div>
+                    <!-- arrivee -->
+                    <div class="field-container clearfix">
+                        <p class="error">a crappy spray gun from South Miami</p>
+                        <label class="hide" for="text">Text Input <abbr title="Required">*</abbr></label>
+                        <div class="icon-inside-input left">
+                            <span class="inner-iput-text" title="Arrivée vers ">Vers</span>
+                            <input id="text" type="text" placeholder="Saisir un arrêt, une adresse, une communue" class="inner-icons has-error">
+                            <ul class="list-input-icons">
+                                <li><a title="Ajouter en favoris" href="#" class="input-icons pos-right" id="favoris">
+                                    <span class="keolis-icon-star-empty"></span>
+                                    <span class="sr-only">favoris</span>
+                                </a></li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="search_datetime" class="search_datetime clearfix field-container">
+                <p class="error">a crappy spray gun from South Miami</p>
+                <div class="group-date clearfix">
+                    <input type="text" value="Mercredi 24 juin 2015" required="required" name="search[datetime][date]" id="search_datetime_date" class="hasDatepicker has-error">
+                    <ul class="list-input-icons">
+                        <li><button type="button" class="ui-datepicker-trigger input-icons pos-right" aria-haspopup="true" title="Ouvrir le calendrier">
+                            <span class="keolis-icon-calendar" title="Ouvrir le calendrier"></span>
+                            <span class="sr-only">Ouvrir le calendrier</span>
+                        </button></li>
+                    </ul>
+                </div>
+                <div class="group-time clearfix">
+                    <span class="wrap-select arrow">
+                        <select title="Sens horaire" name="search[datetime_represents]" id="search_datetime_represents">
+                            <option value="departure">Partir après</option>
+                            <option value="arrival">Arriver avant</option>
+                        </select>
+                    </span>
+                    <span class="fixed-field-date">
+                        <span class="wrap-select arrow">
+                            <select required="required" name="search[datetime][time][hour]" id="search_datetime_time_hour" title="Selectionnez l'heure">
+                                <option value="0">00</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="9">...</option>
+                                <option value="23">23</option>
+                            </select>
+                        </span>
+                        <abbr title="Heures">h</abbr>
+                        <span class="wrap-select arrow">
+                            <select required="required" name="search[datetime][time][minute]" id="search_datetime_time_minute" title="Selectionnez les minutes">
+                                <option value="0">00</option>
+                                <option value="5">05</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">...</option>
+                                <option value="55">55</option>
+                            </select>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            {% include 'organisms-checkbox-accordion' %}
+           <div class="groupe-btn">
+                <button type="button" class="btn secondary full-width" title="valider le formulaire">
+                     Rechercher
+                </button>
+           </div>
+        </fieldset>
+    </form>
+</div>

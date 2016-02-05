@@ -1,0 +1,6 @@
+<label
+    {% if id is defined and id is not empty %} for="{{ id }}"{% endif %}
+    {% if state is defined and state is not empty %} class="{{ state }}"{% endif %}>
+    {{ label }}
+    {% if required is defined and required %}<abbr title="Required">*</abbr>{% endif %}
+</label>

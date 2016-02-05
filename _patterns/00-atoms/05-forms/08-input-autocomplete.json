@@ -1,0 +1,15 @@
+{
+    "type": {
+        "label": "Autocomplete Input",
+        "state": "",
+        "attributes": {
+            "id": "input-autocomplete",
+            "type": "text",
+            "value": "",
+            "placeholder": "Type some letters to have a place autocompletion",
+            "class": "autocompletable",
+            "data-group": "default"
+        },
+        "required": true
+    }
+}

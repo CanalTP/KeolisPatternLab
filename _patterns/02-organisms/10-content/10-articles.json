@@ -1,5 +1,5 @@
 {
-    "articles-x1": [
+    "articlesx1": [
         {
             "Object": {
                 "fields": {
@@ -16,7 +16,7 @@
             }
         }
     ],
-    "articles-x2": [
+    "articlesx2": [
         {
             "Object": {
                 "fields": {
@@ -48,7 +48,7 @@
             }
         }
     ],
-    "articles-x3": [
+    "articlesx3": [
         {
             "Object": {
                 "fields": {
@@ -95,7 +95,7 @@
             }
         }
     ],
-    "articles-x4": [
+    "articlesx4": [
         {
             "Object": {
                 "fields": {

@@ -1,0 +1,9 @@
+{
+    "label": "Element de liste",
+    "type": null,
+    "attributes": {
+        "class": "radio-item odd",
+        "id": "list-item",
+        "name": "list-item"
+    }
+}

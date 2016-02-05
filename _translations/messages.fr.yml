@@ -1,0 +1,4 @@
+places:
+    type:
+        stop_area: "Arrêt"
+        address: "Adresse"

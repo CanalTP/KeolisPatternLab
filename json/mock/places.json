@@ -1,0 +1,179 @@
+{
+  "disruptions": [],
+  "links": [
+    {
+      "href": "http://navitia2-ws.ctp.dev.canaltp.fr/v1/coverage/jdr/stop_areas/{stop_area.id}",
+      "type": "stop_area",
+      "rel": "stop_areas",
+      "templated": true
+    }
+  ],
+  "places": [
+    {
+      "embedded_type": "administrative_region",
+      "quality": 90,
+      "administrative_region": {
+        "insee": "94080",
+        "name": "Vincennes",
+        "level": 8,
+        "coord": {
+          "lat": "48.84745",
+          "lon": "2.439671"
+        },
+        "label": "Vincennes (94300)",
+        "id": "admin:108346extern",
+        "zip_code": "94300"
+      },
+      "id": "admin:108346extern",
+      "name": "Vincennes (94300)"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "name": "Porte de Vincennes",
+        "links": [],
+        "coord": {
+          "lat": "48.847316",
+          "lon": "2.408136"
+        },
+        "label": "Porte de Vincennes (Paris)",
+        "administrative_regions": [
+          {
+            "insee": "75120",
+            "name": "20e Arrondissement",
+            "level": 9,
+            "coord": {
+              "lat": "48.865044",
+              "lon": "2.398929"
+            },
+            "label": "20e Arrondissement (75020)",
+            "id": "admin:9529extern",
+            "zip_code": "75020"
+          },
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": {
+              "lat": "48.856506",
+              "lon": "2.352133"
+            },
+            "label": "Paris (75001-75116)",
+            "id": "admin:7444extern",
+            "zip_code": "75001;75116"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:JDR:SA:PORTEdeVINCENNES"
+      },
+      "name": "Porte de Vincennes (Paris)",
+      "id": "stop_area:JDR:SA:PORTEdeVINCENNES"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 80,
+      "stop_area": {
+        "name": "Porte de Vincennes",
+        "links": [],
+        "coord": {
+          "lat": "48.847266",
+          "lon": "2.408883"
+        },
+        "label": "Porte de Vincennes (Paris)",
+        "administrative_regions": [
+          {
+            "insee": "75120",
+            "name": "20e Arrondissement",
+            "level": 9,
+            "coord": {
+              "lat": "48.865044",
+              "lon": "2.398929"
+            },
+            "label": "20e Arrondissement (75020)",
+            "id": "admin:9529extern",
+            "zip_code": "75020"
+          },
+          {
+            "insee": "75056",
+            "name": "Paris",
+            "level": 8,
+            "coord": {
+              "lat": "48.856506",
+              "lon": "2.352133"
+            },
+            "label": "Paris (75001-75116)",
+            "id": "admin:7444extern",
+            "zip_code": "75001;75116"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:JDR:SA:PTVIN"
+      },
+      "name": "Porte de Vincennes (Paris)",
+      "id": "stop_area:JDR:SA:PTVIN"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "name": "Bérault",
+        "links": [],
+        "coord": {
+          "lat": "48.845334",
+          "lon": "2.429239"
+        },
+        "label": "Bérault (Vincennes)",
+        "administrative_regions": [
+          {
+            "insee": "94080",
+            "name": "Vincennes",
+            "level": 8,
+            "coord": {
+              "lat": "48.84745",
+              "lon": "2.439671"
+            },
+            "label": "Vincennes (94300)",
+            "id": "admin:108346extern",
+            "zip_code": "94300"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:JDR:SA:BERAU"
+      },
+      "name": "Bérault (Vincennes)",
+      "id": "stop_area:JDR:SA:BERAU"
+    },
+    {
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "name": "Château de Vincennes",
+        "links": [],
+        "coord": {
+          "lat": "48.844536",
+          "lon": "2.43951"
+        },
+        "label": "Château de Vincennes (Vincennes)",
+        "administrative_regions": [
+          {
+            "insee": "94080",
+            "name": "Vincennes",
+            "level": 8,
+            "coord": {
+              "lat": "48.84745",
+              "lon": "2.439671"
+            },
+            "label": "Vincennes (94300)",
+            "id": "admin:108346extern",
+            "zip_code": "94300"
+          }
+        ],
+        "timezone": "Europe/Paris",
+        "id": "stop_area:JDR:SA:CHVIN"
+      },
+      "name": "Château de Vincennes (Vincennes)",
+      "id": "stop_area:JDR:SA:CHVIN"
+    }
+  ]
+}

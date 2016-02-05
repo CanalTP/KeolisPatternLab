@@ -1,0 +1,8 @@
+{
+    "label": "Valider",
+    "attributes": {
+        "type": "submit",
+        "class": "btn secondary full-width",
+        "title": "Valider le formulaire"
+    }
+}
