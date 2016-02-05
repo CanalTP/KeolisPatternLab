@@ -1,3 +1,5 @@
 *.css
 /.sass-cache/
 node_modules
+js/main.min.js
+js/modules.min.js

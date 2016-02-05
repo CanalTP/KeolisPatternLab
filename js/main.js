@@ -1,4 +1,5 @@
 global.CanalTP = require('kisio/config');
+global.Translator = require('kisio/translator');
 var $ = require('jquery'),
     modules = require('./modules.js');
 

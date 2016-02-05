@@ -1,6 +1,9 @@
 var Yaml = require('yamljs');
 
 var Translator = {
+    prefix: '%',
+    suffix: '%',
+
     trans: function(id, parameters, domain, locale) {
         var domain = typeof domain !== 'undefined' ? domain : 'messages';
         var locale = typeof locale !== 'undefined' ? locale : 'fr';
@@ -22,7 +25,7 @@ var Translator = {
         if (typeof parameters === 'object') {
             var keys = Object.keys(parameters);
             keys.forEach(function(index) {
-                translation = translation.replace(index, parameters[index]);
+                translation = translation.replace(this.prefix + index + this.suffix, parameters[index]);
             });
         }
 

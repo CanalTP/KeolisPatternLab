@@ -196,12 +196,12 @@ option {
 
         &.radio-item {
             padding-left: 3em;
-        }
 
-        &:hover {
-            background-color: $color-main!important;
-            * {
-                color: $font-color-light!important;
+            &:hover {
+                background-color: $color-main!important;
+                * {
+                    color: $font-color-light!important;
+                }
             }
         }
     }

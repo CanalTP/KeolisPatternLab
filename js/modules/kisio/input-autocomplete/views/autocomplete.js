@@ -6,7 +6,6 @@ var Backbone = require('backbone'),
     _ = require('underscore'),
     jQuery = require('jquery'),
     Places = require('../collections/places'),
-    Translator = require('kisio/translator'),
     InputIconable = require('kisio/input-iconable'),
     itemTemplate = require('00-atoms/03-lists/02-item-autocomplete.twig'),
     legendTemplate = require('00-atoms/03-lists/03-item-legend.twig');
@@ -242,7 +241,7 @@ var AutocompleteView = Backbone.View.extend({
         var html = itemTemplate.render(item);
         var listItem = jQuery(html);
         if (!list.find('legend:last-child').size() || !list.find('legend:last-child').is('.'+item.type)) {
-            var legendLabel = Translator.trans('places.autocomplete.title.'+item.type.toLowerCase(), {'%value%': ''});
+            var legendLabel = Translator.trans('places.autocomplete.title.'+item.type.toLowerCase(), {'value': ''});
             var legendHtml = legendTemplate.render({'label': legendLabel, 'type': item.type, 'attributes': {'class': 'subtitle-radio-list'}});
             var legendItem = jQuery(legendHtml);
             legendItem.appendTo(list);
