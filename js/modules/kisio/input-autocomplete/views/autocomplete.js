@@ -242,7 +242,7 @@ var AutocompleteView = Backbone.View.extend({
         var html = itemTemplate.render(item);
         var listItem = jQuery(html);
         if (!list.find('legend:last-child').size() || !list.find('legend:last-child').is('.'+item.type)) {
-            var legendLabel = Translator.trans('places.autocomplete.title.'+item.type.toLowerCase()).replace('%value%', '');
+            var legendLabel = Translator.trans('places.autocomplete.title.'+item.type.toLowerCase(), {'%value%': ''});
             var legendHtml = legendTemplate.render({'label': legendLabel, 'type': item.type, 'attributes': {'class': 'subtitle-radio-list'}});
             var legendItem = jQuery(legendHtml);
             legendItem.appendTo(list);

@@ -1,8 +1,10 @@
 var Yaml = require('yamljs');
 
 var Translator = {
-    trans: function(id) {
-        var translations = Yaml.load('/translations/messages.fr.yml');
+    trans: function(id, parameters, domain, locale) {
+        var domain = typeof domain !== 'undefined' ? domain : 'messages';
+        var locale = typeof locale !== 'undefined' ? locale : 'fr';
+        var translations = Yaml.load('/translations/'+domain+'.'+locale+'.yml');
         var translation = id;
         var parts = id.split('.');
 
@@ -16,6 +18,13 @@ var Translator = {
                 translation = translations[part];
             }
         });
+
+        if (typeof parameters === 'object') {
+            var keys = Object.keys(parameters);
+            keys.forEach(function(index) {
+                translation = translation.replace(index, parameters[index]);
+            });
+        }
 
         return translation;
     }
