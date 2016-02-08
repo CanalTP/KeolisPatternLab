@@ -1,7 +1,7 @@
 <div class="page" id="page">
     {% include 'organisms-header' %}
 	<div class="main-container ctp-content" id="ctp-content">
-        {% if emergency is defined and emergency is not defined %}
+        {% if emergency is defined and emergency is not empty %}
             {%  include 'molecules-alert:error' %}
         {% endif %}
 	    <div class="main ctp-container wrapper clearfix">
