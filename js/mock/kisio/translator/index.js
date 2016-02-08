@@ -26,7 +26,7 @@ var Translator = {
             var keys = Object.keys(parameters);
             keys.forEach(function(index) {
                 translation = translation.replace(this.prefix + index + this.suffix, parameters[index]);
-            });
+            }, this);
         }
 
         return translation;
