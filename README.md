@@ -17,7 +17,7 @@ Keolis Patternlab
 - cd KeolisPatternLab
 - compass compile
 - npm install
-- npm run grunt-browserify
+- npm run browserify
 
 [1]: http://git-scm.com
 [2]: https://nodejs.org/en/download/package-manager/
