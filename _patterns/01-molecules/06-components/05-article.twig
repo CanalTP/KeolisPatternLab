@@ -1,0 +1,14 @@
+<div class="content-element element-type-article col-{{ customAttributes.width|default(4) }} row-{{ customAttributes.height|default(1) }}">
+    <div class="element-style-link element-style-table" style="background-image: url('{{Object.fields.image.uri}}');">
+        <a href="#" class="article-link {% if Object.fields.image.uri|default(null) is empty %}no-image{% endif %}" title="Lire la suite">
+            <div class="preface preface-default clearfix">
+                <h2 class="uppercase article-title"><strong>{{ Object.fields.title|default('Article #1') }}</strong></h2>
+                <div class="article-description text">{{ Object.fields.description|default('Lorem ipsum ...') }}</div>
+                <button class="btn btn-small only-icon right">
+                    <span class="keolis-icon-arrow-right"></span>
+                    <span class="sr-only">Lire la suite</span>
+                </button>
+            </div>
+        </a>
+    </div>
+</div>

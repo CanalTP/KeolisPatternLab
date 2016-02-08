@@ -1,0 +1,6 @@
+{
+    "label": "Arrêt",
+    "attributes": {
+        "class": "subtitle-radio-list title-icon stop_area"
+    }
+}

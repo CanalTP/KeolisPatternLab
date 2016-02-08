@@ -1,0 +1,70 @@
+{
+    "types": [
+        {
+            "label": "Text Input",
+            "state": "",
+            "attributes": {
+                "id": "input-1",
+                "type": "text",
+                "value": "",
+                "placeholder": "Text Input"
+            },
+            "required": true
+        },
+        {
+            "label": "Error Input",
+            "state": "error",
+            "attributes": {
+                "id": "input-2",
+                "type": "text",
+                "value": "",
+                "placeholder": "Error Input"
+            },
+            "required": true
+        },
+        {
+            "label": "Valid Input",
+            "state": "valid",
+            "attributes": {
+                "id": "input-3",
+                "type": "text",
+                "value": "",
+                "placeholder": "Valid Input"
+            },
+            "required": true
+        },
+        {
+            "label": "Type your Password",
+            "state": "",
+            "attributes": {
+                "id": "input-4",
+                "type": "password",
+                "value": "",
+                "placeholder": "Type your Password"
+            },
+            "required": true
+        },
+        {
+            "label": "Email address",
+            "state": "",
+            "attributes": {
+                "id": "input-5",
+                "type": "email",
+                "value": "",
+                "placeholder": "name@email.com"
+            },
+            "required": true
+        },
+        {
+            "label": "Number Input",
+            "state": "",
+            "attributes": {
+                "id": "input-6",
+                "type": "number",
+                "value": "",
+                "placeholder": "Enter a number"
+            },
+            "required": true
+        }
+    ]
+}

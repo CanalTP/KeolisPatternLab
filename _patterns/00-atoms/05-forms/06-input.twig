@@ -1,0 +1,20 @@
+<div class="field-container">
+    {% set dataLabel = {'id': attributes.id|default(null), 'state': state|default(null), 'required': required|default(false), 'label': label} %}
+    {% if label_position|default('before') == 'before' %}
+        {% include 'atoms-label' with dataLabel only %}
+    {% endif %}
+    {% set class = attributes.class|default('') %}
+    {% if state|default(null) is not empty %}
+        {% set class = class ~ ' is-' ~ state %}
+    {% endif %}
+    <input
+        {% if class is not empty %}class="{{ class }}"{% endif %}
+        {% for key, value in attributes %}
+            {% if key != 'class' %}
+                {{ key }}="{{ value }}"
+            {% endif %}
+        {% endfor %}>
+    {% if label_position|default('before') == 'after' %}
+        {% include 'atoms-label' with dataLabel only %}
+    {% endif %}
+</div>

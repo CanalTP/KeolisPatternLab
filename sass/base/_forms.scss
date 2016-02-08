@@ -1,0 +1,526 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+form {
+    & ol, & ul {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    & input {
+        padding : 0.465em 0.563em;
+    }
+
+    hr {
+        margin: 0 1em;
+    }
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    display: block;
+    padding-bottom: $space-half;
+    color: $gray-dark-2;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0 1px 0;
+}
+
+input, textarea, select {
+    width: 100%;
+    border: 1px solid $gray-med-2;
+    padding: $pad-half 0.65rem;
+    background-color: $white;
+    @include border-radius(0.25em);
+
+    &:active {
+        background-color: $white;
+    }
+
+    &:focus {
+        border-color: $color-second;
+    }
+  }
+
+
+input[type=text],
+input[type=search],
+input[type=url],
+input[type=number],
+textarea {
+    -webkit-appearance: none;
+}
+
+button, input[type="submit"] {
+    padding: $pad-half;
+    background: $gray-dark;
+    border: 1px solid $gray;
+    cursor: pointer;
+}
+
+input {
+    &[type="checkbox"], &input[type="radio"] {
+        width: auto;
+        margin-right: 0.3em;
+    }
+
+    &input[type="search"] {
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+
+    &input[type="search"]::-webkit-search-cancel-button,
+    &input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+    &.hasDatepicker {
+        margin: 0 0em 0.5em 0;
+        padding: 0.465em 0.563em;
+        float: left;
+    }
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    font-style: italic;
+}
+:-ms-input-placeholder {
+    font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-style: italic;
+}
+
+//Form Field Container
+.field-container {
+    margin-bottom: $space;
+}
+
+.inline-form {
+    fieldset, .inline-container {
+        position: relative;
+    }
+}
+
+/* Validation */
+.has-error, .is-error {
+    border-color: $error;
+}
+.is-valid {
+    border-color: $valid;
+}
+
+input,
+select,
+option {
+    color: $gray-dark;
+}
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+
+/* Search Form */
+.st0{
+    background-color: $gray-light-3;
+    padding: 1.5em 1em;
+}
+.search-field {
+    padding-right: 3em;
+}
+.inline-form .search-submit {
+    background: none;
+    padding: 0.78em 1em;
+    border: 0;
+    border-left: 1px solid $gray;
+    color: $gray;
+}
+.options {
+    legend {
+      margin-bottom: $space;
+    }
+}
+.checkox-list {
+    .checkbox-item {
+        float: left;
+        margin-right: 1em;
+    }
+    label {
+        display: inline;
+        cursor: pointer;
+    }
+    [class^="icon-"],
+    [class*=" icon-"] {
+        cursor: pointer;
+    }
+    [class^="keolis-icon-"],
+    [class*=" keolis-icon-"] {
+        font-size: $font-size-large;
+    }
+}
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.autocompletable {
+    &.autocompleted {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: none;
+    }
+}
+.autocomplete-list {
+    background-color: white;
+    border: 1px solid $gray-med-2;
+    margin: 0 1px;
+
+    li {
+        padding: $pad-half;
+        cursor: default;
+
+        &.radio-item {
+            padding-left: 3em;
+
+            &:hover {
+                background-color: $color-second!important;
+                * {
+                    color: $font-color-light!important;
+                }
+            }
+        }
+    }
+}
+.radio-list {
+    margin-bottom: $space;
+}
+.radio-item,
+.subtitle-radio-list {
+    list-style-type: none;
+}
+.radio-item {
+    padding: $pad;
+
+    input[type="radio"] {
+        width: auto;
+        visibility: hidden;
+        position: absolute;
+
+        &:checked + label:before {
+            box-shadow: inset 0 0 0 $color-second, inset 0 0 0 $color-second, inset 0 0 0 5px $color-second;
+            border: 1px solid $color-second;
+            background-color: $white;
+
+        }
+
+        & + label {
+            display: inline;
+            cursor: pointer;
+
+            &:before{
+                height: 18px;
+                width: 18px;
+                content: " ";
+                display: inline-block;
+                vertical-align: sub;
+                transition: 0.3s;
+                border: 1px solid $gray-med;
+                margin-right: $space;
+                @include border-radius(50%);
+            }
+        }
+    }
+    .field-container {
+        margin-bottom: 0;
+    }
+    label {
+        padding-bottom: 0;
+    }
+}
+.group-list {
+    background-color: $white;
+    border: 1px solid $gray-med-2;
+    @include border-radius(0.25em 0.25em 0 0);
+    margin-bottom: 1em;
+}
+.title-radio-list {
+    border-bottom: 1px solid $gray-med-2;
+    padding: $pad;
+    text-transform: uppercase;
+    font-family: $font-bold;
+}
+.subtitle-radio-list {
+    padding: $pad;
+    font-family: $font-bold;
+
+    &.title-icon,
+    .title-icon {
+        background-position: 0 46%;
+        padding-left: 2.25em;
+    }
+
+    &.title-icon {
+        margin-left: 1em;
+    }
+}
+.field-container {
+    &.autocomplete,
+    &.btn-container {
+        float: left;
+    }
+    @media all and (min-width: $bp-large-2) {
+        &.autocomplete {
+            width: 45%;
+            margin-right: 2em;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.group-field-container {
+    &.icon-left {
+        margin-left: 3em;
+
+        @media all and (min-width: $bp-med) {
+            margin-left: 4em;
+        }
+    }
+}
+.field-container,
+.group-field-container {
+    abbr {
+        text-decoration: none;
+    }
+}
+  /***** text input with icon ***/
+input.inner-icons {
+    padding: 0.5em 4em 0.5em 3.5em;
+}
+.inner-iput-text {
+    position: absolute;
+    left: 1em;
+    top: 0.45em;
+    font-family: $font-bold;
+}
+.icon-clear {
+    line-height: 1em;
+    display: inline-block;
+}
+
+.icon-inside-input {
+    position: relative;
+    width: 100%;
+}
+.iconable-group {
+    li {
+        display: inline;
+        float: left;
+        margin-right: 0.5em;
+
+        &:last-child {
+            margin-right: 0em;
+        }
+    }
+}
+.input-iconable {
+    position: relative;
+
+    .input-icons {
+        position: absolute;
+        right: 0;
+        top: 0.5em;
+        padding: 0 0.5em;
+        cursor: pointer;
+
+        .icon_clear {
+            color: $gray-dark;
+        }
+    }
+}
+.list-input-icons {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    li {
+        float: left;
+        padding: 0.25em;
+
+        span, a {
+            vertical-align: middle;
+            color: $color-second;
+        }
+    }
+}
+.group-date {
+    margin-bottom: 0.5em;
+    position: relative;
+    width: 100%;
+
+    input,
+    select,
+    textarea {
+        padding: 0.465em 0.563em;
+    }
+
+    input.hasDatepicker {
+        padding-right: 2em;
+    }
+}
+.radio_fields {
+    input[type="radio"] {
+        width: auto;
+    }
+
+    label {
+        display: inline;
+    }
+}
+
+/* Contact Form */
+
+.contact-form {
+    padding: 1em 0 3em;
+    background-color: $gray-light-3;
+
+    & form {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    & header h1 {
+        margin: 1em auto;
+    }
+
+    & .field-container {
+        margin: 1.4em  auto 0;
+        text-align: center;
+
+        & label {
+            text-align: left;
+        }
+    }
+
+    @media all and (min-width: $bp-med) {
+        form {
+            padding: 0;
+        }
+
+        header {
+
+            & div {
+                width: 50%;
+
+                & h1 {
+                    width: 50%;
+                }
+            }
+        }
+
+        .split {
+            width: 50%;
+            float: left;
+
+            &.bd-left {
+                border-left: 1px solid $gray-med-2;
+                padding-bottom: 2em;
+            }
+        }
+
+        .field-container {
+            width: 50%;
+        }
+    }
+}
+.element-type-filter-form form {
+    background-color: $gray-light-3;
+    padding: $space;
+
+    .content-element {
+        padding: 0;
+    }
+}
+.group-time {
+    span,
+    abbr {
+        margin-right: 0.5em;
+    }
+
+    span:last-child {
+        margin-right: 0;
+    }
+
+    select {
+        width: auto;
+        appearance: none;
+        @include appearance(none);
+        background: $white;
+        padding-left: 0.7em;
+        padding-right: 1.65em;
+
+        &:-ms-expand {
+            display: none;
+        }
+
+        &:-moz-focusring {
+            color: transparent;
+            text-shadow: 0 0 0 #000;
+        }
+    }
+
+    option {
+        padding: 0 0.7em;
+    }
+
+    .wrap-select {
+        position:relative;
+        background-color:$white;
+        display:inline-block;
+        @include border-radius(0.25em);
+        border: 1px solid $gray-med-2;
+
+        select {
+            border:none;
+            background-color:transparent;
+            color:inherit;
+            width:100%;
+            height:100%;
+        }
+
+        &.arrow {
+            &:after {
+                font-family: "keolis-icons";
+                content: $icon-arrow-right;
+                color: $color-second;
+                @include transform(rotate(90deg));
+                pointer-events: none;
+                position:absolute;
+                top:0.5em;
+                right: 0.5em;
+            }
+        }
+    }
+}
+@media all and (max-width: $bp-small-1) {
+   .fixed-field-date {
+       display: block;
+   }
+}

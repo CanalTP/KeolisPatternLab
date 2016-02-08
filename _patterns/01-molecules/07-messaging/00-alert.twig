@@ -1,0 +1,10 @@
+<div class="flash-message {% if type|default(null) is not empty %}flash-{{ type }}{% endif %} {% if icon is not defined %}flash-icon-tick{% endif %}">
+    {% if title|default('') is not empty %}
+        <p class="flash-title uppercase">{{ title }}</p>
+    {% endif %}
+    <ul>
+        <li class="last">
+            {{ messages.O|default('Default message...') }}
+        </li>
+    </ul>
+</div>

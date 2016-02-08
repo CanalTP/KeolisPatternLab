@@ -1,0 +1,7 @@
+{
+    "label": "Arrêt",
+    "type": "stop_area",
+    "attributes": {
+        "class": "odd subtitle-radio-list"
+    }
+}

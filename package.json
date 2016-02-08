@@ -1,0 +1,35 @@
+{
+  "name": "keolis-pattern-lab",
+  "version": "0.0.1",
+  "author": "Vincent Catillon",
+  "description": "Pattern Lab is a collection of tools to help you create atomic design systems.",
+  "dependencies": {
+    "backbone": "^1.2.3",
+    "jquery": "^2.2.0",
+    "jquery-ui": "^1.10.5",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "browserify": "latest",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.1",
+    "grunt-cli": "^0.1.13",
+    "through2": "^0.6.3",
+    "twig": "^0.8.7",
+    "twigify-patternlab": "0.0.3",
+    "watchify": "latest",
+    "yamljs": "^0.2.4"
+  },
+  "scripts": {
+    "browserify": "./node_modules/grunt-cli/bin/grunt"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CanalTP/KeolisPatternLab.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CanalTP/KeolisPatternLab/issues"
+  }
+}

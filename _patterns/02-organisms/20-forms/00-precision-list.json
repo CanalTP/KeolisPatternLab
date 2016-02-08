@@ -1,0 +1,237 @@
+{
+    "from": {
+        "header": {
+            "label": "De",
+            "title": "Liste de départ"
+        },
+        "items": [
+            {
+                "legend": {
+                    "type": "stop_area",
+                    "attributes": {
+                        "class": "subtitle-radio-list title-icon stop_area"
+                    }
+                },
+                "items": [
+                    {
+                        "label": "Gare (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item odd",
+                            "id": "list-item-precision-from-1",
+                            "name": "list-item-precision-from"
+                        }
+                    },
+                    {
+                        "label": "Pré Gare (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item even",
+                            "id": "list-item-precision-from-2",
+                            "name": "list-item-precision-from"
+                        }
+                    },
+                    {
+                        "label": "Gare de la Poterie (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item odd",
+                            "id": "list-item-precision-from-3",
+                            "name": "list-item-precision-from"
+                        }
+                    },
+                    {
+                        "label": "Gare Sud Féval (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item even",
+                            "id": "list-item-precision-from-4",
+                            "name": "list-item-precision-from"
+                        }
+                    },
+                    {
+                        "label": "Ceson Gare (Ceson-Sévigné)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item odd",
+                            "id": "list-item-precision-from-5",
+                            "name": "list-item-precision-from"
+                        }
+                    },
+                    {
+                        "label": "Gare de Bruz (Bruz)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item even",
+                            "id": "list-item-precision-from-6",
+                            "name": "list-item-precision-from"
+                        }
+                    },
+                    {
+                        "label": "Gare de Pontchaillou (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item odd",
+                            "id": "list-item-precision-from-7",
+                            "name": "list-item-precision-from"
+                        }
+                    }
+                ],
+                "attributes": {
+                    "class": "radio-list"
+                }
+            },
+            {
+                "legend": {
+                    "type": "address",
+                    "attributes": {
+                        "class": "subtitle-radio-list title-icon address"
+                    }
+                },
+                "items": [
+                    {
+                        "label": "Rennes (35000)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item odd",
+                            "id": "list-item-precision-from-8",
+                            "name": "list-item-precision-from"
+                        }
+                    },
+                    {
+                        "label": "Centre ville (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item even",
+                            "id": "list-item-precision-from-9",
+                            "name": "list-item-precision-from"
+                        }
+                    }
+                ],
+                "attributes": {
+                    "class": "radio-list"
+                }
+            }
+        ]
+    },
+    "to": {
+        "header": {
+            "label": "Vers",
+            "title": "Liste d'arrivée"
+        },
+        "items": [
+            {
+                "legend": {
+                    "type": "stop_area",
+                    "attributes": {
+                        "class": "subtitle-radio-list title-icon stop_area"
+                    }
+                },
+                "items": [
+                    {
+                        "label": "Gare (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item odd",
+                            "id": "list-item-precision-to-1",
+                            "name": "list-item-precision-to"
+                        }
+                    },
+                    {
+                        "label": "Pré Gare (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item even",
+                            "id": "list-item-precision-to-2",
+                            "name": "list-item-precision-to"
+                        }
+                    },
+                    {
+                        "label": "Gare de la Poterie (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item odd",
+                            "id": "list-item-precision-to-3",
+                            "name": "list-item-precision-to"
+                        }
+                    },
+                    {
+                        "label": "Gare Sud Féval (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item even",
+                            "id": "list-item-precision-to-4",
+                            "name": "list-item-precision-to"
+                        }
+                    },
+                    {
+                        "label": "Ceson Gare (Ceson-Sévigné)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item odd",
+                            "id": "list-item-precision-to-5",
+                            "name": "list-item-precision-to"
+                        }
+                    },
+                    {
+                        "label": "Gare de Bruz (Bruz)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item even",
+                            "id": "list-item-precision-to-6",
+                            "name": "list-item-precision-to"
+                        }
+                    },
+                    {
+                        "label": "Gare de Pontchaillou (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item odd",
+                            "id": "list-item-precision-to-7",
+                            "name": "list-item-precision-to"
+                        }
+                    }
+                ],
+                "attributes": {
+                    "class": "radio-list"
+                }
+            },
+            {
+                "legend": {
+                    "type": "address",
+                    "attributes": {
+                        "class": "subtitle-radio-list title-icon address"
+                    }
+                },
+                "items": [
+                    {
+                        "label": "Rennes (35000)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item odd",
+                            "id": "list-item-precision-to-8",
+                            "name": "list-item-precision-to"
+                        }
+                    },
+                    {
+                        "label": "Centre ville (Rennes)",
+                        "type": "radio",
+                        "attributes": {
+                            "class": "radio-item even",
+                            "id": "list-item-precision-to-9",
+                            "name": "list-item-precision-to"
+                        }
+                    }
+                ],
+                "attributes": {
+                    "class": "radio-list"
+                }
+            }
+        ]
+    },
+    "attributes": {
+        "action": "#",
+        "method": "get",
+        "name": "precision-form"
+    }
+}

@@ -1,3 +1,4 @@
+var $ = require('jquery');
 
 (function(w){
 	var sw = document.body.clientWidth,

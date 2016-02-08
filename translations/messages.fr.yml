@@ -1,0 +1,8 @@
+places:
+    autocomplete:
+        title:
+            stop_point: Arrêt %value%
+            stop_area: Arrêt %value%
+            poi: Point d'intérêt %value%
+            address: Adresse %value%
+            administrative_region: Commune %value%

@@ -1,0 +1,9 @@
+<ul {% for key, value in attributes|default([]) %} {{ key }}="{{ value }}"{% endfor %}>
+    {% for item in items %}
+        {% set zebra = loop.index % 2 ? 'odd' : 'even' %}
+        {% set item_attributes = item.attributes|merge({'class': item.attributes.class|default('') ~ 'radio-item ' ~ zebra}) %}
+        {% block content %}
+            {% include 'atoms-item' with item|merge({'attributes': item_attributes}) only %}
+        {% endblock %}
+    {% endfor %}
+</ul>

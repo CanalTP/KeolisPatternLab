@@ -1,0 +1,5 @@
+<div class="flash-messages">
+    {% for alert in alerts %}
+        {% include 'molecules-alert' with alert only %}
+    {% endfor %}
+</div>
