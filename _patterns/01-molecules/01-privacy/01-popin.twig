@@ -1,0 +1,8 @@
+<div>
+    {% include 'atoms-heading' with {heading: 1, label: title} only %}
+    <div class="popin-content">
+        {% include 'atoms-paragraph' with {label: content} only %}
+        {% include 'atoms-button-standard' with {label: actions.accept, attributes: {id: 'cookies-eu-accept', class: 'btn secondary'}} only %}
+        {% include 'atoms-button-standard' with {label: actions.reject, attributes: {id: 'cookies-eu-reject', class: 'btn secondary'}} only %}
+    </div>
+</div>

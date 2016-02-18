@@ -1,0 +1,22 @@
+.cookies-eu-banner {
+    background-color: #EAEAEA;
+    padding: 0.875em 0;
+    display: none;
+
+    &.plugnplay {
+        padding-left: 0.875em;
+        padding-right: 0.875em;
+        margin-bottom: 0.875em;
+    }
+    .cookies-eu-hide {
+        float: right;
+        text-decoration: none;
+        position: initial!important;
+        background: url("#{$pattern-dir-img}jquery-ui/ui-icons_000000_256x240.png") no-repeat scroll -98px -131px;
+        font-size: 10px;
+        margin-top: 0.5em;
+        height: 1.2em;
+        width: 1.2em;
+        cursor: pointer;
+    }
+}

@@ -2,9 +2,9 @@
 
 use Symfony\Component\Yaml\Parser;
 
-$filter = new Twig_SimpleFilter('trans', function($key, $domain = 'messages', $replacements = array()) {
+$filter = new Twig_SimpleFilter('trans', function($key, $domain = 'messages', $replacements = array(), $locale = 'fr') {
 
-    $content = file_get_contents(__DIR__.'/../../translations/'.$domain.'.fr.yml');
+    $content = file_get_contents(__DIR__.'/../../translations/'.$domain.'.'.$locale.'.yml');
     $parser = new Parser();
     $translations = $parser->parse($content);
 

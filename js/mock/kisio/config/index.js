@@ -19,5 +19,10 @@ module.exports = {
             },
             group: 'stop_area_only'
         }
-    ]
+    ],
+    AnalyticsKeys: {
+        NMP: 'APP-123456789',
+        NMPCobranding: 'COBRANDING-123456789',
+        Project: 'PROJECT-123456789'
+    }
 };

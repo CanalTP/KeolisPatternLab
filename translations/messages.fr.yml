@@ -6,3 +6,18 @@ places:
             poi: Point d'intérêt %value%
             address: Adresse %value%
             administrative_region: Commune %value%
+privacy:
+    title:
+        index: Règles de confidentialité
+        cookies: Information relative aux cookies
+    description:
+        intro: En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour mesurer la fréquentation de nos services afin de les améliorer.
+        full: |
+            Un cookie est un fichier installé sur votre poste via le navigateur web que vous utilisez. Il nous permet d'agréger des données lorsque vous naviguez sur notre site.
+            Dans notre cas nous ne stockons que les statistiques sur votre utilisation du site. Ces statistiques sont anonymes et ne sont utilisées que dans le seul but d'analyser l'ergonomie et les fonctionnalités du site pour savoir si elles répondent pleinement à vos attentes et, le cas échéant, les améliorer.
+            En ce sens, acceptez-vous le dépôt et la lecture de cookies afin d'analyser votre navigation et nous permettre de mesurer l'audience de notre site internet ?
+    actions:
+        hide: Masquer
+        read_more: Pour en savoir plus et paramétrer vos cookies
+        accept: Oui
+        reject: Non

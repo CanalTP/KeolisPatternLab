@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "heading": "1",
+            "label": "Heading level 1"
+        },
+        {
+            "heading": "2",
+            "label": "Heading level 2"
+        },
+        {
+            "heading": "3",
+            "label": "Heading level 3"
+        },
+        {
+            "heading": "4",
+            "label": "Heading level 4"
+        },
+        {
+            "heading": "5",
+            "label": "Heading level 5"
+        },
+        {
+            "heading": "6",
+            "label": "Heading level 6"
+        }
+    ]
+}
