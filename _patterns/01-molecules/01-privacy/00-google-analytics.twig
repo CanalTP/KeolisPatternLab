@@ -1,0 +1,9 @@
+{% if enable_consent %}
+    <div id="cookies-eu-banner" class="cookies-eu-banner {{ layout_type }}">
+        <div class="ctp-container">
+            {% include 'atoms-link' with {label: '', attributes: {id: 'cookies-eu-hide', class: 'cookies-eu-hide', title: 'privacy.actions.hide'|trans }} only %}
+            {{ 'privacy.description.intro'|trans }}<br/>
+            {% include 'atoms-link' with {label: 'privacy.actions.read_more'|trans, attributes: {id: 'cookies-eu-more', href: path('privacy_cookies'), title: 'privacy.actions.read_more'|trans, class: 'highlight' }} only %}
+        </div>
+    </div>
+{% endif %}
