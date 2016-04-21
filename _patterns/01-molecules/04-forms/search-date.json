@@ -1,0 +1,12 @@
+{
+    "label": "Choix de la date",
+    "state": "",
+    "attributes": {
+        "id": "search_date",
+        "name": "search[datetime][date]",
+        "type": "date",
+        "class": "hasDatepicker",
+        "value": "Mercredi 24 juin 2016"
+    },
+    "required": true
+}

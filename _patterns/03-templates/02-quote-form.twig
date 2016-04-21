@@ -1,0 +1,30 @@
+<div class="quote-form clearfix">
+    <form method="get" name="quote">
+        <header class="header">
+            <div>
+                <h1>Nous envoyer un devis</h1>
+            </div>
+        </header>
+        <div class="split">
+            {% for item in applicant_items %}
+                {% include 'atoms-input' with item only %}
+            {% endfor %}
+        </div>
+        <div class="split bd-left">
+            {% for item in benefit_items %}
+                {% if item.attributes.type is defined and item.attributes.type == 'textarea' %}
+                    {% include 'atoms-textarea' with item only %}
+                {% elseif item.attributes.type is defined and item.attributes.type == 'date' %}
+                    {% include 'molecules-search-date' with item only %}
+                {% elseif item.attributes.type is defined and item.attributes.type == 'time' %}
+                    {% include 'molecules-search-time' with item only %}
+                {% else %}
+                    {% include 'atoms-input' with item only %}
+                {% endif %}
+            {% endfor %}
+            <div class="field-container">
+                {% include 'atoms-button-standard' with button only %}
+            </div>
+        </div>
+    </form>
+</div>

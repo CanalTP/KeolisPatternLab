@@ -1,0 +1,24 @@
+<div class="search_time clearfix field-container">
+    <div class="group-time clearfix">
+        {% set dataLabel = {'id': attributes.id|default(null),
+            'state': state|default(null),
+            'required': required|default(false),
+            'label': label,
+            'title': attributes.title}
+        %}
+        {% if label_position|default('before') == 'before' %}
+            {% include 'atoms-label' with dataLabel only %}
+        {% endif %}
+        <span class="fixed-field-date">
+            <span class="wrap-select arrow">
+                {% set optgroup = groups.0 %}
+                {% include 'atoms-select' with optgroup only %}
+            </span>
+            <abbr title="heures">h</abbr>
+            <span class="wrap-select arrow">
+                {% set optgroup = groups.1 %}
+                {% include 'atoms-select' with optgroup only %}
+            </span>
+        </span>
+    </div>
+</div>

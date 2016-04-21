@@ -1,0 +1,261 @@
+{
+    "applicant_items": [
+        {
+            "label": "Nom",
+            "state": "",
+            "attributes": {
+                "id": "name",
+                "type": "text",
+                "value": "",
+                "placeholder": "ex: Pshit"
+            },
+            "required": true
+        },
+        {
+            "label": "Prénom",
+            "state": "",
+            "attributes": {
+                "id": "firstname",
+                "type": "text",
+                "value": "",
+                "placeholder": "ex: Daniela"
+            },
+            "required": true
+        },
+        {
+            "label": "Société",
+            "state": "",
+            "attributes": {
+                "id": "societe",
+                "type": "text",
+                "value": "",
+                "placeholder": "ex: Keolis"
+            },
+            "required": false
+        },
+        {
+            "label": "Téléphone",
+            "state": "",
+            "attributes": {
+                "id": "telephone",
+                "type": "text",
+                "value": "",
+                "placeholder": "ex: 0102030405"
+            },
+            "required": false
+        },
+        {
+            "label": "Email",
+            "state": "",
+            "attributes": {
+                "id": "email",
+                "type": "email",
+                "value": "",
+                "placeholder": "ex: dapshit@north.fr"
+            },
+            "required": false
+        }
+    ],
+    "benefit_items": [
+        {
+            "label": "Lieu de départ",
+            "state": "",
+            "attributes": {
+                "id": "depart",
+                "type": "text",
+                "value": "",
+                "placeholder": "ex: Rennes"
+            },
+            "required": false
+        },
+        {
+            "label": "Date de départ",
+            "state": "",
+            "attributes": {
+                "id": "date-depart",
+                "type": "date",
+                "value": "",
+                "placeholder": "ex: 26/04/16"
+            },
+            "required": false
+        },
+        {
+            "label": "Choix de l'horaire de départ",
+            "required": false,
+            "state": "",
+            "attributes": {
+                "id": "",
+                "title": "Sélectionnez l'horaire de départ",
+                "type": "time"
+            },
+            "groups": [
+                {
+                    "attributes": {
+                        "id": "search_datetime_time_hour",
+                        "name": "search[datetime][time][hour]",
+                        "title": "Sélectionnez l'heure"
+                    },
+                    "required": true,
+                    "group": {
+                        "label": "",
+                        "options": {
+                            "0": "00",
+                            "1": "01",
+                            "2": "02",
+                            "3": "03",
+                            "4": "04",
+                            "5": "05",
+                            "6": "06",
+                            "7": "07",
+                            "8": "08"
+                        }
+                    }
+                },
+                {
+                    "attributes": {
+                        "id": "search_datetime_time_minute",
+                        "name": "search[datetime][time][minute]",
+                        "title": "Sélectionnez la minute"
+                    },
+                    "required": true,
+                    "group": {
+                        "label": "",
+                        "options": {
+                            "0": "00",
+                            "5": "05",
+                            "10": "10",
+                            "15": "15",
+                            "20": "20",
+                            "25": "25",
+                            "30": "30",
+                            "35": "35",
+                            "40": "40"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "label": "Lieu d'arrivée",
+            "state": "",
+            "attributes": {
+                "id": "arrivee",
+                "type": "text",
+                "value": "",
+                "placeholder": "ex: Nantes"
+            },
+            "required": false
+        },
+        {
+            "label": "Date d'arrivée",
+            "state": "",
+            "attributes": {
+                "id": "date-arrivee",
+                "type": "date",
+                "value": "",
+                "placeholder": "ex: 28/04/16"
+            },
+            "required": false
+        },
+        {
+            "label": "Choix de l'horaire d'arrivée",
+            "required": false,
+            "state": "",
+            "attributes": {
+                "id": "",
+                "title": "Sélectionnez l'horaire d'arrivée",
+                "type": "time"
+            },
+            "groups": [
+                {
+                    "attributes": {
+                        "id": "search_datetime_time_hour",
+                        "name": "search[datetime][time][hour]",
+                        "title": "Sélectionnez l'heure"
+                    },
+                    "required": true,
+                    "group": {
+                        "label": "",
+                        "options": {
+                            "0": "00",
+                            "1": "01",
+                            "2": "02",
+                            "3": "03",
+                            "4": "04",
+                            "5": "05",
+                            "6": "06",
+                            "7": "07",
+                            "8": "08"
+                        }
+                    }
+                },
+                {
+                    "attributes": {
+                        "id": "search_datetime_time_minute",
+                        "name": "search[datetime][time][minute]",
+                        "title": "Sélectionnez la minute"
+                    },
+                    "required": true,
+                    "group": {
+                        "label": "",
+                        "options": {
+                            "0": "00",
+                            "5": "05",
+                            "10": "10",
+                            "15": "15",
+                            "20": "20",
+                            "25": "25",
+                            "30": "30",
+                            "35": "35",
+                            "40": "40"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "label": "Nombre de voyageurs",
+            "state": "",
+            "attributes": {
+                "id": "nombre-voyageur",
+                "type": "number",
+                "value": "",
+                "placeholder": "ex: 18"
+            },
+            "required": false
+        },
+        {
+            "label": "Motif",
+            "state": "",
+            "attributes": {
+                "id": "motif",
+                "type": "textarea",
+                "value": "",
+                "placeholder": "ex: Votre motif"
+            },
+            "required": false
+        },
+        {
+            "label": "Description",
+            "state": "",
+            "attributes": {
+                "id": "description",
+                "type": "textarea",
+                "value": "",
+                "rows": "6",
+                "cols": "48",
+                "placeholder": "ex: Votre description"
+            },
+            "required": true
+        }
+    ],
+    "button":
+    {
+        "label": "Envoyer",
+        "attributes": {
+            "type": "submit",
+            "class": "btn secondary full-width",
+            "title": "Envoyer la demande"
+        }
+    }
+}

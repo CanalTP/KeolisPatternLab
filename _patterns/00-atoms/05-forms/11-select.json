@@ -1,0 +1,16 @@
+{
+    "attributes": {
+        "id": "select",
+        "name": "select",
+        "title": "Sélectionnez"
+    },
+    "required": true,
+    "group": {
+        "label": "Options Group",
+        "options": {
+            "opt1": "Option One",
+            "opt2": "Option Two",
+            "opt3": "Option Three"
+        }
+    }
+}

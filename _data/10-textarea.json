@@ -1,0 +1,13 @@
+{
+    "label": "Textarea",
+    "state": "",
+    "attributes": {
+        "id": "textarea",
+        "type": "textarea",
+        "value": "",
+        "rows": "2",
+        "cols": "48",
+        "placeholder": "Textarea"
+    },
+    "required": false
+}
