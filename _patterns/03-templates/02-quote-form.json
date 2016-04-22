@@ -80,7 +80,7 @@
             "required": false
         },
         {
-            "label": "Choix de l'horaire de départ",
+            "label": "Horaire de départ",
             "required": false,
             "state": "",
             "attributes": {
@@ -91,8 +91,8 @@
             "groups": [
                 {
                     "attributes": {
-                        "id": "search_datetime_time_hour",
-                        "name": "search[datetime][time][hour]",
+                        "id": "search_departure_datetime_time_hour",
+                        "name": "search[departure][datetime][time][hour]",
                         "title": "Sélectionnez l'heure"
                     },
                     "required": true,
@@ -113,8 +113,8 @@
                 },
                 {
                     "attributes": {
-                        "id": "search_datetime_time_minute",
-                        "name": "search[datetime][time][minute]",
+                        "id": "search_departure_datetime_time_minute",
+                        "name": "search[departure][datetime][time][minute]",
                         "title": "Sélectionnez la minute"
                     },
                     "required": true,
@@ -158,7 +158,7 @@
             "required": false
         },
         {
-            "label": "Choix de l'horaire d'arrivée",
+            "label": "Horaire d'arrivée",
             "required": false,
             "state": "",
             "attributes": {
@@ -169,8 +169,8 @@
             "groups": [
                 {
                     "attributes": {
-                        "id": "search_datetime_time_hour",
-                        "name": "search[datetime][time][hour]",
+                        "id": "search_arrival_datetime_time_hour",
+                        "name": "search[arrival][datetime][time][hour]",
                         "title": "Sélectionnez l'heure"
                     },
                     "required": true,
@@ -191,8 +191,8 @@
                 },
                 {
                     "attributes": {
-                        "id": "search_datetime_time_minute",
-                        "name": "search[datetime][time][minute]",
+                        "id": "search_arrival_datetime_time_minute",
+                        "name": "search[arrival][datetime][time][minute]",
                         "title": "Sélectionnez la minute"
                     },
                     "required": true,
