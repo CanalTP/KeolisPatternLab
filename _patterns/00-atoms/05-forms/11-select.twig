@@ -1,0 +1,9 @@
+<select {% if attributes.id is defined and attributes.id is not empty %} id="{{ attributes.id }}"{% endif %}
+        {% if attributes.title is defined and attributes.title is not empty %} title="{{ attributes.title }}"{% endif %}
+        {% if attributes.name is defined and attributes.name is not empty %} name="{{ attributes.name }}"{% endif %}>
+    <optgroup {% if group.label is defined and group.label is not empty %} label="{{ group.label }}"{% endif %}>
+        {% for key, value in group.options %}
+            <option value="{{ key }}">{{ value }}</option>
+        {% endfor %}
+    </optgroup>
+</select>

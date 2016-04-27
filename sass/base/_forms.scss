@@ -395,9 +395,9 @@ input.inner-icons {
     }
 }
 
-/* Contact Form */
+/* Contact Form, Estimate Form */
 
-.contact-form {
+.contact-form, .estimate-form {
     padding: 1em 0 3em;
     background-color: $gray-light-3;
 
@@ -417,6 +417,10 @@ input.inner-icons {
         & label {
             text-align: left;
         }
+    }
+
+    & .search_time {
+      text-align: left;
     }
 
     @media all and (min-width: $bp-med) {
@@ -450,6 +454,7 @@ input.inner-icons {
         }
     }
 }
+
 .element-type-filter-form form {
     background-color: $gray-light-3;
     padding: $space;
@@ -458,6 +463,7 @@ input.inner-icons {
         padding: 0;
     }
 }
+
 .group-time {
     span,
     abbr {
@@ -519,6 +525,7 @@ input.inner-icons {
         }
     }
 }
+
 @media all and (max-width: $bp-small-1) {
    .fixed-field-date {
        display: block;
