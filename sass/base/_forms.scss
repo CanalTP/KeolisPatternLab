@@ -104,6 +104,7 @@ input {
 
 //Form Field Container
 .field-container {
+    position: relative;
     margin-bottom: $space;
 }
 
@@ -189,6 +190,7 @@ option {
     background-color: white;
     border: 1px solid $gray-med-2;
     margin: 0 1px;
+    z-index: 10;
 
     li {
         padding: $pad-half;
@@ -279,19 +281,8 @@ option {
     }
 }
 .field-container {
-    &.autocomplete,
     &.btn-container {
         float: left;
-    }
-    @media all and (min-width: $bp-large-2) {
-        &.autocomplete {
-            width: 45%;
-            margin-right: 2em;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
     }
 }
 
@@ -310,15 +301,21 @@ option {
         text-decoration: none;
     }
 }
-  /***** text input with icon ***/
-input.inner-icons {
-    padding: 0.5em 4em 0.5em 3.5em;
+/***** text input with icon ***/
+input {
+    &.inner-icons {
+        padding: 0.5em 4em 0.5em 3.5em;
+    }
+    &.inner-label {
+        padding: 0.5em 0.5em 0.5em 5.5em;
+    }
 }
 .inner-iput-text {
     position: absolute;
-    left: 1em;
+    left: 1.9em;
     top: 0.45em;
     font-family: $font-bold;
+    color: $gray-dark;
 }
 .icon-clear {
     line-height: 1em;
@@ -530,4 +527,19 @@ input.inner-icons {
    .fixed-field-date {
        display: block;
    }
+}
+// Widget
+.widget {
+    .keolis-icon-location {
+        font-size: 1.45em;
+        left: 0.25em;
+        position: absolute;
+        top: 0.25em;
+    }
+}
+.location-from {
+    color: $color-location-from;
+}
+.location-to{
+    color: $color-location-to;
 }
