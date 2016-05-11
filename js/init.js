@@ -25,6 +25,4 @@ var $ = require('jquery');
 		$(this).toggleClass('active');
 		$('.header .search-form').toggleClass('active');
 	});
-
-});
 })(this);

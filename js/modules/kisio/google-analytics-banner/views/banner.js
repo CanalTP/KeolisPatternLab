@@ -1,7 +1,8 @@
 var Backbone = require('backbone'),
     _ = require('underscore'),
     jQuery = require('jquery'),
-    PopinView = require('./popin'),
+    PopinView = require('kisio/modal'),
+    PopinTemplate = require('01-molecules/01-privacy/01-popin.twig'),
     AnalyticsView = require('./analytics');
 
 var BannerView = Backbone.View.extend({
@@ -19,7 +20,32 @@ var BannerView = Backbone.View.extend({
         cookieName: "hasConsent",
         cookiePath: "/",
         waitAccept: true,
-        analyticsKeys: {}
+        analyticsKeys: {},
+        popinContent: {
+            title: Translator.trans('privacy.title.cookies'),
+            content: {
+                type: 'html',
+                data: Translator.trans('privacy.description.full')
+            },
+            actions: {
+                accept: {
+                    label: Translator.trans('privacy.actions.accept'),
+                    type: 'button',
+                    attributes: {
+                        class: 'btn secondary',
+                        'data-event': 'accept'
+                    }
+                },
+                reject: {
+                    label: Translator.trans('privacy.actions.reject'),
+                    type: 'button',
+                    attributes: {
+                        class: 'btn secondary',
+                        'data-event': 'reject'
+                    }
+                }
+            }
+        }
     },
 
     events: {
@@ -53,7 +79,10 @@ var BannerView = Backbone.View.extend({
      */
     showBanner: function() {
         this.displayBanner(true);
+        
+        jQuery(this.$el).find('#popin-banner').html(PopinTemplate.render(this.parameters.popinContent));
         new PopinView({el: this.parameters.actions.moreLink, container: this.$el});
+
         if (this.$(this.parameters.actions.hideLink) !== null) {
             this.$(this.parameters.actions.hideLink).on('click', jQuery.proxy(function(e) {
                 this.saveAnswer(e);
