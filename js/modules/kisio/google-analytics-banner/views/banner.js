@@ -1,7 +1,6 @@
 var Backbone = require('backbone'),
     _ = require('underscore'),
     jQuery = require('jquery'),
-    PopinView = require('kisio/modal'),
     PopinTemplate = require('01-molecules/01-privacy/01-popin.twig'),
     AnalyticsView = require('./analytics');
 
@@ -33,7 +32,7 @@ var BannerView = Backbone.View.extend({
                     type: 'button',
                     attributes: {
                         class: 'btn secondary',
-                        'data-event': 'accept'
+                        'data-event': 'banner-accept'
                     }
                 },
                 reject: {
@@ -41,7 +40,7 @@ var BannerView = Backbone.View.extend({
                     type: 'button',
                     attributes: {
                         class: 'btn secondary',
-                        'data-event': 'reject'
+                        'data-event': 'banner-reject'
                     }
                 }
             }
@@ -49,8 +48,8 @@ var BannerView = Backbone.View.extend({
     },
 
     events: {
-        'accept': 'saveAnswer',
-        'reject': 'saveAnswer'
+        'banner-accept': 'saveAnswer',
+        'banner-reject': 'saveAnswer'
     },
 
     initialize: function(options) {
@@ -69,25 +68,38 @@ var BannerView = Backbone.View.extend({
 
         this.showBanner();
 
+        this.preparePopin();
+
         if (!this.parameters.waitAccept) {
             this.setCookie(this.cookieName, true);
         }
     },
 
-    /*
+    /**
      * Show banner at the top of the page
      */
     showBanner: function() {
         this.displayBanner(true);
-        
-        jQuery(this.$el).find('#popin-banner').html(PopinTemplate.render(this.parameters.popinContent));
-        new PopinView({el: this.parameters.actions.moreLink, container: this.$el});
 
         if (this.$(this.parameters.actions.hideLink) !== null) {
             this.$(this.parameters.actions.hideLink).on('click', jQuery.proxy(function(e) {
                 this.saveAnswer(e);
             }, this));
         }
+    },
+
+    /**
+     * inner popin html in the dialog container and setup event listeners
+     */
+    preparePopin: function() {
+        var that = this;
+
+        jQuery(this.$el).find('#popin-banner').html(PopinTemplate.render(this.parameters.popinContent));
+
+        jQuery('body').on('banner-accept banner-reject', function(event) {
+            that.saveAnswer(event);
+        });
+
     },
 
     /**

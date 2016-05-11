@@ -4,7 +4,7 @@ require('00-atoms/06-buttons/00-button-standard.twig');
 var Backbone = require('backbone'),
     _ = require('underscore'),
     jQuery = require('jquery'),
-    Popin = require('popin'),
+    // Popin = require('popin'),
     template = require('01-molecules/01-privacy/01-popin.twig');
 
 var ModalView = Backbone.View.extend({

@@ -1,5 +1,5 @@
-{% include 'atoms-heading' with {heading: 1, label: title} only %}
-<div class="popin-content">
+<div class="popin">
+    {% include 'atoms-heading' with {"heading": 2, "label": title} only %}
     {% if content is defined %}
         {% if content.type == 'raw' %}
             {{ content.data|raw }}
