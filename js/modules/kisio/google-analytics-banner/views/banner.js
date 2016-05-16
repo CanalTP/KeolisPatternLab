@@ -21,6 +21,9 @@ var BannerView = Backbone.View.extend({
         waitAccept: true,
         analyticsKeys: {},
         popinContent: {
+            attributes: {
+                id: 'popin-banner'
+            },
             title: Translator.trans('privacy.title.cookies'),
             content: {
                 type: 'html',
@@ -81,8 +84,11 @@ var BannerView = Backbone.View.extend({
     showBanner: function() {
         this.displayBanner(true);
 
-        if (this.$(this.parameters.actions.hideLink) !== null) {
-            this.$(this.parameters.actions.hideLink).on('click', jQuery.proxy(function(e) {
+        // bind close banner button to saveAnswer
+        var $closeButtonBanner = this.$(this.parameters.actions.hideLink);
+        if ($closeButtonBanner !== null) {
+            $closeButtonBanner.on('click', jQuery.proxy(function(e) {
+
                 this.saveAnswer(e);
             }, this));
         }
@@ -94,7 +100,7 @@ var BannerView = Backbone.View.extend({
     preparePopin: function() {
         var that = this;
 
-        jQuery(this.$el).find('#popin-banner').html(PopinTemplate.render(this.parameters.popinContent));
+        this.$el.after(PopinTemplate.render(this.parameters.popinContent));
 
         jQuery('body').on('banner-accept banner-reject', function(event) {
             that.saveAnswer(event);

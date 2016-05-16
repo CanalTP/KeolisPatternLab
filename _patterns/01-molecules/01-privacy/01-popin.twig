@@ -1,4 +1,6 @@
-<div class="popin">
+{% set attributes = attributes|merge( {class: 'popin ' ~ attributes['class']|join(' ')} ) %}
+
+<div {% for key, value in attributes %} {{ key }}="{{ value }}"{% endfor %}>
     {% include 'atoms-heading' with {"heading": 2, "label": title} only %}
     {% if content is defined %}
         {% if content.type == 'raw' %}

@@ -53,11 +53,33 @@ var Popin = function() {
         var that = this;
 
         dialog.find('button, a').on('click', function(event) {
-            event.stopImmediatePropagation();
+            event.preventDefault();
 
             // trigger defined event
             if (jQuery(this).data('event').length) {
                 jQuery('body').trigger(jQuery(this).data('event'));
+            }
+
+            if (jQuery(this).is('a')) {
+                var url = jQuery(this).attr('href');
+
+                // if url start with #, we skip
+                if (!url.match(/#.*/gi)) {
+                    // retrieve domain
+                    if (url.indexOf("://") > -1) {
+                        domain = url.split('/')[2];
+                    } else {
+                        domain = url.split('/')[0];
+                    }
+
+                    //find & remove port number
+                    domain = domain.split(':')[0];
+
+                    // for external url we open the link in new tab
+                    if (window.location.hostname !== domain) {
+                        window.open(url, '_blank')
+                    }
+                }
             }
 
             // close the popin

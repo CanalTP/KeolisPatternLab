@@ -1,31 +1,33 @@
-<div id="information-popin" class="popin" data-default-status="open">
-    {% include 'molecules-popin' with {
-        title: 'Lorem Ipseum',
-        content: {
-            type: 'text',
-            data: 'Attention, il y a du lorem ipsumsum'
+{% include 'molecules-popin' with {
+    attributes: {
+        id: 'information-popin',
+        'data-default-status':'open'
+    },
+    title: 'Lorem Ipseum',
+    content: {
+        type: 'text',
+        data: 'Attention, il y a du lorem ipsumsum'
+    },
+    actions: {
+        accept: {
+            label: 'En savoir plus',
+            type: 'link',
+            url: 'http://jira.canaltp.fr/browse/COL-230',
+            title: 'Go to this',
+            attributes: {
+                class: 'btn secondary',
+                'data-event': 'accept'
+            }
         },
-        actions: {
-            accept: {
-                label: 'En savoir plus',
-                type: 'link',
-                url: '#http://jira.canaltp.fr/browse/COL-230',
-                title: 'Go to this',
-                attributes: {
-                    class: 'btn secondary',
-                    'data-event': 'accept'
-                }
-            },
-            close: {
-                label: 'J\'ai compris',
-                type: 'link',
-                url: '#weshalors',
-                title: 'let\'s see',
-                attributes: {
-                    class: 'btn secondary',
-                    'data-event': 'close'
-                }
+        close: {
+            label: 'J\'ai compris',
+            type: 'link',
+            url: '#weshalors',
+            title: 'let\'s see',
+            attributes: {
+                class: 'btn secondary',
+                'data-event': 'close'
             }
         }
-    } %}
-</div>
+    }
+} %}
