@@ -1,7 +1,7 @@
 var Backbone = require('backbone'),
     _ = require('underscore'),
     jQuery = require('jquery'),
-    PopinTemplate = require('01-molecules/01-privacy/01-popin.twig'),
+    PopinTemplate = require('01-molecules/06-components/popin.twig'),
     AnalyticsView = require('./analytics');
 
 var BannerView = Backbone.View.extend({
