@@ -1,12 +1,28 @@
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha   {
+    color: $color-second;
+    font-family: "Museo";
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    @include font-size(1.75);
 }
 
 h2, .beta    {
+    color: $color-second;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    @include font-size(1.2);
 }
 
 h3, .gamma   {
+    color: $color-second;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    @include font-size(1);
 }
 
 h4, .delta   {

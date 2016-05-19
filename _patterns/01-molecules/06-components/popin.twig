@@ -1,0 +1,22 @@
+{% set attributes = attributes|default({}) %}
+{% if attributes.class is defined and 'popin' not in attributes.class %}
+    {% set attributes = attributes|merge( {class: 'popin ' ~ attributes['class']|join(' ')} ) %}
+{% endif %}
+
+<div {% for key, value in attributes %} {{ key }}="{{ value }}"{% endfor %}>
+    {% include 'atoms-heading' with {"heading": 2, "label": title} only %}
+    {% if content is defined %}
+        {% if content.type == 'raw' %}
+            {{ content.data|raw }}
+        {% else %}
+            {% include 'atoms-paragraph' with {label: content.data} only %}
+        {% endif %}
+    {% endif %}
+    {% for button in actions %}
+        {% if button.type is defined and button.type == 'button' %}
+            {% include 'atoms-button-standard' with {label: button.label, attributes: button.attributes} only %}
+        {% else %}
+            {% include 'atoms-lien-text' with {url: button.url, label: button.label, title: button.title, attributes: button.attributes} only %}
+        {% endif %}
+    {% endfor %}
+</div>

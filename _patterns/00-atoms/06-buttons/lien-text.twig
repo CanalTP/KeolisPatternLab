@@ -1,0 +1,3 @@
+<a href="{{ url }}" title="{{ title }}" {% for key, value in attributes|default([]) %} {{ key }}="{{ value }}"{% endfor %}>
+    {{ label }}
+</a>

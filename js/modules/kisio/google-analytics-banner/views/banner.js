@@ -1,7 +1,7 @@
 var Backbone = require('backbone'),
     _ = require('underscore'),
     jQuery = require('jquery'),
-    PopinView = require('./popin'),
+    PopinTemplate = require('01-molecules/06-components/popin.twig'),
     AnalyticsView = require('./analytics');
 
 var BannerView = Backbone.View.extend({
@@ -19,12 +19,40 @@ var BannerView = Backbone.View.extend({
         cookieName: "hasConsent",
         cookiePath: "/",
         waitAccept: true,
-        analyticsKeys: {}
+        analyticsKeys: {},
+        popinContent: {
+            attributes: {
+                id: 'popin-banner'
+            },
+            title: Translator.trans('privacy.title.cookies'),
+            content: {
+                type: 'html',
+                data: Translator.trans('privacy.description.full')
+            },
+            actions: {
+                accept: {
+                    label: Translator.trans('privacy.actions.accept'),
+                    type: 'button',
+                    attributes: {
+                        class: 'btn secondary',
+                        'data-event': 'banner-accept'
+                    }
+                },
+                reject: {
+                    label: Translator.trans('privacy.actions.reject'),
+                    type: 'button',
+                    attributes: {
+                        class: 'btn secondary',
+                        'data-event': 'banner-reject'
+                    }
+                }
+            }
+        }
     },
 
     events: {
-        'accept': 'saveAnswer',
-        'reject': 'saveAnswer'
+        'banner-accept': 'saveAnswer',
+        'banner-reject': 'saveAnswer'
     },
 
     initialize: function(options) {
@@ -43,22 +71,41 @@ var BannerView = Backbone.View.extend({
 
         this.showBanner();
 
+        this.preparePopin();
+
         if (!this.parameters.waitAccept) {
             this.setCookie(this.cookieName, true);
         }
     },
 
-    /*
+    /**
      * Show banner at the top of the page
      */
     showBanner: function() {
         this.displayBanner(true);
-        new PopinView({el: this.parameters.actions.moreLink, container: this.$el});
-        if (this.$(this.parameters.actions.hideLink) !== null) {
-            this.$(this.parameters.actions.hideLink).on('click', jQuery.proxy(function(e) {
+
+        // bind close banner button to saveAnswer
+        var $closeButtonBanner = this.$(this.parameters.actions.hideLink);
+        if ($closeButtonBanner !== null) {
+            $closeButtonBanner.on('click', jQuery.proxy(function(e) {
+
                 this.saveAnswer(e);
             }, this));
         }
+    },
+
+    /**
+     * inner popin html in the dialog container and setup event listeners
+     */
+    preparePopin: function() {
+        var that = this;
+
+        this.$el.after(PopinTemplate.render(this.parameters.popinContent));
+
+        jQuery('body').on('banner-accept banner-reject', function(event) {
+            that.saveAnswer(event);
+        });
+
     },
 
     /**
