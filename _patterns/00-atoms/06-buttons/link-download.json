@@ -1,0 +1,9 @@
+{
+    "alt": "ligne xx",
+    "url": "../../images/sample/sample_download.png",
+    "attributes": {
+        "href": "#",
+        "class": "btn btn-default left",
+        "title": "Télécharger la ligne xx"
+    }
+}

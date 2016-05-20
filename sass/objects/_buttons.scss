@@ -68,6 +68,15 @@ input[type=submit].btn, button.btn, a.btn, .btn {
     &.full-width {
         width: 100%;
     }
+    &.btn-default {
+        border: 1px solid $gray-light-3;
+        padding: 1em 1em;
+        margin: 0 0.25em 0.5em 0;
+        line-height: 1em;
+        &:hover {
+            background-color : $gray-light-3;
+        }
+    }
 }
 .btn-small {
     padding: 0.5em !important;
