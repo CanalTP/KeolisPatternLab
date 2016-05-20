@@ -1,0 +1,9 @@
+<div class="group-items">
+	<h3>{{title}}</h3>
+	<div>
+	    {% for button in buttons %}
+	           {% include 'atoms-link-download' with button only %}
+
+    	{% endfor %}
+	</div>
+</div>
