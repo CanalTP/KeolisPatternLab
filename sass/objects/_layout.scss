@@ -112,7 +112,6 @@ $breakpoints: $bp-small-2, $bp-med-2, $bp-large-2, $bp-xl, $bp-xxxl;
     /* #{$i} row(s) */
     /****************/
     @for $j from 1 through length($breakpoints) {
-        $breakpoint: nth($breakpoints, $j);
         .row-#{$i} > div, .row-#{$i} > div > iframe, .row-#{$i} > .btn-block > div, .row-#{$i} > a {
             $minHeight: $grid-row-height * ($bp-xxxl / $bp-xl) * $i;
             min-height: #{$minHeight - $grid-gutter-width * 2}em;
