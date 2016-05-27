@@ -91,14 +91,14 @@
     $widthParent: percentage($i / $grid-columns);
     .col-#{$i} {
         width: 100%;
-        @include breakpoint($bp-med-2) {
+        @include breakpoint($breakpoint-m) {
             width: $widthParent;
         }
         @for $j from 1 through $i {
             $widthChild: percentage($j / $i);
             & > .col-#{$j}, & > div > .col-#{$j} {
                 width: 100%;
-                @include breakpoint($bp-med-2) {
+                @include breakpoint($breakpoint-m) {
                     width: $widthChild;
                 }
             }
@@ -112,13 +112,17 @@ $breakpoints: $bp-small-2, $bp-med-2, $bp-large-2, $bp-xl, $bp-xxxl;
     /* #{$i} row(s) */
     /****************/
     @for $j from 1 through length($breakpoints) {
-        $breakpoint: nth($breakpoints, $j);
-        .row-#{$i} > div, .row-#{$i} > div > iframe {
-            @include breakpoint($breakpoint) {
-                $minHeight: $grid-row-height * ($breakpoint / $bp-xl) * $i;
-                min-height: #{$minHeight - $grid-gutter-width * 2}em;
+        .row-#{$i} > div, .row-#{$i} > div > iframe, .row-#{$i} > .btn-block > div, .row-#{$i} > a {
+            $minHeight: $grid-row-height * ($bp-xxxl / $bp-xl) * $i;
+            min-height: #{$minHeight - $grid-gutter-width * 2}em;
+            &.element-style-table {
+                height: #{$minHeight - $grid-gutter-width * 2}em;
+            }
+            @include breakpoint(max-width $breakpoint-s) {
+                $bp-medHeight: $grid-row-height * ($bp-small / $bp-xl) * $i;
+                min-height: 6em;
                 &.element-style-table {
-                    height: #{$minHeight - $grid-gutter-width * 2}em;
+                    height: #{$bp-medHeight - $grid-gutter-width * 2}em;
                 }
             }
         }
