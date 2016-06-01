@@ -3,8 +3,8 @@
 @mixin container-fixed() {
     margin-right: auto;
     margin-left: auto;
-    padding-left:  $pad-half;
-    padding-right: $pad-half;
+    padding-left:  1.2em;
+    padding-right: 0.5em;
     @include clearfix();
 }
 
@@ -14,8 +14,18 @@
  */
 @mixin content-row {
     @include clearfix;
-    margin-left: -$pad-half;
-    margin-right: -$pad-half;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+}
+
+/**
+ * Style for a zone in a grid system
+ * @TODO make padding editable with variable (gutter width)
+ */
+@mixin content-zone {
+    float: left;
+    min-height: 1px;
+    position: relative;
 }
 
 /**
@@ -23,9 +33,7 @@
  * @TODO make padding editable with variable (gutter width)
  */
 @mixin content-col {
-    float: left;
-    min-height: 1px;
-    padding-left: $pad-half;
-    padding-right: $pad-half;
-    position: relative;
+    @include content-zone;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }

@@ -1,20 +1,20 @@
 .accordion {
     margin-bottom: $space;
     & > li {
-        border-bottom: 1px solid $gray-light;
+        border-bottom: 1px solid $color-grey-light-5;
     }
     &.th0 {
         & > li {
-            border: 1px solid $gray-med-2;
-            background-color: $white;
+            border: 1px solid $color-grey;
+            background-color: $color-white;
         }
     }
 
 }
 
 .acc-handle {
-    background: $color-second;
-    color: $font-color-contrast-second;
+    background: $color-button-background;
+    color: $color-button-foreground;
     text-transform: uppercase;
     font-weight: bold;
     display: block;
@@ -31,13 +31,13 @@
     }
 
     &:hover {
-        color: $font-color-contrast-second-highlight;
-        background-color: $color-second-highlight;
+        color: $color-button-foreground-hover;
+        background-color: $color-button-background-hover;
     }
 
     &.active {
-        color: $font-color-contrast-second-highlight;
-        background: $color-second-highlight;
+        color: $color-button-foreground-hover;
+        background: $color-button-background-hover;
 
         &:after {
             @include transform(translate(50%, -50%) rotate(270deg));
@@ -50,31 +50,31 @@
 }
 .state-active {
     &.acc-panel-border {
-        border: 1px solid $color-second-highlight;
+        border: 1px solid $color-button-background;
     }
 }
 
 /************* style th0 ****************/
 .th0 {
     .acc-handle {
-        background: $white;
-        color: $gray-med;
+        background: $color-white;
+        color: $color-grey;
 
         &:after {
             font-family: "keolis-icons";
             content: $icon-arrow-right;
             top: 50%;
-            color: $color-second;
+            color: $color-main;
         }
 
         &:hover {
-            color: $color-second;
-            background-color: $font-color-contrast-second;
+            color: $color-main;
+            background-color: $color-white;
         }
 
         &.active {
-            color: $gray-med;
-            background: $white;
+            color: $color-grey;
+            background: $color-white;
         }
     }
 }

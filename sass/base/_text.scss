@@ -1,3 +1,13 @@
+h1 {
+    color: $color-second;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: $space;
+}
+.ctp-container p {
+    margin-bottom: $space;
+}
+
 .highlight {
     color: $color-second;
 }
@@ -5,4 +15,12 @@
 // alt txt
 .ctp-txt-alt {
     padding-right: 1em;
+}
+.title-second {
+    font-family:$font-secondary;
+}
+.block-fix {
+    h2 {
+        margin-bottom: 1em;
+    }
 }

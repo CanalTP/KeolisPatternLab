@@ -1,42 +1,33 @@
+/*------------------------------------*\
+    $header
+\*------------------------------------*/
+
 .header-container {
+    z-index: 1000;
+    background-color: $color-header-background;
+    margin-bottom: 1em;
+
+    // @include breakpoint($bp-med-2) {
+    position: fixed;
     top: 0;
     left: 0;
-    position: fixed;
-    right: 0;
-    z-index: 1000;
-    background-color: $color-header;
+    width: 100%;
+    margin-bottom: 0;
+    //}
 
     [class*="hr-"],
     [class^="hr-"]  {
-        border-color: $gray-light-2;
-    }
-    // Ancre ctp-main-nav inactive (on n'affiche que le bouton d'affichage du menu)
-    &:not(:target) > a:first-of-type {
-        display: block;
-        @media all and (min-width: $bp-med-2) {
-            display: none;
-        }
-    }
-    &:not(:target) > a:last-of-type {
-        display: none;
-    }
-    // Ancre ctp-main-nav active (on n'affiche que le bouton de masquage du menu)
-    &:target > a:first-of-type {
-        display: none;
-    }
-    &:target > a:last-of-type {
-        display: block;
-        @media all and (min-width: $bp-med-2) {
-            display: none;
-        }
-    }
-
-    &:target > ul {
-        display: block;
+        border-color: $color-grey-light-5;
     }
 
     & h1 {
         margin: 0;
+        @include breakpoint(max-width $bp-med-2) {
+            max-width: 70%;
+        }
+        @include breakpoint($bp-med-2 $bp-large-2) {
+            max-width: 23%;
+        }
     }
 
     & select[name="lang"] {
@@ -46,7 +37,31 @@
 
 .link-account {
     a {
-        background-color: $color-second;
-        color:$font-color-light;
+        background-color: $color-button-background;
+        color: $color-button-foreground;
+    }
+}
+
+@include breakpoint(max-width $bp-med-2) {
+    .top-nav  {
+        display: none;
+    }
+}
+
+.main-logo {
+    img {
+        max-width: 100%;
+    }
+    &.logo {
+        display: block;
+        height: image-height('logo.png');
+    }
+}
+
+.switch-language {
+    input.btn {
+        width: 30%;
+        float: right;
+        padding: 0.25em;
     }
 }

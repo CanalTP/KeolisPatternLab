@@ -1,15 +1,15 @@
 /* Links */
 a {
-    color: $gray-dark;
+    color: $color-link;
     text-decoration: none;
     outline: 0;
 
     &:hover, &:focus {
-        color: $gray;
+        color: $color-link-hover;
     }
 
     &.highlight {
-        color: $color-second;
+        color: $color-link-visited;
         text-decoration: underline;
     }
 }

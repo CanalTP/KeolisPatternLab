@@ -10,11 +10,12 @@
 }
 
 /**
-        === container ===
+=== container ===
 **/
 
 .main-container {
-    background-color: $color-body;
+    padding-top: $space;
+    background-color: $color-main-container-background;
 }
 // row
 .ctp-row, .content-row {
@@ -24,16 +25,13 @@
 // container , wrapper, iiner-wrapper
 .ctp-container, .wrapper {
     @include container-fixed;
-     width: 100%;
+    width: 100%;
     /*@media all and (min-width: $bp-med-2) {
         width: 95%;
     }*/
     @media all and (min-width: $bp-xxxl) {
         width: 91em;
     }
-
-
-
 }
 .container {
     margin: 0 auto;
@@ -45,17 +43,18 @@
         width: 100%;
     }
 }
-// col
-.ctp-col {
-    @include content-col;
-    position: relative;
-    width: 100%;
 
-    @media all and (min-width: $bp-med-2) {
-        width: 50%;
+.layout-fullpage {
+    .content-row {
+        margin-left: -0.25em;
+        margin-right: -0.25em;
+        margin-bottom: 1em;
+    }
+    [class*="col-"].content-block {
+        margin: 0!important;
+        min-height: 1px;
     }
 }
-
 
 // width-full
 .width-full {
@@ -78,7 +77,9 @@
 [class^="col-"],
 [class*=" col-"] {
     float: left;
-    padding: 0.5em;
+}
+[class^="col-"] {
+    width: 100%;
 }
 // Absolute grid system
 //
@@ -91,7 +92,7 @@
     $widthParent: percentage($i / $grid-columns);
     .col-#{$i} {
         width: 100%;
-        @include breakpoint($breakpoint-m) {
+        @include breakpoint($breakpoint-m)  {
             width: $widthParent;
         }
         @for $j from 1 through $i {
@@ -106,43 +107,24 @@
     }
 }
 
-$breakpoints: $bp-small-2, $bp-med-2, $bp-large-2, $bp-xl, $bp-xxxl;
 @for $i from 1 through $grid-columns {
     /****************/
     /* #{$i} row(s) */
     /****************/
-    @for $j from 1 through length($breakpoints) {
-        .row-#{$i} > div, .row-#{$i} > div > iframe, .row-#{$i} > .btn-block > div, .row-#{$i} > a {
-            $minHeight: $grid-row-height * ($bp-xxxl / $bp-xl) * $i;
-            min-height: #{$minHeight - $grid-gutter-width * 2}em;
+    .row-#{$i} > div, .row-#{$i} > div > iframe, .row-#{$i} > .btn-block > div, .row-#{$i} > a {
+        $minHeight: $grid-row-height * ($bp-xxxl / $bp-xl) * $i;
+        min-height: #{$minHeight - $grid-gutter-width * 2}em;
+        &.element-style-table {
+            height: #{$minHeight - $grid-gutter-width * 2}em;
+        }
+        @include breakpoint(max-width $breakpoint-s) {
+            $bp-medHeight: $grid-row-height * ($bp-small / $bp-xl) * $i;
+            min-height: 6em;
             &.element-style-table {
-                height: #{$minHeight - $grid-gutter-width * 2}em;
-            }
-            @include breakpoint(max-width $breakpoint-s) {
-                $bp-medHeight: $grid-row-height * ($bp-small / $bp-xl) * $i;
-                min-height: 6em;
-                &.element-style-table {
-                    height: #{$bp-medHeight - $grid-gutter-width * 2}em;
-                }
+                height: #{$bp-medHeight - $grid-gutter-width * 2}em;
             }
         }
     }
 }
 
-// col for tablet
 
-@for $i from 1 through $grid-columns {
-    /*******************/
-    /* #{$i} column(s) */
-    /*******************/
-    $widthParent: percentage($i / $grid-columns);
-
-    @include breakpoint($bp-med-2 $bp-large-3) {
-        .col-md-#{$i} {
-            width: $widthParent;
-        }
-    }
-}
-.block-fix {
-    padding: 1em;
-}

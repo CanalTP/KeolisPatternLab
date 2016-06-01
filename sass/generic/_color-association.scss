@@ -1,0 +1,125 @@
+/**
+ * You must use only variables in all sections
+ */
+
+// Header
+//-----------------------------------------------------------------------------
+$color-header-background: $color-white;
+
+// Footer
+//-----------------------------------------------------------------------------
+$color-footer-background: $color-design-one;
+
+// Menus
+//-----------------------------------------------------------------------------
+$color-main-menu-background: $color-white;
+$color-main-menu-background-hover: $color-main;
+$color-main-menu-foreground: $color-grey-dark;
+$color-main-menu-foreground-hover: $color-white;
+$color-main-menu-active: $color-main;
+
+// Breadcrumb
+//-----------------------------------------------------------------------------
+$color-breadcrumb-background: $color-main;
+$color-breadcrumb-item-foreground: $color-white;
+$color-breadcrumb-item-foreground-hover: $color-white;
+
+// Body
+//-----------------------------------------------------------------------------
+$color-body-background: $color-design-one;
+$color-body-foreground: $color-grey-dark-2;
+$color-main-container-background: $color-white;
+
+// Headings
+//-----------------------------------------------------------------------------
+$color-h1: $color-main;
+$color-h2: $color-grey-dark;
+$color-h3: $color-grey-dark;
+$color-h4: $color-grey-dark;
+$color-h5: $color-grey-dark;
+$color-h6: $color-grey-dark;
+
+// Texts
+//-----------------------------------------------------------------------------
+$color-text: $color-design-two;
+$color-title-block-style: $color-white;
+
+// Separators
+//-----------------------------------------------------------------------------
+$color-separator: $color-grey-light;
+
+// Link blocks
+//-----------------------------------------------------------------------------
+$color-link-block-one-background: $color-main;
+$color-link-block-one-foreground: $color-white;
+$color-link-block-two-background: $color-second;
+$color-link-block-two-foreground: $color-white;
+$color-link-block-three-background: $color-third;
+$color-link-block-three-foreground: $color-white;
+
+// Text links
+//-----------------------------------------------------------------------------
+$color-link: $color-main;
+$color-link-hover: darken($color-main, 10);
+$color-link-visited: $color-main;
+$color-link-inverted: $color-white;
+$color-link-inverted-hover: darken($color-white, 10);
+$color-link-inverted-visited: $color-white;
+
+// Buttons
+//-----------------------------------------------------------------------------
+$color-button-background: $color-main;
+$color-button-background-hover: desaturate(lighten($color-main, 40), 50%);
+$color-button-foreground: $color-white;
+$color-button-foreground-hover: $color-black;
+
+$color-button-secondary-background: $color-second;
+$color-button-secondary-background-hover: lighten($color-second, 10);
+$color-button-secondary-foreground: $color-white;
+$color-button-secondary-foreground-hover: $color-white;
+
+$color-button-inverted-background: $color-white;
+$color-button-inverted-background-hover: darken($color-white, 10);
+$color-button-inverted-foreground: $color-black;
+$color-button-inverted-foreground-hover: $color-black;
+$color-button-inverted-foreground-hover: $color-black;
+
+// Pager
+//-----------------------------------------------------------------------------
+$color-pager-link: $color-main;
+$color-pager-link-hover: $color-black;
+$color-pager-inactive: $color-black;
+
+// Forms
+//-----------------------------------------------------------------------------
+$color-form-background: $color-grey-light-6;
+$color-form-foreground: $color-design-three;
+$color-form-alternate-background: $color-main;
+$color-form-alternate-foreground: $color-white;
+
+// Form fields
+//-----------------------------------------------------------------------------
+$color-form-field-background: $color-white;
+$color-form-field-border: $color-grey-light-3;
+$color-form-field-border-focus: darken($color-second, 10);
+$color-form-field-label: $color-grey-dark-5;
+
+// Odd/Even
+//-----------------------------------------------------------------------------
+$color-odd: $color-grey-light-3;
+$color-even: $color-white;
+
+// Icons
+//-----------------------------------------------------------------------------
+$color-icon-background: $color-grey-dark;
+$color-icon-foreground: $color-white;
+
+// Autocomplete
+//-----------------------------------------------------------------------------
+$color-autocomplete-item-background-hover: $color-main;
+$color-autocomplete-item-foreground-hover: $color-white;
+
+// Articles
+//-----------------------------------------------------------------------------
+$color-article-summary-background: $color-main;
+$color-article-summary-foreground: $color-white;

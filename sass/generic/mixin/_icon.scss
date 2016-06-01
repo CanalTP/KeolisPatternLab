@@ -1,0 +1,23 @@
+
+/**
+ * mixin pour ajouter un picto en bg
+ * @param $icon-sprit : true / false (par défaut) = Defini si c'est un sprit ou pas
+ * @param $icon-name : nom de l'image
+ * @param $icon-position : si c 'est un sprit la position de l image
+ * @param $icon-width: largeur de l image pr calc le padding-left
+ * @param $icon-height: Hautaur de l image pr calc le padding-top
+ */
+@mixin icon-bg-label($icon-name, $icon-width, $icon-height, $icon-sprit: false, $icon-position: 0) {
+    background: url("#{$icon-name}") no-repeat;
+    @if $icon-sprit == true {
+        background-position: $icon-position;
+    }
+    padding-left: $icon-width + $space-padding-left-icon;
+    padding-top: $icon-height /2;
+
+    /*  @include breakpoint(max-width $bp-med-2) {
+
+          padding-top: $icon-height /2;
+
+      }*/
+}

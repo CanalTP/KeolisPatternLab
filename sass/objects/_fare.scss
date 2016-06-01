@@ -1,22 +1,46 @@
+.head-far {
+    margin-bottom: 1em;
+    a.btn {
+        color : $color-link;
+        border: 1px solid $color-link;
+    }
+    span {
+        color: $color-link;
+    }
+}
 .fare-summary {
-    padding: $pad 0;
+    padding: 0 0 $pad 0;
     .fare-results {
         float: left;
     }
     .fare-pagination {
         float: right;
+        i {
+            font-size: 1em;
+            &.icon-arrow-left {
+                margin-right: 0.5em;
+            }
+            &.icon-arrow-right {
+                margin-left: 0.5em;
+            }
+        }
+    }
+    .fare-back-link {
+        span {
+            margin-left: $space-half;
+        }
     }
 }
 .fare-row {
-    background-color: $white;
-    border: 1px solid $color-second;
+    background-color: $color-white;
+    border: 1px solid $color-main;
     margin-bottom: $space;
 
     [class^="col"],
     .fare {
         padding: $pad;
         &.fare {
-            background-color: $gray-light-3;
+            background-color: $color-grey-light-6;
             p {
                 margin-bottom: 0;
             }
@@ -25,10 +49,19 @@
             margin-top: $space-half;
         }
     }
-    &:not(.fare) > h4 {
+    :not(.fare) > h4 {
         margin-bottom: $space-half;
     }
     img {
-        max-width: 100%;
+        width: 100%;
+    }
+}
+.element-type-filter-form {
+    .content-element {
+        width: percentage(1/3);
+        float: left;
+        &.buttons {
+            float: right;
+        }
     }
 }

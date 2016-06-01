@@ -21,53 +21,53 @@
  * @param $second-color
  */
 @mixin block-style ($primary-color: $color-main, $second-color : $white) {
-	& > a {
+    & > a {
         div {
             padding: 1em;
             min-height: 10em;
         }
     }
-	.bg-color-default,
-        .bg-color-primary,
-        .preface-default {
-            background-color: $primary-color;
+    .bg-color-default,
+    .bg-color-primary,
+    .preface-default {
+        background-color: $primary-color;
+        color: $color-title-block-style;
+        h1, h2, h3, h4, h5, h6 {
             color: $color-title-block-style;
-            h1, h2, h3, h4, h5, h6 {
-                color: $color-title-block-style;
-                font-weight: normal;
-                font-size: 1rem;
-            }
+            font-weight: normal;
+            font-size: 1rem;
         }
-	.bg-color-default,
-        .preface-default {
-            &:hover {
-                background-color: lighten($primary-color, 5%);
-            }
+    }
+    .bg-color-default,
+    .preface-default {
+        &:hover {
+            background-color: lighten($primary-color, 5%);
         }
-        .preface-default {
-            min-height: 2em;
-	}
-        .bg-color-default,
-        .bg-color-primary {
-            min-height: 10em;
-        }
-	.bg-default {
+    }
+    .preface-default {
+        min-height: 2em;
+    }
+    .bg-color-default,
+    .bg-color-primary {
+        min-height: 10em;
+    }
+    .bg-default {
         background-color: $color-white;
         color: $primary-color;
         &.font-default {
             color: $color-black;
         }
-	}
-	.boder-default,
-	&.boder-default {
+    }
+    .boder-default,
+    &.boder-default {
         border: 1px solid $primary-color;
-	}
-	.btn-style1 {
+    }
+    .btn-style1 {
         @include button-link($primary-color, $second-color);
-	}
-	.btn-style2 {
+    }
+    .btn-style2 {
         @include button-link($second-color, $primary-color);
-	}
+    }
     .btn-style1,
     .btn-style2 {
         padding: 0.2em 0.4em;

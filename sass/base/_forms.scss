@@ -14,7 +14,7 @@ form {
 
     h1, h2, h3, h4, h5, h6 {
         font-family: inherit;
-        font-size: 1rem;
+        @include font-size(1);
     }
 
     hr {
@@ -97,7 +97,7 @@ input {
         @include input-placeholder {
             font-style: italic;
         }
-      }
+    }
 }
 
 //Form Field Container
@@ -551,9 +551,9 @@ input.inner-label {
     }
 }
 @media all and (max-width: $bp-small-1) {
-   .fixed-field-date {
-       display: block;
-   }
+    .fixed-field-date {
+        display: block;
+    }
 }
 .widget {
     .keolis-icon-location {

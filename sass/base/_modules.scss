@@ -1,13 +1,10 @@
 .flash-message {
-    background: $gray-light no-repeat 10px center;
+    background: $color-grey no-repeat 10px center;
     margin-bottom: $space-half;
     padding: $pad;
-    border: 1px solid $gray-light-2;
+    border: 1px solid $color-grey-light-2;
     @include border-radius(0.25em);
 
-    &:last-child {
-        margin-bottom: 0;
-    }
     &.flash-error {
         color: darken(#a94442, 6);
         background-color: #f2dede;
@@ -32,7 +29,7 @@
         padding-left: 3.325em;
     }
     &.flash-icon-tick {
-        background-image: url('../images/design/alert-tick.png');
+        background-image: url('#{$pattern-dir-img}design/alert-tick.png');
         background-position: 1em;
     }
     ul {
