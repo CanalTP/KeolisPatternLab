@@ -85,26 +85,3 @@ $pad-quarter :$pad/4;
 $border-light: 1px;
 $border-med: 3px;
 $border-thick: 7px;
-
-/*------------------------------------------------------------------------*\
-    les variables ci-dessous sont gardées ici pour la retrocompatibilité
-\*------------------------------------------------------------------------*/
-// ********** sprite*************************************
-@import "design/footer/*.png";
-
-$picture-sprite-icon:'#{$pattern-dir-img}sprite/sprite.png';
-// smart-banner
-$smart-banner-background: '#{$pattern-dir-img}jquery-smartbanner/dark_background_stripes.gif';
-
-
-
-//position(and width/height) icon from and icon to
-$url-icon-from: '#{$pattern-dir-img-nmp}picto/26/origin.png';
-$icon-width-from: 1em;
-$icon-height-from: 1.938em;
-$url-icon-to: '#{$pattern-dir-img-nmp}picto/26/destination.png';
-$icon-width-to: 1em;
-$icon-height-to: 1.938em;
-// mixin icon-bg-label
-// var  pour l'espace entre icon et le txt
-$space-padding-left-icon: 0.30em;
