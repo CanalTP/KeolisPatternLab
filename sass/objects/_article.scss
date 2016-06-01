@@ -9,7 +9,7 @@
     .element-style-link {
         width: 100%;
         vertical-align: middle;
-        background-color: $color-second;
+        background-color: $color-article-summary-background;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -22,8 +22,7 @@
 
             .preface {
                 position: relative;
-                background-color: $color-second;
-                color: white;
+                background-color: $color-article-summary-background;
                 top: 0;
                 left: 0;
                 width: auto;
@@ -36,18 +35,28 @@
                     margin-bottom: $space-half;
                 }
                 .btn {
-                    color: $color-second;
+                    color: $color-article-summary-background;
                 }
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                color: $color-link-block-one-foreground;
             }
 
             &:not(.no-image) {
                 .preface {
-                    margin: 1em;
+                    margin: 1em 1em 1em 0;
                     @media all and (min-width: $bp-xl) {
                         width: 65%;
                     }
                 }
             }
+        }
+    }
+    .element-style-default {
+        .publication-date {
+            @include font-size(0.8);
+            color: $color-second;
         }
     }
 }

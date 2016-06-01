@@ -7,20 +7,20 @@ input[type=submit].btn, button.btn, a.btn, .btn {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    color: $black;
+    color: $color-button-inverted-foreground;
 
     display: inline-block;
     z-index: 1;
     padding: 0.75em 1em;
-    background: $white;
+    background: $color-button-inverted-background;
     border: none;
     @include border-radius(0.15rem);
 
     cursor: pointer;
 
     &:hover, &:focus {
-        background: darken($white, 5%);
-        color: $black;
+        background: $color-button-inverted-background-hover;
+        color: $color-button-inverted-foreground-hover;
     }
 
     &:after, &:before {
@@ -43,47 +43,62 @@ input[type=submit].btn, button.btn, a.btn, .btn {
     }
 
     &.disabled {
-        background: $gray-light-2;
-        color: $gray;
+        background: $color-grey-light-2;
+        color: $color-grey;
         cursor: default;
     }
 
     &.btn-social {
-        background-color: none;
+        background: none;
     }
 
-    &.secondary {
-        background-color: $color-second;
-        color: $white;
+    &.primary {
+        background-color: $color-button-background;
+        color: $color-button-foreground;
         &:hover, &:focus {
-            background: $color-second-highlight;
-            color: $font-color-contrast-second-highlight;
+            background: $color-button-background-hover;
+            color: $color-button-foreground-hover;
+        }
+    }
+    &.secondary {
+        background-color: $color-button-secondary-background;
+        color: $color-button-secondary-foreground;
+        &:hover, &:focus {
+            background: $color-button-secondary-background-hover;
+            color: $color-button-secondary-foreground-hover;
         }
     }
 
     &.btn-highlight {
-        background: $color-second;
-        color: $font-color-contrast-second;
+        background: $color-button-background;
+        color: $color-button-foreground;
     }
     &.full-width {
         width: 100%;
     }
+    &.btn-small {
+        padding: 0 0.20em;
+        &.right {
+            position: absolute;
+            bottom: 0.5em;
+            right: 0.5em;
+        }
+    }
     &.btn-default {
-        border: 1px solid $gray-light-3;
+        border: 1px solid $color-grey-light-3;
         padding: 1em 1em;
         margin: 0 0.25em 0.5em 0;
         line-height: 1em;
         &:hover {
-            background-color : $gray-light-3;
+            background-color : $color-grey-light-6;
         }
+        &:focus {
+            background : none;
+        }
+
     }
 }
-.btn-small {
-    padding: 0.5em !important;
-    [class^="keolis-icon-"], [class*=" keolis-icon-"] {
-        font-size: 1em;
-    }
-}
+
 .input-group-btn {
     .btn {
         padding: 0.54em;
@@ -115,6 +130,11 @@ input[type=submit].btn, button.btn, a.btn, .btn {
         }
     }
 }
+
+.keolis-icon-calendar {
+    color: #007f80;
+}
+
 .journey-reverse {
     position: relative;
     a {
@@ -123,9 +143,9 @@ input[type=submit].btn, button.btn, a.btn, .btn {
         top: 0.85em;
         @include font-size(1.85);
         padding: 0 0.25em;
-        color: $black;
+        color: $color-button-secondary-foreground;
         &:hover {
-            color: $color-second;
+            color: $color-button-secondary-foreground-hover;
         }
     }
 }
