@@ -1,8 +1,17 @@
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
-input[type=submit].btn, button.btn, a.btn, .btn {
-    font-size: $font-size-small-2;
+
+//input[type="submit"] {
+//    padding: $pad-half;
+//    background: $color-button-background;
+//    border: 1px solid $color-button-background;
+//    cursor: pointer;
+//}
+
+button, input[type=submit], button.btn, a.btn, .btn {
+    @include font-size(0.875);
+    @include line-height(0.875);
     font-family: $font;
     font-weight: bold;
     text-align: center;
@@ -11,7 +20,7 @@ input[type=submit].btn, button.btn, a.btn, .btn {
 
     display: inline-block;
     z-index: 1;
-    padding: 0.75em 1em;
+    padding: 0.75rem 0.81rem;
     background: $color-button-inverted-background;
     border: none;
     @include border-radius(0.15rem);
@@ -26,7 +35,7 @@ input[type=submit].btn, button.btn, a.btn, .btn {
     &:after, &:before {
         font-weight: normal;
         font-family: 'keolis-icons';
-        vertical-align: middle;
+        //vertical-align: middle; send down icons 1px
         display: inline-block;
         font-weight: normal;
     }

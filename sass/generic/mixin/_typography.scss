@@ -6,3 +6,8 @@
     font-size: ($size * $base-font-size) + px;
     font-size: $size + rem;
 }
+
+@mixin line-height($size: 1.0) {
+    line-height: ($size * $base-font-size) + px;
+    line-height: $size + rem;
+}

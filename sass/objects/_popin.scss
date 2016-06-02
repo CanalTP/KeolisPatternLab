@@ -98,7 +98,7 @@
 
     button.ctp-popin-close {
         width: 28px;
-        font-size: 28px;
+        @include font-size(1.75);
         font-weight: bold;
         color: black;
         background-color: transparent;

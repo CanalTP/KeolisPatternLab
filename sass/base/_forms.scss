@@ -34,7 +34,7 @@ label {
     color: $color-form-field-label;
 }
 
-button, input, select, textarea {
+input, select, textarea {
     font-family: inherit;
     font-size: 100%;
     margin: 0 1px 0;
@@ -64,12 +64,6 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
     -webkit-appearance: none;
 }
 
-button, input[type="submit"] {
-    padding: $pad-half;
-    background: $color-button-background;
-    border: 1px solid $color-button-background;
-    cursor: pointer;
-}
 
 input {
     &[type="checkbox"], &input[type="radio"] {
