@@ -48,6 +48,9 @@
                 }
                 a {
                     text-decoration: underline;
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
                 ul {
                     list-style: none;
@@ -80,6 +83,14 @@
                 padding: 0.25em 0 0.25em 0;
                 color: $color-h1;
                 font-weight: normal;
+            }
+        }
+    }
+    .element-type-paragraph {
+        a {
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
             }
         }
     }

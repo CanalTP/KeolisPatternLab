@@ -1,7 +1,7 @@
 .breadcrumb {
     background-color: $color-breadcrumb-background;
     font-size: 0.875em;
-    color: $color-breadcrumb-item-foreground;
+    color: contrast-color($color-breadcrumb-background, $color-typo-dark, $color-breadcrumb-item-foreground);
     margin-bottom: $space;
 
     @media (max-width: $bp-med-2) {
@@ -16,7 +16,7 @@
 
             a {
                 text-decoration: underline;
-                color: $color-breadcrumb-item-foreground;
+                color: contrast-color($color-breadcrumb-background, $color-typo-dark, $color-breadcrumb-item-foreground);
             }
 
             &:nth-child(1n+3):before {

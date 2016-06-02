@@ -1,15 +1,15 @@
 /* Links */
 a {
-    color: $color-link;
+    color: contrast-color($color-link, $color-link, $color-typo-dark);
     text-decoration: none;
     outline: 0;
 
     &:hover, &:focus {
-        color: $color-link-hover;
+        color: contrast-color($color-link, $color-link, $color-typo-dark);
     }
 
     &.highlight {
-        color: $color-link-visited;
+        color: contrast-color($color-link-visited, $color-link-visited, $color-typo-dark);;
         text-decoration: underline;
     }
 }

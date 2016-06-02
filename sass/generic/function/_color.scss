@@ -1,0 +1,7 @@
+@function luminance-contrast($base-color, $dark-color, $light-color) {
+    @if brightness($base-color) > 50% {
+        @return $dark-color;
+    } @else {
+        @return $light-color;
+    }
+}

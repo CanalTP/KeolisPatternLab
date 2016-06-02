@@ -13,14 +13,14 @@
     background-color: transparent\9;
     $color: rgba($red, $green, $blue, $alpha);
     @include filter-gradient($color, $color);
-
 }
+
 /**
  * Block style and  variants
  * @param $primary-color
  * @param $second-color
  */
-@mixin block-style ($primary-color: $color-main, $second-color : $white) {
+@mixin block-style ($primary-color: $color-main, $second-color: $white) {
     & > a {
         div {
             padding: 1em;
@@ -31,9 +31,9 @@
     .bg-color-primary,
     .preface-default {
         background-color: $primary-color;
-        color: $color-title-block-style;
+        color: $second-color;
         h1, h2, h3, h4, h5, h6 {
-            color: $color-title-block-style;
+            color: $second-color;
             font-weight: normal;
             font-size: 1rem;
         }
@@ -41,7 +41,7 @@
     .bg-color-default,
     .preface-default {
         &:hover {
-            background-color: lighten($primary-color, 5%);
+            background-color: desaturate(lighten($primary-color, 10), 20%);
         }
     }
     .preface-default {
@@ -53,26 +53,24 @@
     }
     .bg-default {
         background-color: $color-white;
-        color: $primary-color;
+        color: $color-typo-dark;
         &.font-default {
-            color: $color-black;
+            color: $color-typo-dark;
         }
     }
-    .boder-default,
-    &.boder-default {
+    .border-default,
+    &.border-default {
         border: 1px solid $primary-color;
-    }
-    .btn-style1 {
-        @include button-link($primary-color, $second-color);
-    }
-    .btn-style2 {
-        @include button-link($second-color, $primary-color);
     }
     .btn-style1,
     .btn-style2 {
         padding: 0.2em 0.4em;
     }
-    .bg-default.boder-default {
+    .bg-default.border-default {
         padding: 0.45em;
+    }
+    .btn-small {
+        color: $primary-color;
+        background-color: contrast-color($primary-color, $color-typo-dark, $color-typo-light);
     }
 }

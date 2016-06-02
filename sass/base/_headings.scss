@@ -1,7 +1,7 @@
 /* Headings */
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha {
-    color: $color-main;
+    color: $color-h1;
     font-family: "Museo";
     font-weight: normal;
     text-transform: uppercase;
@@ -10,7 +10,7 @@ h1, .alpha {
 }
 
 h2, .beta {
-    color: $color-main;
+    color: $color-h2;
     font-family: "Museo";
     font-weight: bold;
     text-transform: uppercase;
@@ -19,7 +19,7 @@ h2, .beta {
 }
 
 h3, .gamma {
-    color: $color-main;
+    color: $color-h3;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1em;
