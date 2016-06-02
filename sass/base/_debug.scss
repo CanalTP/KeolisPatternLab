@@ -4,20 +4,24 @@
     padding: 2em 0;
     color: white;
 
-    ul {
+    & > ul {
+        & > li {
+            & > ul {
+                display: none;
+            }
+
+            &:hover > ul {
+                display: block;
+            }
+        }
+    }
+
+    & ul {
         padding: 0 2em;
 
         li {
             overflow: hidden;
             line-height: 1.3em;
-
-            &>ul {
-                display: none;
-            }
-
-            &:hover>ul {
-                display: block;
-            }
 
             a {
                 display: block;

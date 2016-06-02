@@ -1,0 +1,21 @@
+/**
+ * These colors are commonly used in all type of websites (greys, black, white...)
+ */
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey: #777777;
+$color-grey-light: lighten($color-grey, 5);
+$color-grey-light-2: lighten($color-grey, 10);
+$color-grey-light-3: lighten($color-grey, 15);
+$color-grey-light-4: lighten($color-grey, 20);
+$color-grey-light-5: lighten($color-grey, 30);
+$color-grey-light-6: lighten($color-grey, 45);
+$color-grey-light-7: lighten($color-grey, 60);
+$color-grey-dark: darken($color-grey, 5);
+$color-grey-dark-2: darken($color-grey, 10);
+$color-grey-dark-3: darken($color-grey, 15);
+$color-grey-dark-4: darken($color-grey, 20);
+$color-grey-dark-5: darken($color-grey, 30);
+$color-grey-dark-6: darken($color-grey, 45);
+$color-grey-dark-7: darken($color-grey, 60);

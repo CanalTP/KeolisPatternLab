@@ -1,3 +1,7 @@
+/*------------------------------------*\
+    $Block
+\*------------------------------------*/
+
 // block search
 .block-search {
     padding: 1em;
@@ -7,32 +11,6 @@
         border: medium none;
         border-radius: 0.15em;
         padding: 0.25em;
- }
-}
-.content-row {
-    @include content-row;
-    @include clearfix;
-}
-.content-block {
-    margin-bottom: 0 !important;
-}
-.content-element {
-    padding: 0.5em;
-    [class^="element-style-"],
-    [class*="element-style-"] {
-        padding: 1em;
-    }
-}
-.content-page {
-    .main-title {
-        padding: 0 0 1em 0;
-        h1 {
-            @include font-size(1.875);
-            line-height: 1.125em;
-            font-weight: 400;
-            padding: 0.5em;
-            background-color: $white;
-        }
     }
 }
 
@@ -52,25 +30,16 @@
         padding: 0.5em;
     }
 }
-
-// block style color main two
+.block-style-1 {
+    @include block-style($color-link-block-one-background, $color-link-block-one-foreground);
+}
 .block-style-2 {
-    @include  block-style($color-second, $white);
-    .btn-style1 {
-        .icon-arrow-right {
-            background-position: -389px -297px;
-        }
-    }
+    @include block-style($color-link-block-two-background, $color-link-block-two-foreground);
 }
 .block-style-3 {
-    @include  block-style($color-third,$white );
-    .btn-style1 {
-        .icon-arrow-right {
-            background-position: -389px -326px;
-        }
-    }
-
+    @include block-style($color-link-block-three-background, $color-link-block-three-foreground);
 }
+
 //preface
 .preface {
     left: 1em;
@@ -78,14 +47,20 @@
     top: 1em;
     width: 12em;
     z-index: 100;
-	.font-secondary {
-	    display:block;
-	}
-	&.preface-default {
-    	padding: 1em;
-	}
-	.title-light {
-	    line-height: 1.25em;
-	    margin: 0.5em 0;
-	}
+    min-height: 5em;
+    &.preface-default {
+        padding: 1em;
+    }
+    .title-light {
+        line-height: 1.25em;
+        margin: 0.5em 0;
+    }
+}
+.element-type-content-link {
+    .btn-block > img {
+        display: block;
+        height: auto;
+        z-index: 1;
+        width: 100%;
+    }
 }

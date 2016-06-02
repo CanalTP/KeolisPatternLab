@@ -1,12 +1,12 @@
-@import "../fonts/keolis/reference/variables";
+@import '../fonts/keolis/reference/variables';
 
 @font-face {
     font-family: 'keolis-icons';
-    src:url('../fonts/keolis/keolis-icons.eot?lc4hd5');
-    src:url('../fonts/keolis/keolis-icons.eot?#iefixlc4hd5') format('embedded-opentype'),
-    url('../fonts/keolis/keolis-icons.woff?lc4hd5') format('woff'),
-    url('../fonts/keolis/keolis-icons.ttf?lc4hd5') format('truetype'),
-    url('../fonts/keolis/keolis-icons.svg?lc4hd5#keolis-icons') format('svg');
+    src:url('#{$pattern-dir-font}keolis/keolis-icons.eot?lc4hd5');
+    src:url('#{$pattern-dir-font}keolis/keolis-icons.eot?#iefixlc4hd5') format('embedded-opentype'),
+    url('#{$pattern-dir-font}keolis/keolis-icons.woff?lc4hd5') format('woff'),
+    url('#{$pattern-dir-font}keolis/keolis-icons.ttf?lc4hd5') format('truetype'),
+    url('#{$pattern-dir-font}keolis/keolis-icons.svg?lc4hd5#keolis-icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,7 +18,7 @@
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    line-height: 1;
+    //line-height: 1;
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -29,8 +29,8 @@
 
     &.square {
         padding: 0.3em;
-        background: $gray-dark;
-        color: $font-color-contrast-main;
+        background: $color-icon-background;
+        color: $color-icon-foreground;
     }
     &.round {
         @extend .square;

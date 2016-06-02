@@ -1,17 +1,15 @@
+/*------------------------------------*\
+    $text
+\*------------------------------------*/
+
 .sitemap {
     h4 {
         @include font-size(1);
-        color:$font-color-light;
+        color: $color-white;
     }
-}
-h2.title {
-    margin-bottom: 1em;
 }
 h4.uppercase {
     @include font-size(1.125);
-}
-h4.title-small {
-    @include font-size(0.813);
 }
 .text {
     @include font-size(0.875);
@@ -22,7 +20,12 @@ h4.title-small {
 .title-light {
     font-weight: 300;
 }
-
+h2.title {
+    margin-bottom: 1em;
+}
+h4.title-small {
+    @include font-size(0.813);
+}
 .sitemap {
     li {
         a {
@@ -40,12 +43,22 @@ h4.title-small {
         line-height: 1.125em;
     }
 }
-strong {
+h1 {
+    color: $color-h1;
+    text-transform: uppercase;
     font-weight: bold;
+    margin: 1em;
 }
 p {
     margin-bottom: $space;
 }
-.small-text {
-   @include font-size(0.875);
+strong {
+    font-weight: bold;
+}
+.ctp-container p {
+    margin-bottom: $space;
+}
+.content-title {
+    @include font-size(1.5);
+    margin: 1em 0;
 }

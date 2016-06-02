@@ -8,7 +8,13 @@ form {
     }
 
     & input {
-        padding : 0.465em 0.563em;
+        padding: 0.465em 0.563em;
+        color: $color-text;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: inherit;
+        @include font-size(1);
     }
 
     hr {
@@ -25,7 +31,7 @@ fieldset {
 label {
     display: block;
     padding-bottom: $space-half;
-    color: $gray-dark-2;
+    color: $color-form-field-label;
 }
 
 button, input, select, textarea {
@@ -36,33 +42,32 @@ button, input, select, textarea {
 
 input, textarea, select {
     width: 100%;
-    border: 1px solid $gray-med-2;
+    border: 1px solid $color-form-field-border;
     padding: $pad-half 0.65rem;
-    background-color: $white;
+    background-color: $color-form-field-background;
     @include border-radius(0.25em);
 
     &:active {
-        background-color: $white;
+        background-color: $color-form-field-background;
     }
 
     &:focus {
-        border-color: $color-second;
+        border-color: $color-form-field-border-focus;
     }
-  }
+}
 
-
-input[type=text],
-input[type=search],
-input[type=url],
-input[type=number],
 textarea {
+    min-height: 140px;
+}
+
+input[type=text], input[type=search], input[type=url], input[type=number], textarea {
     -webkit-appearance: none;
 }
 
 button, input[type="submit"] {
     padding: $pad-half;
-    background: $gray-dark;
-    border: 1px solid $gray;
+    background: $color-button-background;
+    border: 1px solid $color-button-background;
     cursor: pointer;
 }
 
@@ -87,19 +92,12 @@ input {
         padding: 0.465em 0.563em;
         float: left;
     }
-}
 
-::-webkit-input-placeholder {
-    font-style: italic;
-}
-::-moz-placeholder {  /* Firefox 19+ */
-    font-style: italic;
-}
-:-ms-input-placeholder {
-    font-style: italic;
-}
-:-moz-placeholder { /* Firefox 18- */
-    font-style: italic;
+    &[type="text"] {
+        @include input-placeholder {
+            font-style: italic;
+        }
+    }
 }
 
 //Form Field Container
@@ -112,45 +110,67 @@ input {
     fieldset, .inline-container {
         position: relative;
     }
+
 }
 
 /* Validation */
-.has-error, .is-error {
-    border-color: $error;
+.has-error, .is-error, .error {
+    border-color: $color-design-error;
+    input, textarea, select {
+        border-color: $color-design-error;
+    }
 }
+
 .is-valid {
-    border-color: $valid;
+    border-color: $color-design-success;
+    input, textarea, select {
+        border-color: $color-design-success;
+    }
 }
 
 input,
 select,
 option {
-    color: $gray-dark;
+    color: $color-text;
 }
+
+.error-message {
+    margin-top: $space-half;
+
+    li {
+        color: $color-design-error;
+        line-height: 1.2em;
+    }
+}
+
 /*------------------------------------*\
     $SPECIFIC FORMS
 \*------------------------------------*/
 
 /* Search Form */
-.st0{
-    background-color: $gray-light-3;
+.st0 {
+    background-color: $color-grey-light-3;
     padding: 1.5em 1em;
 }
 .search-field {
     padding-right: 3em;
 }
+
 .inline-form .search-submit {
     background: none;
     padding: 0.78em 1em;
     border: 0;
-    border-left: 1px solid $gray;
-    color: $gray;
+    border-left: 1px solid $color-grey;
+    color: $color-grey;
 }
+
 .options {
     legend {
-      margin-bottom: $space;
+        font-weight: bold;
+        margin-bottom: 0.5em;
     }
 }
+
 .checkox-list {
     .checkbox-item {
         float: left;
@@ -188,7 +208,7 @@ option {
 }
 .autocomplete-list {
     background-color: white;
-    border: 1px solid $gray-med-2;
+    border: 1px solid $color-grey;
     margin: 0 1px;
     z-index: 10;
 
@@ -200,9 +220,9 @@ option {
             padding-left: 3em;
 
             &:hover {
-                background-color: $color-second!important;
+                background-color: $color-autocomplete-item-background-hover !important;
                 * {
-                    color: $font-color-light!important;
+                    color: $color-autocomplete-item-foreground-hover !important;
                 }
             }
         }
@@ -224,10 +244,9 @@ option {
         position: absolute;
 
         &:checked + label:before {
-            box-shadow: inset 0 0 0 $color-second, inset 0 0 0 $color-second, inset 0 0 0 5px $color-second;
+            box-shadow: inset 0 0 0 $color-main, inset 0 0 0 $color-main, inset 0 0 0 5px $color-main;
             border: 1px solid $color-second;
-            background-color: $white;
-
+            background-color: $color-white;
         }
 
         & + label {
@@ -241,7 +260,7 @@ option {
                 display: inline-block;
                 vertical-align: sub;
                 transition: 0.3s;
-                border: 1px solid $gray-med;
+                border: 1px solid $color-grey;
                 margin-right: $space;
                 @include border-radius(50%);
             }
@@ -255,13 +274,13 @@ option {
     }
 }
 .group-list {
-    background-color: $white;
-    border: 1px solid $gray-med-2;
+    background-color: $color-white;
+    border: 1px solid $color-grey;
     @include border-radius(0.25em 0.25em 0 0);
     margin-bottom: 1em;
 }
 .title-radio-list {
-    border-bottom: 1px solid $gray-med-2;
+    border-bottom: 1px solid $color-grey;
     padding: $pad;
     text-transform: uppercase;
     font-family: $font-bold;
@@ -295,10 +314,18 @@ option {
     }
 }
 
+.journey-reverse {
+    position: relative;
+    a {
+        left: 0;
+        position: absolute;
+        top: 1.5em;
+    }
+}
+
 .group-field-container {
     &.icon-left {
         margin-left: 3em;
-
         @media all and (min-width: $bp-med) {
             margin-left: 4em;
         }
@@ -311,36 +338,45 @@ option {
     }
 }
 /***** text input with icon ***/
-input {
-    &.inner-icons {
-        padding: 0.5em 4em 0.5em 3.5em;
-    }
-    &.inner-label {
-        padding: 0.5em 0.5em 0.5em 5.5em;
-    }
+input.inner-icons {
+    padding: 0.5em 4em 0.5em 3.5em;
 }
+input.inner-label {
+    padding: 0.5em 0.5em 0.5em 5.5em;
+}
+
 .inner-iput-text {
     position: absolute;
     left: 1.9em;
     top: 0.45em;
     font-family: $font-bold;
-    color: $gray-dark;
+    color: $color-grey;
 }
+
 .icon-clear {
-    line-height: 1em;
-    display: inline-block;
+    position: absolute;
+    right: 1.85em;
+    top: 0.45em;
+}
+
+.input-icons {
+    position: absolute;
+    top: 0.55em;
+    &.pos-right {
+        right: 0.35em;
+    }
 }
 
 .icon-inside-input {
     position: relative;
     width: 100%;
 }
+
 .iconable-group {
     li {
         display: inline;
         float: left;
         margin-right: 0.5em;
-
         &:last-child {
             margin-right: 0em;
         }
@@ -357,55 +393,52 @@ input {
         cursor: pointer;
 
         .icon_clear {
-            color: $gray-dark;
-        }
-    }
-}
-.list-input-icons {
-    position: absolute;
-    right: 0;
-    top: 0;
-
-    li {
-        float: left;
-        padding: 0.25em;
-
-        span, a {
-            vertical-align: middle;
-            color: $color-second;
+            color: $color-grey-dark;
         }
     }
 }
 .group-date {
+    margin-right: 0.5em;
     margin-bottom: 0.5em;
     position: relative;
-    width: 100%;
+}
 
-    input,
-    select,
-    textarea {
+.search_date {
+    .group-date {
+        margin-right: 0em;
+        margin-bottom: 0.5em;
+        position: relative;
+    }
+}
+
+.group-time,
+.group-date {
+    input, select, textarea {
         padding: 0.465em 0.563em;
     }
-
     input.hasDatepicker {
         padding-right: 2em;
     }
 }
+
 .radio_fields {
     input[type="radio"] {
         width: auto;
     }
-
     label {
         display: inline;
     }
 }
 
-/* Contact Form, Estimate Form */
+/* Contact Form */
+.contact-form-result {
+    padding: $pad;
+    background-color: $color-form-background;
+}
 
 .contact-form, .estimate-form {
-    padding: 1em 0 3em;
-    background-color: $gray-light-3;
+    padding: $pad 0 3*$pad;
+    background-color: $color-form-background;
 
     & form {
         padding-left: 1em;
@@ -413,11 +446,11 @@ input {
     }
 
     & header h1 {
-        margin: 1em auto;
+        margin: 1em auto 0;
     }
 
     & .field-container {
-        margin: 1.4em  auto 0;
+        margin: 1.4em auto 0;
         text-align: center;
 
         & label {
@@ -426,7 +459,7 @@ input {
     }
 
     & .search_time {
-      text-align: left;
+        text-align: left;
     }
 
     @media all and (min-width: $bp-med) {
@@ -435,10 +468,8 @@ input {
         }
 
         header {
-
             & div {
                 width: 50%;
-
                 & h1 {
                     width: 50%;
                 }
@@ -450,65 +481,54 @@ input {
             float: left;
 
             &.bd-left {
-                border-left: 1px solid $gray-med-2;
+                border-left: 1px solid $color-grey;
                 padding-bottom: 2em;
             }
         }
 
         .field-container {
             width: 50%;
+
         }
     }
 }
-
 .element-type-filter-form form {
-    background-color: $gray-light-3;
+    background-color: $color-form-background;
     padding: $space;
-
     .content-element {
         padding: 0;
     }
 }
-
 .group-time {
-    span,
-    abbr {
+    span, abbr {
         margin-right: 0.5em;
     }
-
     span:last-child {
         margin-right: 0;
     }
-
     select {
         width: auto;
-        appearance: none;
         @include appearance(none);
-        background: $white;
+        background: $color-white;
         padding-left: 0.7em;
         padding-right: 1.65em;
-
-        &:-ms-expand {
+        &::-ms-expand {
             display: none;
         }
-
         &:-moz-focusring {
             color: transparent;
             text-shadow: 0 0 0 #000;
         }
     }
-
     option {
         padding: 0 0.7em;
     }
-
     .wrap-select {
         position:relative;
-        background-color:$white;
+        background-color: $color-white;
         display:inline-block;
         @include border-radius(0.25em);
-        border: 1px solid $gray-med-2;
-
+        border: 1px solid $color-grey;
         select {
             border:none;
             background-color:transparent;
@@ -516,12 +536,11 @@ input {
             width:100%;
             height:100%;
         }
-
         &.arrow {
             &:after {
                 font-family: "keolis-icons";
                 content: $icon-arrow-right;
-                color: $color-second;
+                color: $color-main;
                 @include transform(rotate(90deg));
                 pointer-events: none;
                 position:absolute;
@@ -531,24 +550,23 @@ input {
         }
     }
 }
-
 @media all and (max-width: $bp-small-1) {
-   .fixed-field-date {
-       display: block;
-   }
+    .fixed-field-date {
+        display: block;
+    }
 }
-// Widget
 .widget {
     .keolis-icon-location {
         font-size: 1.45em;
         left: 0.25em;
         position: absolute;
-        top: 0.25em;
+        top: 0em;
     }
 }
+
 .location-from {
-    color: $color-location-from;
+    color: $color-design-origin;
 }
 .location-to{
-    color: $color-location-to;
+    color: $color-design-destination;
 }
