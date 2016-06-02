@@ -136,10 +136,10 @@ li.link-account {
             }
         }
         a {
-            color: $color-pager-link;
+            color: contrast-color($color-pager-link, $color-pager-link, $color-typo-dark);
             text-decoration: none;
             &:hover {
-                color: $color-pager-link-hover;
+                color: contrast-color($color-pager-link-hover, $color-pager-link-hover, $color-typo-dark);
                 background: none;
             }
         }

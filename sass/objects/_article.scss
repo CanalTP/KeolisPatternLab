@@ -19,6 +19,7 @@
 
         .article-link {
             vertical-align: middle;
+            color: contrast-color($color-article-summary-background, $color-typo-dark, $color-typo-light);
 
             .preface {
                 position: relative;
@@ -52,11 +53,15 @@
                 }
             }
         }
+
+        button, a.btn, .btn {
+            background-color: contrast-color($color-article-summary-background, $color-typo-dark, $color-typo-light);
+        }
     }
     .element-style-default {
         .publication-date {
             @include font-size(0.8);
-            color: $color-second;
+            color: contrast-color($color-second, $color-second, $color-typo-dark);
         }
     }
 }

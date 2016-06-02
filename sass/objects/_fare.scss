@@ -1,7 +1,7 @@
 .head-far {
     margin-bottom: 1em;
     a.btn {
-        color : $color-link;
+        color : contrast-color($color-link, $color-typo-dark, $color-link);
         border: 1px solid $color-link;
     }
     span {

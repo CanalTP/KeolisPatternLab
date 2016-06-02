@@ -1,17 +1,18 @@
 @import "compass/reset";
 @import "compass/utilities/color/contrast";
+@import "compass/utilities/color/brightness";
 @import "compass/utilities/general/clearfix";
 @import "compass/utilities/general/float";
 @import "compass/utilities/sprites";
 @import "compass/css3";
 @import "breakpoint";
 
+@import "generic/function/color";
 
 @import "generic/variables";
 @import "base/global-classes";
 
 // Function and mixin
-
 @import "generic/mixin/fixes";
 @import "generic/mixin/box";
 @import "generic/mixin/color";

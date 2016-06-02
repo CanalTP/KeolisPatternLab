@@ -14,8 +14,8 @@ $color-footer-background: $color-design-one;
 //-----------------------------------------------------------------------------
 $color-main-menu-background: $color-white;
 $color-main-menu-background-hover: $color-main;
-$color-main-menu-foreground: $color-grey-dark;
-$color-main-menu-foreground-hover: $color-white;
+$color-main-menu-foreground: contrast-color($color-main-menu-background, $color-typo-dark, $color-typo-light);
+$color-main-menu-foreground-hover: contrast-color($color-main-menu-background-hover, $color-typo-dark, $color-typo-light);
 $color-main-menu-active: $color-main;
 
 // Breadcrumb
@@ -32,8 +32,8 @@ $color-main-container-background: $color-white;
 
 // Headings
 //-----------------------------------------------------------------------------
-$color-h1: $color-main;
-$color-h2: $color-grey-dark;
+$color-h1: luminance-contrast($color-main, $color-typo-dark, $color-main);
+$color-h2: luminance-contrast($color-main, $color-typo-dark, $color-main);
 $color-h3: $color-grey-dark;
 $color-h4: $color-grey-dark;
 $color-h5: $color-grey-dark;
@@ -51,11 +51,11 @@ $color-separator: $color-grey-light;
 // Link blocks
 //-----------------------------------------------------------------------------
 $color-link-block-one-background: $color-main;
-$color-link-block-one-foreground: $color-white;
+$color-link-block-one-foreground: contrast-color($color-link-block-one-background, $color-typo-dark, $color-typo-light);
 $color-link-block-two-background: $color-second;
-$color-link-block-two-foreground: $color-white;
+$color-link-block-two-foreground: contrast-color($color-link-block-two-background, $color-typo-dark, $color-typo-light);
 $color-link-block-three-background: $color-third;
-$color-link-block-three-foreground: $color-white;
+$color-link-block-three-foreground: contrast-color($color-link-block-three-background, $color-typo-dark, $color-typo-light);
 
 // Text links
 //-----------------------------------------------------------------------------
@@ -70,19 +70,18 @@ $color-link-inverted-visited: $color-white;
 //-----------------------------------------------------------------------------
 $color-button-background: $color-main;
 $color-button-background-hover: desaturate(lighten($color-main, 40), 50%);
-$color-button-foreground: $color-white;
-$color-button-foreground-hover: $color-black;
+$color-button-foreground: contrast-color($color-button-background, $color-typo-dark, $color-typo-light);
+$color-button-foreground-hover: contrast-color($color-button-background-hover, $color-typo-dark, $color-typo-light);
 
 $color-button-secondary-background: $color-second;
 $color-button-secondary-background-hover: lighten($color-second, 10);
-$color-button-secondary-foreground: $color-white;
-$color-button-secondary-foreground-hover: $color-white;
+$color-button-secondary-foreground: contrast-color($color-button-secondary-background, $color-typo-dark, $color-typo-light);
+$color-button-secondary-foreground-hover: contrast-color($color-button-secondary-background-hover, $color-typo-dark, $color-typo-light);
 
 $color-button-inverted-background: $color-white;
 $color-button-inverted-background-hover: darken($color-white, 10);
-$color-button-inverted-foreground: $color-black;
-$color-button-inverted-foreground-hover: $color-black;
-$color-button-inverted-foreground-hover: $color-black;
+$color-button-inverted-foreground: contrast-color($color-button-inverted-background, $color-typo-dark, $color-typo-light);
+$color-button-inverted-foreground-hover: contrast-color($color-button-inverted-background-hover, $color-typo-dark, $color-typo-light);
 
 // Pager
 //-----------------------------------------------------------------------------
