@@ -1,32 +1,32 @@
 {
     "attributes": {
-        "id": "information-popin",
-        "data-default-status": "open"
+        "data-show": "true",
+        "data-uid": "67cb6c14e2c254228b94d657f4011df7",
+        "class": "in"
     },
-    "title": "Lorem Ipseum",
+    "title": "Grève générale et nationale le 12 mai 2016",
     "content": {
-        "type": "text",
-        "data": "Attention, il y a du lorem ipsumsum"
+        "type": "raw",
+        "data": "<p>Après la journée de forte mobilisation du 28 avril, sept syndicats appellent les salariés, les étudiants et les lycéens à une nouvelle <strong>grève nationale et générale le jeudi 12 mai 2016</strong>.</p><p>Peu de perturbations ont été annoncées.</p><ul>\n<li>\n<strong>Ecoles</strong> - des perturbations sont à prévoir dans les cantines scolaires et l'accueil périscolaire de plusieurs villes :<ul>\n<li>\n<strong>Pau</strong> - <a href=\"http://www.pau.fr/evenement/7247/7-mouvement-social-du-12-mai-2016.htm\" target=\"_blank\">Voir le détail.</a>\n</li>\n<li>\n<strong>Quimper</strong> - <a href=\"http://www.quimper.bzh/actualite/15346/3-actualites.htm\" target=\"_blank\">Voir le détail.</a>\n</li>\n<li>\n<strong>Quimperlé</strong> - <a href=\"http://www.quimperle.com/index.php/item/989-gr%C3%A8ve-du-12-mai.html\" target=\"_blank\">Voir le détail.</a>\n</li>\n<li>\n<strong>Rennes </strong>- <a href=\"http://metropole.rennes.fr/fileadmin/rrm/documents/Pratique/Notez_le/autres_notez_le/pre__visionnel_gre__ve_du_12_juin_2016.pdf\" target=\"_blank\">Voir le détail.</a>\n</li>\n<li>\n<strong>Toulouse</strong> - <a href=\"http://www.toulouse.fr/web/education/-/actu-mouvement-social-jeudi-12-mai-2016\" target=\"_blank\">Voir le détail</a>.</li>\n</ul>\n</li>\n<li>Transport urbain :<ul>\n<li>\n<strong>Nice (Ligne d'Azur)</strong> : beaucoup de lignes seront impactées. <a href=\"http://www.lignesdazur.com/perturbation/?rub_code=17&pert_id=16070\" target=\"_blank\">Voir la liste des perturbations</a>.</li>\n<li>\n<strong>Pau</strong> - (Idelis) : légères perturbations. <a href=\"http://www.reseau-idelis.com/\" target=\"_blank\">Plus d'infos.</a>\n</li>\n<li>\n<strong>Rennes (Star)</strong> : perturbations dans les bus et cela continuera le vendredi. <a href=\"http://www.star.fr/\" target=\"_blank\">Plus d'infos.</a>\n</li>\n</ul>\n</li>\n<li>\n<strong>SNCF</strong>  : pas de perturbations. Les syndicats internes à la SNCF ont décidé de ne pas suivre ce mouvement.</li>\n</ul><p>La circulation dans les centres villes risque d'être impactée du fait des manifestations organisées. La liste des manifestations est disponible sur le site Lutt.es.</p>"
     },
     "actions": {
-        "accept": {
+        "redirect": {
             "label": "En savoir plus",
             "type": "link",
             "url": "http://jira.canaltp.fr/browse/COL-230",
-            "title": "Go to this",
+            "title": "En savoir plus",
             "attributes": {
                 "class": "btn secondary",
-                "data-event": "accept"
+                "data-callback": "createPopinCookie",
+                "target": "_blank"
             }
         },
         "close": {
-            "label": "J'ai compris",
-            "type": "link",
-            "url": "#weshalors",
-            "title": "let's see",
+            "label": "Fermer",
+            "type": "button",
             "attributes": {
                 "class": "btn secondary",
-                "data-event": "close"
+                "data-callback": "createPopinCookie"
             }
         }
     }
