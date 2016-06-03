@@ -1,3 +1,8 @@
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-</button>
+{# really need cross in keolis font #}
+{% include 'atoms-button-standard' with {
+    attributes: {
+        type: "button",
+        class: "btn only-icon keolis-icon-close ctp-popin-close",
+        title: "Close the window"
+    }
+} only %}

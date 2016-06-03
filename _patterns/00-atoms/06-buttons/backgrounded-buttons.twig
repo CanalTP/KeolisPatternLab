@@ -2,15 +2,31 @@
     <a class="default btn-block inner-shade" href="#">
         <div class="bg-color-default clearfix">
             <p>
-                <button type="button" class="btn only-icon keolis-icon-calendar" title="{{ icon.journey.reverse }}">
-                    <span class="sr-only">{{ label.date }}Changer une date</span>
-                </button>
+                {% include 'atoms-button-standard' with {
+                    label: "button.backgrounded.label",
+                    attributes: {
+                        type: "button",
+                        class: "btn only-icon keolis-icon-calendar",
+                        title: "icon.journey.reverse"
+                    }
+                } only %}
             </p>
             <p class="clearfix">
-                <button class="btn only-icon keolis-icon-arrow-right right"></button>
+                {% include 'atoms-button-standard' with {
+                    attributes: {
+                        type: "button",
+                        class: "keolis-icon-arrow right btn only-icon"
+                    }
+                } only %}
             </p>
             <p>
-                <button class="btn btn-icon keolis-icon-arrow-right">{{ label.example }}</button>
+                {% include 'atoms-button-standard' with {
+                    label: "example",
+                    attributes: {
+                        type: "button",
+                        class: "btn keolis-icon-arrow"
+                    }
+                } only %}
             </p>
         </div>
     </a>
