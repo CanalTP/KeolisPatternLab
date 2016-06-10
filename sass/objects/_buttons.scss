@@ -1,22 +1,35 @@
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
-input[type=submit].btn, button.btn, a.btn, .btn {
-    font-size: $font-size-small-2;
+button, input[type="submit"] {
     font-family: $font;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    color: $color-button-inverted-foreground;
+}
 
+.btn {
     display: inline-block;
     z-index: 1;
-    padding: 0.75em 1em;
-    background: $color-button-inverted-background;
-    border: none;
-    @include border-radius(0.15rem);
-
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
     cursor: pointer;
+    user-select: none;
+    border: none;
+    text-transform: uppercase;
+
+    @include font-size(0.89);
+    @include line-height(0.89);
+    @include border-radius(0.15rem);
+    padding: 0.75rem 0.81rem;
+
+    color: $color-button-inverted-foreground;
+    background: $color-button-inverted-background;
+
+    input::-moz-focus-inner {
+        margin-top: -2px;
+        margin-bottom: -2px;
+    }
+
 
     &:hover, &:focus {
         background: $color-button-inverted-background-hover;
@@ -26,7 +39,6 @@ input[type=submit].btn, button.btn, a.btn, .btn {
     &:after, &:before {
         font-weight: normal;
         font-family: 'keolis-icons';
-        vertical-align: middle;
         display: inline-block;
         font-weight: normal;
     }
@@ -95,7 +107,13 @@ input[type=submit].btn, button.btn, a.btn, .btn {
         &:focus {
             background : none;
         }
+    }
+    &[class*="keolis-icon-"] {
 
+        &:after {
+            font-family: 'keolis-icons';
+            vertical-align: middle;
+        }
     }
 }
 

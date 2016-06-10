@@ -12,7 +12,6 @@
 }
 
 [class^="keolis-icon-"], [class*=" keolis-icon-"] {
-    font-family: 'keolis-icons';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -86,8 +85,7 @@
 .keolis-icon-location:before {
     content: $icon-location;
 }
-[class^="keolis-icon-arrow"] {
-    font-size: 1rem;
+[class*="keolis-icon-arrow"] {
     &:after {
         content: $icon-arrow-right;
     }

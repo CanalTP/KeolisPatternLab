@@ -1,3 +1,4 @@
+example: Exemple
 places:
     autocomplete:
         title:
@@ -21,3 +22,9 @@ privacy:
         read_more: Pour en savoir plus et paramétrer vos cookies
         accept: Oui
         reject: Non
+
+button:
+    date:
+        label: Date de départ
+    backgrounded:
+        label: <span class="sr-only"></span>

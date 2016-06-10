@@ -1,22 +1,25 @@
 {% set attributes = attributes|default({}) %}
-{% if attributes.class is defined and 'popin' not in attributes.class %}
-    {% set attributes = attributes|merge( {class: 'popin ' ~ attributes['class']|join(' ')} ) %}
+{% if attributes.class is defined and 'ctp-popin' not in attributes.class %}
+    {% set attributes = attributes|merge( {class: 'ctp-popin ' ~ attributes['class']|join(' ')} ) %}
+{% else %}
+    {% set attributes = attributes|merge( {class: 'ctp-popin'} ) %}
 {% endif %}
 
-<div {% for key, value in attributes %} {{ key }}="{{ value }}"{% endfor %}>
-    {% include 'atoms-heading' with {"heading": 2, "label": title} only %}
-    {% if content is defined %}
-        {% if content.type == 'raw' %}
-            {{ content.data|raw }}
-        {% else %}
-            {% include 'atoms-paragraph' with {label: content.data} only %}
-        {% endif %}
+{% if content is defined %}
+    <div {% for key, value in attributes %} {{ key }}="{{ value }}"{% endfor %}>
+    {#{% include 'atoms-button-standard' with { label: "&times;", attributes: { class: "ctp-popin-close", title: "Close the window" } } only %}#}
+    {% include 'atoms-heading' with { "heading": 2, "label": title } only %}
+    {% if content.type == 'raw' %}
+        {{ content.data|raw }}
+    {% else %}
+        {% include 'atoms-paragraph' with {label: content.data} only %}
     {% endif %}
     {% for button in actions %}
         {% if button.type is defined and button.type == 'button' %}
-            {% include 'atoms-button-standard' with {label: button.label, attributes: button.attributes} only %}
+            {% include 'atoms-button-standard' with { label: button.label, attributes: button.attributes } only %}
         {% else %}
-            {% include 'atoms-lien-text' with {url: button.url, label: button.label, title: button.title, attributes: button.attributes} only %}
+            {% include 'atoms-lien-text' with { href: button.url, title: button.title, label: button.label, attributes: button.attributes } only %}
         {% endif %}
     {% endfor %}
-</div>
+    </div>
+{% endif %}
